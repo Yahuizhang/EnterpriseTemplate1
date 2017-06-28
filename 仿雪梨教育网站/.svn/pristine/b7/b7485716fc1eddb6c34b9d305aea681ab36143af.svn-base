@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>雪梨教育同步课</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <script type="text/javascript" src="js/jquery-1.12.1.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/tongbuke.css"/>
+		<script type="text/javascript" src="js/tongbuke.js"></script>
+	</head>
+<body>
+	<!-- 导航栏 -->
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="height:50px;margin-bottom:0px;font-family:'Microsoft YaHei';">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><img src="img/logo.png" style="margin-top:-10px;margin-right:100px;"></a>
+				</div>
+				<div class="collapse navbar-collapse navbar-ex1-collapse" style="background-color:rgb(248,248,248);max-height:500px;">
+					<ul class="nav navbar-nav" style="color:black;font-style:楷体;line-height:48px;margin-top:0px;">
+						<li class="active bg-primary dh" style="background-color:rgb(248,248,248);"><a href="sy.html" class="bg-primary">首页</a></li>
+						<li class="dh" style="background-color:rgb(248,248,248);"><a href="KeCheng1.html">课程</a>
+							<div class="lb" style="height:450px;background-color:white;position:absolute;left:-300px;top:50px;display:none;line-height:20px;">
+								<div class="container" style="height:450px;">
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">WEB前端开发</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">前段工程师第一步：用HTML、CSS构建网站</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">构建交互丰富的web应用：Javascript</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">搭建Web服务器</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">切图 如何从效果图转换为html页面</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">web前端开发（一）</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Bootstrap使用指南</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">UI设计基础</a>&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">WEB后端开发</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">Java面向对象</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Java数据存储</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Java多线程编程</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">JavaEE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Java网络编程</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Servlet详解</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">PKI</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">微信公众平台应用开发实战傻瓜版</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">JSP详解</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">phpcms</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Web核心技术</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">PHP基础</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">PHPCMS V9</a>&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">移动应用开发</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">Android基础知识</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Android的多媒体应用</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Android的多线程编程</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Android网络访问</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Android中的数据存储</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Android基本组件</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">软件测试</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">QC测试管理工具</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">白盒测试</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">性能测试与LoadRunner应用</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">软件测试基础</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">功能性自动化测试工具</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试环境搭建</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试职业素质</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试基础知识</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">综合测试策略</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试方法</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试背景</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试质量</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Web测试技术</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试用例</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">黑盒测试之等价类划分法</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">黑盒测试</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">软件性能测试基础</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">CMM模型与ISO9000模型</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">白盒测试工具Junit</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">用户手册</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">QuickTest输出值概述</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">软件测试实践</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">QuickTest检查点</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试模型</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试文档</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">缺陷管理</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">数据库</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">数据库高级开发</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">MySQL数据库设计和SQL语句讲解</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">MySQL数据库管理</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">基础知识&实用工具</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">IT技术之雕虫小技</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">计算机基础课程</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">C软件开发工程师</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">网络&操作系统</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">Linux操作系统应用</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">软件设计&系统架构</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">设计模式与体系结构模式</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="dh" style="background-color:rgb(248,248,248);"><a href="kctx.html">课程体系</a></li>
+						<li class="dh" style="background-color:rgb(248,248,248);"><a href="tongbuke.html">同步课</a></li>
+						<li class="dh" style="background-color:rgb(248,248,248);"><a href="sq.html">社区</a></li>
+					</ul>
+					<form class="navbar-form navbar-left" role="search" style="background-color:rgb(248,248,248);margin-right:100px;">
+						<input class="form-control" type="text" placeholder="搜索课程、问答" style="border-radius:15px;border-top-right-radius:0px;border-bottom-right-radius:0px;">
+						<button class="btn btn-priamy" type="submit" style="border-radius:15px;border-top-left-radius:0px;border-bottom-left-radius:0px;margin-left:-5px;"><span class="glyphicon glyphicon-search"></span>
+						</button>
+					</form>
+					<ul class="nav navbar-nav yh" style="color:black;font-style:楷体;background-color:rgb(248,248,248);">
+						<li class="dh1"><a href="denglu.html">登录</a></li>
+						<li class="dh1"><a href="zhuce.html">注册</a></li>
+					</ul>
+				</div>
+			</div>
+	</nav>
+    <!-- content -->
+    <div class="workspace container"> 
+ 		<div class="team-card row">
+ 			<div class="col-sm-4 col-md-3 card-padding">
+ 				<div class="card card-item">
+ 					<a href="tbk1.html">
+ 						<img src="img/tbk1.png" class="img-responsive card-img">
+ 						<h5 class="card-heading">2014级PHP程序设计头脑风暴组</h5>
+ 						<div class="card-content text-muted two-line">
+ 							<span>星多天空亮，人多智慧广！！！我前进，我们一起前进！！！</span>
+ 						</div>
+ 					</a>
+ 					<div class="card-actions text-muted">
+ 						<div class="pull-left">
+ 							<span>任务</span>
+ 							<span>2，</span>
+ 							<span>完成</span>
+ 							<span>90%</span>
+ 						</div>
+ 						<br/>
+ 						<div class="pull-left">
+ 							<span>人数</span>
+ 							<span>11</span>
+ 						</div>
+ 						<div class="pull-right">
+ 							<span class="btn btn-xs join-team-btn" id="jinggao">
+ 								<i class="glyphicon glyphicon-plus">
+ 								</i>
+ 								加入
+ 							</span>
+ 						</div>
+ 					</div>
+	 			</div>
+ 			</div>
+ 			<div class="col-sm-4 col-md-3 card-padding">
+ 				<div class="card card-item">
+ 					<a href="tbk1.html">
+ 						<img src="img/tbk2.png" class="img-responsive card-img">
+ 						<h5 class="card-heading">承德13级 Unity3D 游戏开发</h5>
+ 						<div class="card-content text-muted two-line">
+ 							<span>《Unity3D游戏开发》是计算机软件及相关专业在游动游戏开发方面的专业课，它是为培养应用型人才掌握手机游戏开发的技能而开设的。
+ 							本课程是一门有关手机游戏开发的专业课程。其中课程的主要任务是使学生具有使用C#语言编写基于Unity3D游戏引擎的手机游戏的能力。通过本课程的学习，使学生可以掌握C#脚本语言的使用、熟悉Unity3D游戏引擎和相关工具的使用。最终，使学生能够通过团队协作完成简单手机游戏的开发。</span>
+ 						</div>
+ 					</a>
+ 					<div class="card-actions text-muted">
+ 						<div class="pull-left">
+ 							<span>任务</span>
+ 							<span>4，</span>
+ 							<span>完成</span>
+ 							<span>89%</span>
+ 						</div>
+ 						<br/>
+ 						<div class="pull-left">
+ 							<span>人数</span>
+ 							<span>40</span>
+ 						</div>
+ 						<div class="pull-right">
+ 							<span class="btn btn-xs join-team-btn">
+ 								<i class="glyphicon glyphicon-plus">
+ 								</i>
+ 								加入
+ 							</span>
+ 						</div>
+ 					</div>
+	 			</div>
+ 			</div>
+ 			<div class="col-sm-4 col-md-3 card-padding">
+ 				<div class="card card-item">
+ 					<a href="tbk1.html">
+ 						<img src="img/tbk3.png" class="img-responsive card-img">
+ 						<h5 class="card-heading">承德15级计本-UI/UE设计</h5>
+ 						<div class="card-content text-muted two-line">
+ 							<span>河北民族师范学院，15级计算机科学与技术本科1、2班 UI/UE设计课程。</span>
+ 						</div>
+ 					</a>
+ 					<div class="card-actions text-muted">
+ 						<div class="pull-left">
+ 							<span>任务</span>
+ 							<span>0，</span>
+ 							<span>完成</span>
+ 							<span>0%</span>
+ 						</div>
+ 						<br/>
+ 						<div class="pull-left">
+ 							<span>人数</span>
+ 							<span>73</span>
+ 						</div>
+ 						<div class="pull-right">
+ 							<span class="btn btn-xs join-team-btn">
+ 								<i class="glyphicon glyphicon-plus">
+ 								</i>
+ 								加入
+ 							</span>
+ 						</div>
+ 					</div>
+	 			</div>
+ 			</div>
+ 			<div class="col-sm-4 col-md-3 card-padding">
+ 				<div class="card card-item">
+ 					<a href="tbk1.html">
+ 						<img src="img/tbk4.png" class="img-responsive card-img">
+ 						<h5 class="card-heading">承德13级 前端开发与HTML5程序设计基础</h5>
+ 						<div class="card-content text-muted two-line">
+ 							<span>河北民族师范学院 13级 前端开发与HTML5程序设计基础同步课</span>
+ 						</div>
+ 					</a>
+ 					<div class="card-actions text-muted">
+ 						<div class="pull-left">
+ 							<span>任务</span>
+ 							<span>14，</span>
+ 							<span>完成</span>
+ 							<span>64%</span>
+ 						</div>
+ 						<br/>
+ 						<div class="pull-left">
+ 							<span>人数</span>
+ 							<span>41</span>
+ 						</div>
+ 						<div class="pull-right">
+ 							<span class="btn btn-xs join-team-btn">
+ 								<i class="glyphicon glyphicon-plus">
+ 								</i>
+ 								加入
+ 							</span>
+ 						</div>
+ 					</div>
+	 			</div>
+ 			</div>
+ 			<div class="col-sm-4 col-md-3 card-padding">
+ 				<div class="card card-item">
+ 					<a href="tbk1.html">
+ 						<img src="img/tbk5.png" class="img-responsive card-img">
+ 						<h5 class="card-heading">承德 15计本1、2班 web开发（二）</h5>
+ 						<div class="card-content text-muted two-line">
+ 							<span>河北民族师范学院 计本 15级1、2班，学习JavaScript以及jQuery相关内容。</span>
+ 						</div>
+ 					</a>
+ 					<div class="card-actions text-muted">
+ 						<div class="pull-left">
+ 							<span>任务</span>
+ 							<span>7，</span>
+ 							<span>完成</span>
+ 							<span>89%</span>
+ 						</div>
+ 						<br/>
+ 						<div class="pull-left">
+ 							<span>人数</span>
+ 							<span>76</span>
+ 						</div>
+ 						<div class="pull-right">
+ 							<span class="btn btn-xs join-team-btn">
+ 								<i class="glyphicon glyphicon-plus">
+ 								</i>
+ 								加入
+ 							</span>
+ 						</div>
+ 					</div>
+	 			</div>
+ 			</div>
+ 			<div class="col-sm-4 col-md-3 card-padding">
+ 				<div class="card card-item">
+ 					<a href="tbk1.html">
+ 						<img src="img/tbk6.png" class="img-responsive card-img">
+ 						<h5 class="card-heading">承德 15计本-互联网产品设计</h5>
+ 						<div class="card-content text-muted two-line">
+ 							<span>河北民族师范学院 计本 15级1、2班，本课程主要讲如何使用PHPCMS内容管理系统来设计互联网产品。</span>
+ 						</div>
+ 					</a>
+ 					<div class="card-actions text-muted">
+ 						<div class="pull-left">
+ 							<span>任务</span>
+ 							<span>6，</span>
+ 							<span>完成</span>
+ 							<span>96%</span>
+ 						</div>
+ 						<br/>
+ 						<div class="pull-left">
+ 							<span>人数</span>
+ 							<span>74</span>
+ 						</div>
+ 						<div class="pull-right">
+ 							<span class="btn btn-xs join-team-btn">
+ 								<i class="glyphicon glyphicon-plus">
+ 								</i>
+ 								加入
+ 							</span>
+ 						</div>
+ 					</div>
+	 			</div>
+ 			</div>
+ 			<div class="col-sm-4 col-md-3 card-padding">
+ 				<div class="card card-item">
+ 					<a href="tbk1.html">
+ 						<img src="img/tbk7.png" class="img-responsive card-img">
+ 						<h5 class="card-heading">计算机操作系统</h5>
+ 						<div class="card-content text-muted two-line">
+ 							<span>建设中。</span>
+ 						</div>
+ 					</a>
+ 					<div class="card-actions text-muted">
+ 						<div class="pull-left">
+ 							<span>任务</span>
+ 							<span>11，</span>
+ 							<span>完成</span>
+ 							<span>64%</span>
+ 						</div>
+ 						<br/>
+ 						<div class="pull-left">
+ 							<span>人数</span>
+ 							<span>334</span>
+ 						</div>
+ 						<div class="pull-right">
+ 							<span class="btn btn-xs join-team-btn">
+ 								<i class="glyphicon glyphicon-plus">
+ 								</i>
+ 								加入
+ 							</span>
+ 						</div>
+ 					</div>
+	 			</div>
+ 			</div>
+ 			<div class="col-sm-4 col-md-3 card-padding">
+ 				<div class="card card-item">
+ 					<a href="tbk1.html">
+ 						<img src="img/tbk8.png" class="img-responsive card-img">
+ 						<h5 class="card-heading">2014级前端开发与HTML5程序设计基础</h5>
+ 						<div class="card-content text-muted two-line">
+ 							<span>2014级HTML5方向课程同步学习社区。</span>
+ 						</div>
+ 					</a>
+ 					<div class="card-actions text-muted">
+ 						<div class="pull-left">
+ 							<span>任务</span>
+ 							<span>24，</span>
+ 							<span>完成</span>
+ 							<span>87%</span>
+ 						</div>
+ 						<br/>
+ 						<div class="pull-left">
+ 							<span>人数</span>
+ 							<span>124</span>
+ 						</div>
+ 						<div class="pull-right">
+ 							<span class="btn btn-xs join-team-btn">
+ 								<i class="glyphicon glyphicon-plus">
+ 								</i>
+ 								加入
+ 							</span>
+ 						</div>
+ 					</div>
+	 			</div>
+ 			</div>
+ 			<div class="col-sm-4 col-md-3 card-padding">
+ 				<div class="card card-item">
+ 					<a href="tbk1.html">
+ 						<img src="img/tbk9.png" class="img-responsive card-img">
+ 						<h5 class="card-heading">开源自动化测试工具基础-Java程序设计</h5>
+ 						<div class="card-content text-muted two-line">
+ 							<span></span>
+ 						</div>
+ 					</a>
+ 					<div class="card-actions text-muted">
+ 						<div class="pull-left">
+ 							<span>任务</span>
+ 							<span>9，</span>
+ 							<span>完成</span>
+ 							<span>85%</span>
+ 						</div>
+ 						<br/>
+ 						<div class="pull-left">
+ 							<span>人数</span>
+ 							<span>31</span>
+ 						</div>
+ 						<div class="pull-right">
+ 							<span class="btn btn-xs join-team-btn">
+ 								<i class="glyphicon glyphicon-plus">
+ 								</i>
+ 								加入
+ 							</span>
+ 						</div>
+ 					</div>
+	 			</div>
+ 			</div>
+ 			<div class="col-sm-4 col-md-3 card-padding">
+ 				<div class="card card-item">
+ 					<a href="tbk1.html">
+ 						<img src="img/tbk10.png" class="img-responsive card-img">
+ 						<h5 class="card-heading">web开发（一）2015级5、6班</h5>
+ 						<div class="card-content text-muted two-line">
+ 							<span>2015级5/6班同学Web开发Ⅰ同步学习社区~ 课程资源地址：ftp://10.7.1.4/%BD%CC%D1%A7%B9%DC%C0%ED/2016%C4%EA%BF%CE%B3%CC/web%BF%AA%B7%A2%A3%A8%D2%BB%A3%A9/%CA%B5%D1%E9%CA%D6%B2%E1/</span>
+ 						</div>
+ 					</a>
+ 					<div class="card-actions text-muted">
+ 						<div class="pull-left">
+ 							<span>任务</span>
+ 							<span>10，</span>
+ 							<span>完成</span>
+ 							<span>84%</span>
+ 						</div>
+ 						<br/>
+ 						<div class="pull-left">
+ 							<span>人数</span>
+ 							<span>103</span>
+ 						</div>
+ 						<div class="pull-right">
+ 							<span class="btn btn-xs join-team-btn">
+ 								<i class="glyphicon glyphicon-plus">
+ 								</i>
+ 								加入
+ 							</span>
+ 						</div>
+ 					</div>
+	 			</div>
+ 			</div>
+ 			<div class="col-sm-4 col-md-3 card-padding">
+ 				<div class="card card-item">
+ 					<a href="tbk1.html">
+ 						<img src="img/tbk11.png" class="img-responsive card-img">
+ 						<h5 class="card-heading">web开发（一）2015级3、4班</h5>
+ 						<div class="card-content text-muted two-line">
+ 							<span>2015级3、4班《Web开发（一）》同步学习社区</span>
+ 						</div>
+ 					</a>
+ 					<div class="card-actions text-muted">
+ 						<div class="pull-left">
+ 							<span>任务</span>
+ 							<span>17，</span>
+ 							<span>完成</span>
+ 							<span>95%</span>
+ 						</div>
+ 						<br/>
+ 						<div class="pull-left">
+ 							<span>人数</span>
+ 							<span>98</span>
+ 						</div>
+ 						<div class="pull-right">
+ 							<span class="btn btn-xs join-team-btn">
+ 								<i class="glyphicon glyphicon-plus">
+ 								</i>
+ 								加入
+ 							</span>
+ 						</div>
+ 					</div>
+	 			</div>
+ 			</div>
+ 			<div class="col-sm-4 col-md-3 card-padding">
+ 				<div class="card card-item">
+ 					<a href="tbk1.html">
+ 						<img src="img/tbk12.png" class="img-responsive card-img">
+ 						<h5 class="card-heading">web开发（一）2015级1、2班</h5>
+ 						<div class="card-content text-muted two-line">
+ 							<span>2015级1、2班《Web开发（一）》同步学习社区</span>
+ 						</div>
+ 					</a>
+ 					<div class="card-actions text-muted">
+ 						<div class="pull-left">
+ 							<span>任务</span>
+ 							<span>11，</span>
+ 							<span>完成</span>
+ 							<span>85%</span>
+ 						</div>
+ 						<br/>
+ 						<div class="pull-left">
+ 							<span>人数</span>
+ 							<span>100</span>
+ 						</div>
+ 						<div class="pull-right">
+ 							<span class="btn btn-xs join-team-btn">
+ 								<i class="glyphicon glyphicon-plus">
+ 								</i>
+ 								加入
+ 							</span>
+ 						</div>
+ 					</div>
+	 			</div>
+ 			</div>
+ 		</div>
+    </div>
+    <!-- fenye -->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<ul class="pagination">
+					<li class="disabled"><a href="#">&laquo</a></li>
+					<li class="active"><a href="#" id="yi">1</a></li>
+					<li><a href="tongbuke1.html">2</a></li>
+					<li><a href="tongbuke2.html">3</a></li>
+					<li><a href="tongbuke1.html">&laquo</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- yewei -->
+	<footer style="background-color: #2e323e;padding: 20px;color: #a5a6a9;">
+		<div class="container">
+			<div class="address">地址: 石家庄市裕华区南二环东路20号    ®  石家庄佳诚网络技术有限公司</div>
+			<div class="copyright">冀ICP备</div>
+		</div>
+	</footer>
+	<!-- tanchukuang -->
+	<div class="alert alert-warning" role="alert">
+			<span class="glyphicon glyphicon-info-sign"></span>请先登录
+			<a href="dneglu.html">登录</a>
+			<button type="button" class="close" data-dismiss="alert">
+				<span aria-disabled="true">&times;</span>
+			</button>
+	</div>
+	<!-- <div class="alert alert-warning" role="alert" style="display:none;" id="hy"> 
+			<button type="button" class="close" data-dismiss="alert">
+				<span aria-disabled="true">&times;</span>
+			</button>
+			<strong>请输入您要搜索的信息</strong>	
+		</div> -->
+</body>
+</html>

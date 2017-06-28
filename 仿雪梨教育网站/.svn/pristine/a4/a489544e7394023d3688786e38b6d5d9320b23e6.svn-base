@@ -1,0 +1,15 @@
+$(document).ready(function(){
+// daohang
+	$('.dh').mouseenter(function(){
+		$(this).addClass("hover");
+		$(this).children('div').css("display","block");
+	}).mouseleave(function(){
+		$(this).removeClass("hover");
+		$(this).children('div').css("display","none");
+	})
+	$('.dh1').mouseenter(function(){
+		$(this).addClass("hover1");
+	}).mouseleave(function(){
+		$(this).removeClass("hover1");
+	})
+})

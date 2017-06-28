@@ -1,0 +1,104 @@
+*{
+	margin: 0;
+	padding: 0;
+	border:0;
+}
+body{
+	font-family: "微软雅黑";
+}
+/*daohang*/
+.hover{
+	background-color: #e7e7e7;
+	border-bottom:2px solid orange;
+}
+.hover1{
+	background-color: #e7e7e7;
+}
+a{
+	color: black;
+}
+a:hover{
+	color:red;
+	text-decoration: none;
+}
+ul li{
+	list-style-type: none;
+}
+/*content*/
+.content{
+	padding-top: 55px;
+	background-color: rgb(241,241,241);
+}
+.kb{
+	height: 115px;
+}
+.right{
+	padding: 25px;
+	margin-bottom: 20px;
+	width: 360px;
+	/*height: 300px;*/
+	height: auto;
+	border:1px solid #e5e5e5;
+	background-color: rgb(255,255,255);
+	box-shadow: 1px 1px 29px rgba(0,0,0,0.25);
+}	
+.dl{
+	width: 153px;
+	height: 45px;
+	float: left;
+}
+.dl a{
+	width: 150px;
+	height: 45px;
+	padding: 10px 60px;
+	color: #ff6e3d;
+	font-size: 16px;
+	border-bottom: 1px solid #ff6e3d;
+	font-family: "微软雅黑";
+}
+.dl a:hover,.zc a:hover{
+	background-color: rgb(241,241,241);
+}
+.zc{
+	width: 153px;
+	height: 45px;
+	float: left;
+}
+.zc a{
+	width: 150px;
+	height: 45px;
+	font-size: 16px;
+	padding: 10px 60px;
+	font-family: "微软雅黑";
+}
+.horizontal-line{
+	height: 2px;
+	background-color: #E5E5E5;
+	margin-top: -14px;
+}
+.form-group{
+	margin-top: 15px;
+}
+#denglu{
+	background-color: rgb(255,110,61);
+	border:1px solid rgb(255,110,61);
+}
+#denglu:hover{
+	background-color: rgb(255,80,20);
+}
+/*footer*/
+.address{
+	text-align: center;
+}
+.copyright{
+	text-align: center;
+}
+#hy{
+	width: 300px;
+	height: 50px;
+	color: white;
+	font-size: 14px;
+	border:1px solid red;
+	background-color: red;
+	border-radius: 20px;
+}

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>2014级PHP程序设计头脑风暴组</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <script type="text/javascript" src="js/jquery-1.12.1.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/tbk1.css"/>
+		<script type="text/javascript" src="js/tbk1.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css"/>
+		<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"/></script>
+		<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.css" rel="stylesheet">
+  		<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.js"></script>
+	</head>
+<body>
+	<!-- 回到顶部 --> 
+	<div class="scroll" id="scroll" style="display:none;">
+        <a href="#" class="cd-top cd-is-visible">
+			<i class="icon icon-eject"><span class="glyphicon glyphicon-eject"></span></i>
+		</a>
+    </div>
+	<!-- 导航栏 -->
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="height:50px;margin-bottom:0px;font-family:'Microsoft YaHei';">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><img src="img/logo.png" style="margin-top:-10px;margin-right:100px;"></a>
+				</div>
+				<div class="collapse navbar-collapse navbar-ex1-collapse" style="background-color:rgb(248,248,248);max-height:500px;">
+					<ul class="nav navbar-nav" style="color:black;font-style:楷体;line-height:48px;margin-top:0px;">
+						<li class="active bg-primary dh" style="background-color:rgb(248,248,248);"><a href="sy.html" class="bg-primary">首页</a></li>
+						<li class="dh" style="background-color:rgb(248,248,248);"><a href="KeCheng1.html">课程</a>
+							<div class="lb" style="height:450px;background-color:white;position:absolute;left:-300px;top:50px;display:none;line-height:20px;">
+								<div class="container" style="height:450px;">
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">WEB前端开发</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">前段工程师第一步：用HTML、CSS构建网站</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">构建交互丰富的web应用：Javascript</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">搭建Web服务器</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">切图 如何从效果图转换为html页面</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">web前端开发（一）</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Bootstrap使用指南</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">UI设计基础</a>&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">WEB后端开发</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">Java面向对象</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Java数据存储</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Java多线程编程</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">JavaEE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Java网络编程</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Servlet详解</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">PKI</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">微信公众平台应用开发实战傻瓜版</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">JSP详解</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">phpcms</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Web核心技术</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">PHP基础</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">PHPCMS V9</a>&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">移动应用开发</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">Android基础知识</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Android的多媒体应用</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Android的多线程编程</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Android网络访问</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Android中的数据存储</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Android基本组件</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">软件测试</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">QC测试管理工具</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">白盒测试</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">性能测试与LoadRunner应用</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">软件测试基础</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">功能性自动化测试工具</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试环境搭建</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试职业素质</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试基础知识</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">综合测试策略</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试方法</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试背景</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试质量</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Web测试技术</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试用例</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">黑盒测试之等价类划分法</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">黑盒测试</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">软件性能测试基础</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">CMM模型与ISO9000模型</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">白盒测试工具Junit</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">用户手册</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">QuickTest输出值概述</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">软件测试实践</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">QuickTest检查点</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试模型</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试文档</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">缺陷管理</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">数据库</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">数据库高级开发</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">MySQL数据库设计和SQL语句讲解</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">MySQL数据库管理</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">基础知识&实用工具</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">IT技术之雕虫小技</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">计算机基础课程</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">C软件开发工程师</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">网络&操作系统</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">Linux操作系统应用</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">软件设计&系统架构</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">设计模式与体系结构模式</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="dh" style="background-color:rgb(248,248,248);"><a href="kctx.html">课程体系</a></li>
+						<li class="dh" style="background-color:rgb(248,248,248);"><a href="tongbuke.html">同步课</a></li>
+						<li class="dh" style="background-color:rgb(248,248,248);"><a href="sq.html">社区</a></li>
+					</ul>
+					<form class="navbar-form navbar-left" role="search" style="background-color:rgb(248,248,248);margin-right:100px;">
+						<input class="form-control" type="text" placeholder="搜索课程、问答" style="border-radius:15px;border-top-right-radius:0px;border-bottom-right-radius:0px;">
+						<button class="btn btn-priamy" type="submit" style="border-radius:15px;border-top-left-radius:0px;border-bottom-left-radius:0px;margin-left:-5px;"><span class="glyphicon glyphicon-search"></span>
+						</button>
+					</form>
+					<ul class="nav navbar-nav yh" style="color:black;font-style:楷体;background-color:rgb(248,248,248);">
+						<li class="dh1"><a href="denglu.html">登录</a></li>
+						<li class="dh1"><a href="zhuce.html">注册</a></li>
+					</ul>
+				</div>
+			</div>
+	</nav>
+    <!-- content -->
+    <div class="container">
+    	<div class="row bread">
+    		<ul>
+    			<li style="margin-left:100px">
+    			<a href="sy.html"><i class="glyphicon glyphicon-home home"></i></a>
+    			<span class="divider">/</span>
+    			</li>
+    			<li>
+    				<a href="tongbuke.html" class="tbk">同步课</a>
+    				<span class="divider">/</span>
+    			</li>
+    			<li class="title">2014级PHP程序设计头脑风暴组</li>
+    		</ul>
+    	</div>
+    	<div class="row">
+    		<div class="col-md-7 col-md-offset-1" >
+    			<div class="item-show">
+    				<div class="team-item row">
+    					<div class="col-md-9">
+    						<h5>2014级PHP程序设计头脑风暴组
+    						</h5>
+            				<span>星多天空亮，人多智慧广！！！
+							我前进，我们一起前进！！！
+							</span>
+    					</div>
+    					<div class="col-md-3">
+    						<div class="notask_chart">
+    							<div class="notask_text">
+    								<div>暂无任务</div>
+    							</div>
+    						</div>
+    						<div class="task">
+    							<div>完成任务</div>
+    							<div>90.30%</div>
+    						</div>
+    						<canvas width="75" height="75" id="huabu">
+    						</canvas>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="alert alert1">
+    				请先登录
+    			</div>
+    			<!-- summ -->
+    			<div class="one">
+    				<div>学霸，学渣，偶想说~</div>
+    				<div id="summernote"></div>
+    				<a href="" class="menu">#话题#</a>
+    				<button class="pull-right fabu">发布</button>
+    			</div>
+    			<div class="student1">
+    				<div class="row">
+    					<div class="col-md-1">
+    						<img class="at-popup" data-username="liangyudong" src="img/liangyudong.png">
+    					</div>
+    					<div class="gossip-body col-md-11">
+    						<div class="gossip-title"><a href="man.html">3班—梁玉东</a></div>
+    						<div class="gossip-content">
+				                <div class="gossip-gossip">
+				                    <div class="zhangkai1">后台管理模板——音乐:http://10.7.1.98/201403liangyudong/PHP/%E5%B0%8F%E7%BB%84%E4%BD%9C%E4%B8%9A/%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E6%A8%A1%E6%9D%</div>
+				                    <div class="shouqi1">
+				                    	<p>后台管理模板——音乐:http://10.7.1.98/201403liangyudong/PHP/%E5%B0%8F%E7%BB%84%E4%BD%9C%E4%B8%9A/%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E6%A8%A1%E6%9D%BF-%E9%9F%B3%E4%B9%90/</p>
+				                    	<p><br></p>
+				                    	<p>后台管理模板——影视:http://10.7.1.98/201403liangyudong/PHP/%E5%B0%8F%E7%BB%84%E4%BD%9C%E4%B8%9A/%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E6%A8%A1%E6%9D%BF-%E5%BD%B1%E8%A7%86/</p>
+				                    </div>
+				                    <div class="adjust-ajax adjust-ajaxz1" style="display:block">
+				                    	<img src="img/arrow_carrot-2down.png" style="width:9px;height:14px;" /> 展开
+				                    </div>
+				                    <div class="adjust-ajax adjust-ajaxs1" style="display:none">
+				                    	<img src="img/arrow_carrot-2up.png" style="width:9px;height:14px;" /> 收起
+				                    </div>
+				                </div>
+				            </div>
+				            <div class="gossip-footer clearfix">
+				                <div class="footer-form">
+				                    <div class="text-muted pull-left footer-time">
+				                        1minutes
+				                    </div>
+				                    <div class="gossip-action pull-right">
+				                        <a href="" class="forward">转发</a>|
+				                        <a href="" class="reply">评论</a>|
+				                        <a href="" class="like">赞</a>
+				                    </div>
+				                </div>
+				            </div>
+    					</div>
+    				</div>
+    			</div>
+				<div class="student2">
+					<div class="row">
+						<div class="col-md-1">
+							<img class="at-popup" data-username="kongdexiao" src="img/kongdexiao.png">
+						</div>
+						<div class="gossip-body col-md-11">
+							<div class="gossip-title"><a href="man.html">3班孔德笑</a></div>
+				            <div class="gossip-content">
+				                <div class="gossip-gossip">
+				                	<span></span>
+				                </div>
+				                <div class="gossip-origin readmore">
+				                	<blockquote>
+				                		<div class="gossip-body1">
+				                			<div class="gossip-title1">
+				                				<a href="at-popup" data-username="zhangzhimin" class="at-popup1">@张志敏</a>
+				                			</div>
+				                			<div class="gossip-content1">
+				                				<span class="zhangkai2">
+							                    	给#2014级PHP程序设计头脑风暴组#指派了新任务. 第3次小组任务 小试牛刀 以 http://pan.baidu.com/s/1i4QlGRb为基础，建立一套后台模板，要求： 1、每套模板有自己的主题，比如新闻，博客，二手物品，教育。。。。 2、以主题为中心，设计后台管理菜
+							                    </span>
+							                    <div class="shouqi2">
+							                    	给<a href="" style="color:rgb(235,115,80)">#2014级PHP程序设计头脑风暴组#</a>指派了新任务
+							                    	<a href="" target="_blank" class="btn btn-xs">
+							                    		<i class="glyphicon glyphicon-link">第3次小组任务 小试牛刀</i>
+							                    	</a><br>
+							                        以 http://pan.baidu.com/s/1i4QlGRb为基础，建立一套后台模板，要求：1、每套模板有自己的主题，比如新闻，博客，二手物品，教育。。。。2、以主题为中心，设计后台管理菜单，实现相关内容的增删改查等后台管理...
+							                    </div>
+							                    <div class="adjust-ajax adjust-ajaxz2" style="display:block">
+							                    	<img src="img/arrow_carrot-2down.png" style="width:9px;height:14px;" /> 展开
+							                    </div>
+							                    <div class="adjust-ajax adjust-ajaxs2" style="display:none">
+							                    	<img src="img/arrow_carrot-2up.png" style="width:9px;height:14px;" /> 收起
+							                    </div>
+				                			</div>
+				                			<div class="gossip-footer1 clearfix1">
+				                				<div class="footer-form">
+								                    <div class="text-muted pull-left footer-time">
+								                        2 days，22 hours
+								                    </div>
+								                    <div class="gossip-action pull-right">
+								                        <a href="" class="forward">转发</a>|
+								                        <a href="" class="reply">评论</a>|
+								                        <a href="" class="like">赞</a>
+								                    </div>
+								                </div>
+				                			</div>
+				                		</div>
+				                	</blockquote>
+				                </div>
+				            </div>
+				            <div class="gossip-footer clearfix">
+				                <div class="footer-form">
+				                    <div class="text-muted pull-left footer-time">
+				                        5&nbsp;hours,44&nbsp;minutes
+				                    </div>
+				                    <div class="gossip-action pull-right">
+				                        <a href="" class="forward">转发</a>|
+				                        <a href="" class="reply">评论</a>|
+				                        <a href="" class="like">赞</a>
+				                    </div>
+				                </div>
+				            </div>
+						</div>
+					</div>
+				</div>
+				<div class="student3">
+					<div class="row">
+						<div class="col-md-1">
+							<img class="at-popup" data-username="wangtianhao" src="img/wangtianhao.png">
+						</div>
+						<div class="gossip-body col-md-11">
+							<div class="gossip-title"><a href="man.html">3班王天昊</a></div>
+				            <div class="gossip-content">
+				                <div class="gossip-gossip">
+				                	<span>小组网页1：http://10.7.1.98/201403wangtianhao/PHPclass/</span>
+				                </div>
+				                <div class="gossip-origin readmore">
+				                	<blockquote>
+				                		<div class="gossip-body1">
+				                			<div class="gossip-title1">
+				                				<a href="at-popup" data-username="zhangzhimin" class="at-popup1">@张志敏</a>
+				                			</div>
+				                			<div class="gossip-content1">
+				                				<span class="zhangkai3">
+							                    	给#2014级PHP程序设计头脑风暴组#指派了新任务. 第3次小组任务 小试牛刀 以 http://pan.baidu.com/s/1i4QlGRb为基础，建立一套后台模板，要求： 1、每套模板有自己的主题，比如新闻，博客，二手物品，教育。。。。 2、以主题为中心，设计后台管理菜
+							                    </span>
+							                    <div class="shouqi3">
+							                    	给<a href="" style="color:rgb(235,115,80)">#2014级PHP程序设计头脑风暴组#</a>指派了新任务
+							                    	<a href="" target="_blank" class="btn btn-xs">
+							                    		<i class="glyphicon glyphicon-link">第3次小组任务 小试牛刀</i>
+							                    	</a><br>
+							                        以 http://pan.baidu.com/s/1i4QlGRb为基础，建立一套后台模板，要求：1、每套模板有自己的主题，比如新闻，博客，二手物品，教育。。。。2、以主题为中心，设计后台管理菜单，实现相关内容的增删改查等后台管理...
+							                    </div>
+							                    <div class="adjust-ajax adjust-ajaxz3" style="display:block">
+							                    	<img src="img/arrow_carrot-2down.png" style="width:9px;height:14px;" /> 展开
+							                    </div>
+							                    <div class="adjust-ajax adjust-ajaxs3" style="display:none">
+							                    	<img src="img/arrow_carrot-2up.png" style="width:9px;height:14px;" /> 收起
+							                    </div>
+				                			</div>
+				                			<div class="gossip-footer1 clearfix1">
+				                				<div class="footer-form">
+								                    <div class="text-muted pull-left footer-time">
+								                        6 days，23 hours
+								                    </div>
+								                    <div class="gossip-action pull-right">
+								                        <a href="" class="forward">转发</a>|
+								                        <a href="" class="reply">评论</a>|
+								                        <a href="" class="like">赞</a>
+								                    </div>
+								                </div>
+				                			</div>
+				                		</div>
+				                	</blockquote>
+				                </div>
+				            </div>
+				            <div class="gossip-footer clearfix">
+				                <div class="footer-form">
+				                    <div class="text-muted pull-left footer-time">
+				                        8&nbsp;hours,23&nbsp;minutes
+				                    </div>
+				                    <div class="gossip-action pull-right">
+				                        <a href="" class="forward">转发</a>|
+				                        <a href="" class="reply">评论</a>|
+				                        <a href="" class="like">赞</a>
+				                    </div>
+				                </div>
+				            </div>
+						</div>
+					</div>
+				</div>
+				<div class="teacher">
+					<div class="row">
+						<div class="col-md-1">
+							<img class="at-popup" data-username="zhangzhimin" src="img/zhangzhimin.png">
+						</div>
+						<div class="gossip-body col-md-11">
+							<div class="gossip-title"><a href="man.html">张志敏</a></div>
+				            <div class="gossip-content">
+				                <div class="gossip-gossip">
+				                    <span class="zhangkai">
+				                    	给#2014级PHP程序设计头脑风暴组#指派了新任务. 第3次小组任务 小试牛刀 以 http://pan.baidu.com/s/1i4QlGRb为基础，建立一套后台模板，要求： 1、每套模板有自己的主题，比如新闻，博客，二手物品，教育。。。。 2、以主题为中心，设计后台管理菜
+				                    </span>
+				                    <div class="shouqi">
+				                    	给<a href="" style="color:rgb(235,115,80)">#2014级PHP程序设计头脑风暴组#</a>指派了新任务
+				                    	<a href="" target="_blank" class="btn btn-xs">
+				                    		<i class="glyphicon glyphicon-link">第3次小组任务 小试牛刀</i>
+				                    	</a><br>
+				                        以 http://pan.baidu.com/s/1i4QlGRb为基础，建立一套后台模板，要求：1、每套模板有自己的主题，比如新闻，博客，二手物品，教育。。。。2、以主题为中心，设计后台管理菜单，实现相关内容的增删改查等后台管理...
+				                    </div>
+				                    <div class="adjust-ajax adjust-ajaxz" style="display:block">
+				                    	<img src="img/arrow_carrot-2down.png" style="width:9px;height:14px;" /> 展开
+				                    </div>
+				                    <div class="adjust-ajax adjust-ajaxs" style="display:none">
+				                    	<img src="img/arrow_carrot-2up.png" style="width:9px;height:14px;" /> 收起
+				                    </div>
+				                </div>
+				            </div>
+				            <div class="gossip-footer clearfix">
+				                <div class="footer-form">
+				                    <div class="text-muted pull-left footer-time">
+				                        2 days，22 hours
+				                    </div>
+				                    <div class="gossip-action pull-right">
+				                        <a href="" class="forward">转发</a>|
+				                        <a href="" class="reply">评论</a>|
+				                        <a href="" class="like">赞</a>
+				                    </div>
+				                </div>
+				            </div>
+						</div>
+					</div>
+				</div>
+    		</div>
+    		<div class="col-md-3">
+    			 <div class="weijiaru">
+		 			<div class="alert alert2">
+		 				<p class="pull-left wei"><span class="glyphicon glyphicon-info-sign glyphicon1"></span>您没有加入此同步课!</p>
+		 				<div class="pull-right jiaru">
+		 					<span class="btn btn-xs join-team-btn">
+		 						<i class="glyphicon glyphicon-plus">
+		 						</i>加入
+	 						</span>
+		 				</div>
+		 			</div>
+		 		 </div>
+    			 <div class="taskinfo">
+    			 	<div class="taskitem">
+    			 		<div class="title1">课程任务</div>
+    			 		<div class="item item1">
+    			 			<span class="title item">
+    			 				<i class="glyphicon glyphicon-tasks tasks"></i>
+    			 				<a href="">第3次小组任务 小试牛刀</a>
+    			 			</span><br/>
+    			 			<span class="title item">
+    			 				<i class="glyphicon glyphicon-tasks tasks"></i>
+    			 				<a href="">第2次小组任务：再接再厉</a>
+    			 			</span><br/>
+    			 			<span class="title item">
+    			 				<i class="glyphicon glyphicon-tasks tasks"></i>
+    			 				<a href="">第1次小组任务：抛砖引玉</a>
+    			 			</span>
+    			 		</div>
+    			 		<div class="item2 text-center">
+							<i class="glyphicon glyphicon-info-sign tan"></i>
+    			 			<div class="content" style="color:#9e9e9e;font-family:微软雅黑;font-size:14px;">暂无课程</div>
+    			 		</div>
+    			 	</div>
+    			 </div>
+    			 <div class="studentinfo">
+    			 	<div class="studentitem">
+    			 		<div class="title1">课程学员</div>
+    			 		<div class="item">
+    			 			<ul>
+    			 				<li class="student">
+    			 					<img src="img/liangyudong.png" class="img-responsive" />
+    			 					<div class="name">3班-梁玉东</div>
+    			 				</li>
+    			 				<li class="student">
+    			 					<img src="img/kongdexiao.png" class="img-responsive"/>
+    			 					<div class="name">3班-孔德笑</div>
+    			 				</li>
+    			 				<li class="student">
+    			 					<img src="img/wangtianhao.png" class="img-responsive"/>
+    			 					<div class="name">3班-王天昊</div>
+    			 				</li>
+    			 				<li class="student">
+    			 					<img src="img/liangyudong.png" class="img-responsive"/>
+    			 					<div class="name">3班-梁玉东</div>
+    			 				</li>
+    			 				<li class="student">
+    			 					<img src="img/kongdexiao.png" class="img-responsive"/>
+    			 					<div class="name">3班-孔德笑</div>
+    			 				</li>
+    			 				<li class="student">
+    			 					<img src="img/wangtianhao.png" class="img-responsive"/>
+    			 					<div class="name">3班-王天昊</div>
+    			 				</li>
+    			 				<li class="student">
+    			 					<img src="img/liangyudong.png" class="img-responsive"/>
+    			 					<div class="name">3班-梁玉东</div>
+    			 				</li>
+    			 				<li class="student">
+    			 					<img src="img/kongdexiao.png" class="img-responsive"/>
+    			 					<div class="name">3班-孔德笑</div>
+    			 				</li>
+    			 				<li class="student">
+    			 					<img src="img/wangtianhao.png" class="img-responsive"/>
+    			 					<div class="name">3班-王天昊</div>
+    			 				</li>
+    			 				<li class="student">
+    			 					<img src="img/liangyudong.png" class="img-responsive"/>
+    			 					<div class="name">3班-梁玉东</div>
+    			 				</li>
+    			 			</ul>
+    			 		</div>
+    			 	</div>
+    			 </div>
+    			 <div class="courseinfo">
+    			 	<div class="studentitem">
+    			 		<div class="title1">正在学习课程</div>
+    			 		<div class="item text-center">
+    			 			<i class="glyphicon glyphicon-info-sign tan"></i>
+    			 			<div class="content" style="color:#9e9e9e;font-family:微软雅黑;font-size:14px;">暂无课程</div>
+    			 		</div>
+    			 		
+    			 	</div>
+    			 </div>
+    		</div>
+    	</div>
+    </div>
+	<!-- yewei -->
+	<footer style="background-color: #2e323e;padding: 20px;color: #a5a6a9;">
+		<div class="container">
+			<div class="address">地址: 石家庄市裕华区南二环东路20号    ®  石家庄佳诚网络技术有限公司</div>
+			<div class="copyright">冀ICP备</div>
+		</div>
+	</footer>
+</body>
+</html>

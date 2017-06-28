@@ -1,0 +1,83 @@
+$(document).ready(function(){
+// daohang
+	$('.dh').mouseenter(function(){
+		$(this).addClass("hover");
+		$(this).children('div').css("display","block");
+	}).mouseleave(function(){
+		$(this).removeClass("hover");
+		$(this).children('div').css("display","none");
+	})
+	$('.dh1').mouseenter(function(){
+		$(this).addClass("hover1");
+	}).mouseleave(function(){
+		$(this).removeClass("hover1");
+	})
+
+// content
+$('.adjust-ajaxz1').click(function(){
+	$(this).css("display","none");
+	$('.adjust-ajaxs1').css('display','block');
+	$('.zhangkai1').css('display','none');
+	$('.shouqi1').css('display','block');
+})
+$('.adjust-ajaxs1').click(function(){
+	$(this).css("display","none");
+	$('.adjust-ajaxz1').css('display','block');
+	$('.zhangkai1').css('display','block');
+	$('.shouqi1').css('display','none');
+})
+
+$('.adjust-ajaxz2').click(function(){
+	$(this).css("display","none");
+	$('.adjust-ajaxs2').css('display','block');
+	$('.zhangkai2').css('display','none');
+	$('.shouqi2').css('display','block');
+	$('blockquote').css('height','170px');
+})
+$('.adjust-ajaxs2').click(function(){
+	$(this).css("display","none");
+	$('.adjust-ajaxz2').css('display','block');
+	$('.zhangkai2').css('display','block');
+	$('.shouqi2').css('display','none');
+	$('blockquote').css('height','150px');
+})
+
+$('.adjust-ajaxz3').click(function(){
+	$(this).css("display","none");
+	$('.adjust-ajaxs3').css('display','block');
+	$('.zhangkai3').css('display','none');
+	$('.shouqi3').css('display','block');
+	$('blockquote').css('height','170px');
+})
+$('.adjust-ajaxs3').click(function(){
+	$(this).css("display","none");
+	$('.adjust-ajaxz3').css('display','block');
+	$('.zhangkai3').css('display','block');
+	$('.shouqi3').css('display','none');
+	$('blockquote').css('height','150px');
+})
+
+$('.adjust-ajaxz').click(function(){
+	$(this).css("display","none");
+	$('.adjust-ajaxs').css('display','block');
+	$('.zhangkai').css('display','none');
+	$('.shouqi').css('display','block');
+})
+$('.adjust-ajaxs').click(function(){
+	$(this).css("display","none");
+	$('.adjust-ajaxz').css('display','block');
+	$('.zhangkai').css('display','block');
+	$('.shouqi').css('display','none');
+})
+// top
+	showScroll();
+        function showScroll(){
+            $(window).scroll( function() { 
+                var scrollValue=$(window).scrollTop();
+                scrollValue > 180 ? $('div[class=scroll]').fadeIn():$('div[class=scroll]').fadeOut();
+            } );    
+            $('#scroll').click(function(){
+                $("html,body").animate({scrollTop:0},200);    
+            });    
+        }
+})

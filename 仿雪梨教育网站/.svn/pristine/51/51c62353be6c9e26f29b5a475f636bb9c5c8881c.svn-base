@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>软件测试工程师</title>
+
+		<script type="text/javascript" src="js/jquery-1.12.1.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+		<style type="text/css">
+			.hover{
+				background-color: #e7e7e7;
+				border-bottom:2px solid orange;
+			}
+			.hover1{
+				background-color: #e7e7e7;
+			}
+			.dh,.dh a{
+				height: 48px;
+			}
+			.active a{
+				border-bottom:2px solid orange;
+			}
+			.navbar a{
+				color: #333;
+			}
+			.navbar a:hover{
+				color: orange;
+			}
+			.cd-top{
+				visibility: visible;
+				border:1px solid #D4D4D4;
+				border-radius: 3px;
+				display: inline-block;
+				height: 40px;
+				width: 40px;
+				position: fixed;
+				bottom: 20px;
+				right: 50px;
+				box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
+				overflow: hidden;
+				text-align: center;
+				white-space: nowrap;
+				background-color: #D4D4D4;
+			}
+			.cd-top i{
+				position: fixed;
+				width: 26px;
+				height: 26px;
+				font-size: 26px;
+				bottom: 27px;
+				color: #FFF;
+				right: 59px;
+			}
+			.footer{
+				padding-top: 20px;
+				width: 100%;
+				height: 100px;
+				background-color: #2e323e;
+				text-align: center;
+				line-height: 25px;
+				color: #a29f9f;
+				margin-top: 20px;
+			}
+			.container a{
+				text-decoration: none;
+			}
+			.row1{
+				margin-top:10px;
+				margin-bottom:20px;
+				border:1px solid rgba(0,0,0,0.075);
+				box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
+				border-radius: 3px;
+				padding-bottom: 10px;
+			}
+			.colhover1{
+				box-shadow: 0px 1px 20px #a49e9d;
+			}
+			.footer{
+				padding-top: 20px;
+				width: 100%;
+				height: 100px;
+				background-color: #2e323e;
+				text-align: center;
+				line-height: 25px;
+				color: #a29f9f;
+				margin-top: 20px;
+			}
+			.lb1{
+				width:90px;
+				background-color:white;
+				position:absolute;
+				top:50px;
+				left:-45px;
+				display: none;
+			}
+			.lb1 ul{
+				list-style-type: none;
+				position: relative;
+				left: -40px;
+			}
+			.lb1 ul li a{
+				display: block;
+				width: 90px;
+				height: 30px;
+				text-decoration: none;
+				text-align: center;
+				line-height: 30px;
+			}
+			.lb1 ul li a:hover{
+				background-color: rgb(255,80,20);
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="#" class="cd-top cd-is-visible">
+			<i class="icon icon-eject"><span class="glyphicon glyphicon-eject"></span></i>
+		</a>
+
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="height:50px;margin-bottom:0px;font-family:'Microsoft YaHei';">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><img src="img/logo.png" style="margin-top:-10px;margin-right:100px;"></a>
+				</div>
+		
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse" style="background-color:rgb(248,248,248);max-height:500px;">
+					<ul class="nav navbar-nav" style="color:black;font-style:楷体;line-height:48px;margin-top:0px;">
+						<li class="active bg-primary dh" style="background-color:rgb(248,248,248);"><a href="sy.html" class="bg-primary">首页</a></li>
+						<li class="dh" style="background-color:rgb(248,248,248);"><a href="KeCheng1.html">课程</a>
+							<div class="lb" style="height:450px;background-color:white;position:absolute;left:-300px;top:50px;display:none;line-height:20px;">
+								<div class="container" style="height:450px;">
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">WEB前端开发</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">前段工程师第一步：用HTML、CSS构建网站</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">构建交互丰富的web应用：Javascript</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">搭建Web服务器</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">切图 如何从效果图转换为html页面</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">web前端开发（一）</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Bootstrap使用指南</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">UI设计基础</a>&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">WEB后端开发</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">Java面向对象</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Java数据存储</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Java多线程编程</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">JavaEE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Java网络编程</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Servlet详解</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">PKI</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">微信公众平台应用开发实战傻瓜版</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">JSP详解</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">phpcms</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Web核心技术</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">PHP基础</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">PHPCMS V9</a>&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">移动应用开发</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">Android基础知识</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Android的多媒体应用</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Android的多线程编程</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Android网络访问</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Android中的数据存储</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Android基本组件</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">软件测试</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">QC测试管理工具</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">白盒测试</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">性能测试与LoadRunner应用</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">软件测试基础</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">功能性自动化测试工具</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试环境搭建</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试职业素质</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试基础知识</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">综合测试策略</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试方法</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试背景</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试质量</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Web测试技术</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试用例</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">黑盒测试之等价类划分法</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">黑盒测试</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">软件性能测试基础</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">CMM模型与ISO9000模型</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">白盒测试工具Junit</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">用户手册</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">QuickTest输出值概述</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">软件测试实践</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">QuickTest检查点</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试模型</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试文档</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">缺陷管理</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">数据库</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">数据库高级开发</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">MySQL数据库设计和SQL语句讲解</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">MySQL数据库管理</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">基础知识&实用工具</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">IT技术之雕虫小技</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">计算机基础课程</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">C软件开发工程师</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">网络&操作系统</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">Linux操作系统应用</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">软件设计&系统架构</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">设计模式与体系结构模式</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="dh" style="background-color:rgb(248,248,248);"><a href="kctx.html">课程体系</a></li>
+						<li class="dh" style="background-color:rgb(248,248,248);"><a href="tongbuke.html">同步课</a></li>
+						<li class="dh" style="background-color:rgb(248,248,248);"><a href="sq.html">社区</a></li>
+					</ul>
+					<form class="navbar-form navbar-left" role="search" style="background-color:rgb(248,248,248);margin-right:100px;">
+						<!-- <div class="form-group" style="top:10px;"> -->
+							<input class="form-control" type="text" placeholder="搜索课程、问答" style="border-radius:15px;border-top-right-radius:0px;border-bottom-right-radius:0px;">
+							<button class="btn btn-priamy" type="submit" style="border-radius:15px;border-top-left-radius:0px;border-bottom-left-radius:0px;margin-left:-5px;"><span class="glyphicon glyphicon-search"></span>
+							</button>
+						<!-- </div> -->
+						
+					</form>
+					<!-- <div class="yh"> -->
+					<ul class="nav navbar-nav yh" style="color:black;font-style:楷体;background-color:rgb(248,248,248);">
+						<li class="dh1"><a href="denglu.html">登录</a></li>
+						<li class="dh1"><a href="zhuce.html">注册</a></li>
+					</ul>
+					<!-- </div> -->
+				</div>
+			</div>
+		</nav>
+
+		<div class="container" style="margin-top:70px;font-family:'Microsoft YaHei';">
+			<div class="bread crumb">
+				<a href="sy.html"><span class="glyphicon glyphicon-home" style="color: rgb(255, 127, 35);"></span></a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="kctx.html" style="color: rgb(255, 127, 35);">课程体系</a>&nbsp;&nbsp;/&nbsp;&nbsp;<span style="color:#a0a09e;">软件测试工程师</span>
+			</div>
+
+			<div class="concert">
+				<h2 style="font-size:30px;font-weight: bold;text-align:center;">软件测试工程师</h2>
+				<p style="color:#a0a09e;font-size:14px;text-align:center;">职业前景：软件测试工程师已跻身IT业抢手人才之列，软件测试每年新增约20万测试岗位就业机会，而企业、学校培养出的测试人才却不足需求量的1/10.目前在中大型软件开发企业中，中高级测试工程师年薪起薪可高达10万元。学习目标：职业发展目标1：软件测试工程师————>中级测试工程师————>自动化测试工程师；职业发展目标2：软件测试工程师————>中级测试工程师————>性能测试工程师。</p>
+				<div class="row" style="margin-top:30px;color:black;border:1px solid rgba(0,0,0,0.075);margin-bottom:30px;text-align:center;">
+					<div class="col-md-3" style="border-right:1px solid rgba(0,0,0,0.075);">
+						<img src="img/a9.png" class="center-block" style="margin-top:10px;margin-bottom:10px;">
+					</div>
+					<div class="col-md-3" style="border-right:1px solid rgba(0,0,0,0.075);margin-top:20px;">
+						<p><strong style="font-size:30px;color:#3CB1B0;">5</strong>课时</p>
+						<p>177个视频</p>
+					</div>
+					<div class="col-md-3" style="border-right:1px solid rgba(0,0,0,0.075);margin-top:20px;">
+						<p><strong style="font-size:30px;color:#3CB1B0;">48</strong>小时</p>
+						<p>合计课程时长</p>
+					</div>
+					<div class="col-md-3" style="margin-top:20px;">
+						<p><strong style="font-size:30px;color:#3CB1B0;">31806</strong>人</p>
+						<p>共计69667人次学习</p>
+					</div>
+				</div>
+				<div class="row row1">
+					<div class="col-md-4">
+						<img src="img/c1.png">
+					</div>
+					<div class="col-md-8">
+						<h2 style="font-size:20px;font-weight: bold;margin-top:20px;">功能性自动化测试工具</h2>
+						<p style="color:#a0a09e;font-size:14px;height:90px;">本计划是对当下主流功能性自动化测试工具QuickTest Professional由浅入深的简介，通过本计划的学习可以熟练掌握QuickTest Professional自动化测试工具的应用技能。</p>
+						<p style="color:#a0a09e;"><span class="glyphicon glyphicon-tasks"> 课时 36</span> <span class="glyphicon glyphicon-user"> 人数 3870</span><a class="btn" type="button" style="width:100px;height:30px;float:right;background-color:rgb(255,80,20);color:white;opacity:0.8;" href="video.html">开始学习</a></p>
+					</div>
+				</div>
+				<div class="row row1">
+					<div class="col-md-4">
+						<img src="img/c2.png">
+					</div>
+					<div class="col-md-8">
+						<h2 style="font-size:20px;font-weight: bold;margin-top:20px;">性能测试与LoadRunner应用</h2>
+						<p style="color:#a0a09e;font-size:14px;height:90px;">本计划针对性能测试相关基础及LoadRunner工具的应用进行介绍，旨在让大家掌握性能测试技术。QQ群：105807679，欢饮大家对学习的内容进行交流。</p>
+						<p style="color:#a0a09e;"><span class="glyphicon glyphicon-tasks"> 课时 40</span> <span class="glyphicon glyphicon-user"> 人数 26036</span><a class="btn" type="button" style="width:100px;height:30px;float:right;background-color:rgb(255,80,20);color:white;opacity:0.8;" href="video.html">开始学习</a></p>
+					</div>
+				</div>
+				<div class="row row1">
+					<div class="col-md-4">
+						<img src="img/c3.png">
+					</div>
+					<div class="col-md-8">
+						<h2 style="font-size:20px;font-weight: bold;margin-top:20px;">QC测试管理工具</h2>
+						<p style="color:#a0a09e;font-size:14px;height:90px;">Quality Center是一款基于Web的测试管理工具，可以组织和管理应用程序测试流程的所有阶段，包括制定测试需求、计划测试、执行测试和跟踪缺陷。能够系统的控制整个测试过程，并创建整个测试工作流的框架和基础，使整个测试管理过程变得更为简单和有组织。</p>
+						<p style="color:#a0a09e;"><span class="glyphicon glyphicon-tasks"> 课时 22</span> <span class="glyphicon glyphicon-user"> 人数 6506</span><a class="btn" type="button" style="width:100px;height:30px;float:right;background-color:rgb(255,80,20);color:white;opacity:0.8;" href="video.html">开始学习</a></p>
+					</div>
+				</div>
+				<div class="row row1">
+					<div class="col-md-4">
+						<img src="img/c4.png">
+					</div>
+					<div class="col-md-8">
+						<h2 style="font-size:20px;font-weight: bold;margin-top:20px;">白盒测试</h2>
+						<p style="color:#a0a09e;font-size:14px;height:90px;">本计划主要讲解白盒测试相关知识，知道大家进行白盒相关技术学习，顺利开展代码级别的测试。</p>
+						<p style="color:#a0a09e;"><span class="glyphicon glyphicon-tasks"> 课时 8</span> <span class="glyphicon glyphicon-user"> 人数 3793</span><a class="btn" type="button" style="width:100px;height:30px;float:right;background-color:rgb(255,80,20);color:white;opacity:0.8;" href="video.html">开始学习</a></p>
+					</div>
+				</div>
+				<div class="row row1">
+					<div class="col-md-4">
+						<img src="img/c5.png">
+					</div>
+					<div class="col-md-8">
+						<h2 style="font-size:20px;font-weight: bold;margin-top:20px;">软件测试基础</h2>
+						<p style="color:#a0a09e;font-size:14px;height:90px;">软件测试基础</p>
+						<p style="color:#a0a09e;"><span class="glyphicon glyphicon-tasks"> 课时 71</span> <span class="glyphicon glyphicon-user"> 人数 29462</span><a class="btn" type="button" style="width:100px;height:30px;float:right;background-color:rgb(255,80,20);color:white;opacity:0.8;" href="video.html">开始学习</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer" style="font-family:'Microsoft YaHei'">
+			<p>地址：石家庄市裕华区南二环东路20号  @石家庄佳诚网络技术有限公司</p>
+			<p>冀ICP备12011972号-4   站长统计</p>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+	       	$(".cd-top").click(function(){
+	       		$("html").animate({"scrollTop": "0px"},500); //IE,FF
+	        	$("body").animate({"scrollTop": "0px"},500); //Webkit
+	     	})
+       	})
+
+
+		$('.carousel').carousel({
+			interval:2000
+		})
+
+		$('.dh').mouseenter(function(){
+			$(this).addClass("hover");
+			$(this).children('div').css("display","block");
+		}).mouseleave(function(){
+			$(this).removeClass("hover");
+			$(this).children('div').css("display","none");
+		})
+		$('.dh1').mouseenter(function(){
+			$(this).addClass("hover1");
+		}).mouseleave(function(){
+			$(this).removeClass("hover1");
+		})
+
+		$('.row1').mouseenter(function(){
+			$(this).addClass('colhover1');
+		}).mouseleave(function(){
+			$('.row1').removeClass('colhover1');
+		})
+
+		$('.btn').mouseenter(function(){
+			$(this).css("opacity",1);
+		}).mouseleave(function(){
+			$(this).css("opacity",0.8);
+		})
+
+		var username;
+		var password;
+		if (localStorage["username"]=="张三") {
+			if (localStorage["password"]=="111") {
+				username = localStorage["username"];
+				password = localStorage["password"]; 
+				$(".yh").html("<li class='dh1'><a href='grzx.html'><span class='glyphicon glyphicon-user'> "+username+"</span></a></li><li class='dh2'><a href='#'><span class='glyphicon glyphicon-envelope'></span></a><div class='lb1'><ul><li><a href='my.html'>@我的</a></li><li><a href='pl.html'>评论</a></li><li><a href='zan.html'>赞</a></li><li><a href='yq.html'>邀请</a></li></ul></div></li><li class='dh2'><a href='#'><span class='glyphicon glyphicon-cog'></span></a><div class='lb1'><ul><li><a href='grzl.html'>个人资料</a></li><li><a href='' class='tuichu'>退出</a></li></ul></div></li>")		    
+			}
+		}
+		$('.dh2').mouseenter(function(){
+			$(this).children('.lb1').css("display","block");
+		}).mouseleave(function(){
+			$(this).children('.lb1').css("display","none");
+		})
+		$(".tuichu").click(function(){
+			localStorage.clear();
+			location.reload();
+		})
+	</script>
+</html>

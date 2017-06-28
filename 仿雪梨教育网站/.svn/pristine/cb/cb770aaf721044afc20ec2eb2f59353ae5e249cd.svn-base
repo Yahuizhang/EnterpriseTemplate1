@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>我的课程</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <script type="text/javascript" src="js/jquery-1.12.1.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/mylesson.css"/>
+		<script type="text/javascript" src="js/mylesson.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css"/>
+		<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"/></script>
+		<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.css" rel="stylesheet">
+  		<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.js"></script>
+	</head>
+<body>
+	<!-- 回到顶部 -->
+	<div class="scroll" id="scroll" style="display:none">
+        <a href="#" class="cd-top cd-is-visible">
+			<i class="icon icon-eject"><span class="glyphicon glyphicon-eject"></span></i>
+		</a>
+    </div>
+	<!-- 导航栏 -->
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="height:50px;margin-bottom:0px;font-family:'Microsoft YaHei';">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><img src="img/logo.png" style="margin-top:-10px;margin-right:100px;"></a>
+				</div>
+				<div class="collapse navbar-collapse navbar-ex1-collapse" style="background-color:rgb(248,248,248);max-height:500px;">
+					<ul class="nav navbar-nav" style="color:black;font-style:楷体;line-height:48px;margin-top:0px;">
+						<li class="active bg-primary dh" style="background-color:rgb(248,248,248);"><a href="sy.html" class="bg-primary">首页</a></li>
+						<li class="dh" style="background-color:rgb(248,248,248);"><a href="KeCheng1.html">课程</a>
+							<div class="lb" style="height:450px;background-color:white;position:absolute;left:-300px;top:50px;display:none;line-height:20px;">
+								<div class="container" style="height:450px;">
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">WEB前端开发</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">前段工程师第一步：用HTML、CSS构建网站</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">构建交互丰富的web应用：Javascript</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">搭建Web服务器</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">切图 如何从效果图转换为html页面</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">web前端开发（一）</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Bootstrap使用指南</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">UI设计基础</a>&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">WEB后端开发</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">Java面向对象</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Java数据存储</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Java多线程编程</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">JavaEE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Java网络编程</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Servlet详解</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">PKI</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">微信公众平台应用开发实战傻瓜版</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">JSP详解</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">phpcms</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Web核心技术</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">PHP基础</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">PHPCMS V9</a>&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">移动应用开发</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">Android基础知识</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Android的多媒体应用</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Android的多线程编程</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Android网络访问</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Android中的数据存储</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Android基本组件</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">软件测试</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">QC测试管理工具</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">白盒测试</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">性能测试与LoadRunner应用</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">软件测试基础</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">功能性自动化测试工具</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试环境搭建</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试职业素质</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试基础知识</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">综合测试策略</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试方法</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试背景</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试质量</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Web测试技术</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试用例</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">黑盒测试之等价类划分法</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">黑盒测试</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">软件性能测试基础</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">CMM模型与ISO9000模型</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">白盒测试工具Junit</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">用户手册</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">QuickTest输出值概述</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">软件测试实践</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">QuickTest检查点</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试模型</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试文档</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">缺陷管理</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">数据库</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">数据库高级开发</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">MySQL数据库设计和SQL语句讲解</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">MySQL数据库管理</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">基础知识&实用工具</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">IT技术之雕虫小技</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">计算机基础课程</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">C软件开发工程师</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">网络&操作系统</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">Linux操作系统应用</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">软件设计&系统架构</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">设计模式与体系结构模式</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="dh" style="background-color:rgb(248,248,248);"><a href="kctx.html">课程体系</a></li>
+						<li class="dh" style="background-color:rgb(248,248,248);"><a href="tongbuke.html">同步课</a></li>
+						<li class="dh" style="background-color:rgb(248,248,248);"><a href="sq.html">社区</a></li>
+					</ul>
+					<form class="navbar-form navbar-left" role="search" style="background-color:rgb(248,248,248);margin-right:100px;">
+						<input class="form-control" type="text" placeholder="搜索课程、问答" style="border-radius:15px;border-top-right-radius:0px;border-bottom-right-radius:0px;">
+						<button class="btn btn-priamy" type="submit" style="border-radius:15px;border-top-left-radius:0px;border-bottom-left-radius:0px;margin-left:-5px;"><span class="glyphicon glyphicon-search"></span>
+						</button>
+					</form>
+					<ul class="nav navbar-nav yh" style="color:black;font-style:楷体;background-color:rgb(248,248,248);">
+						<li class='dh1'>
+							<a href='man.html'><span class='glyphicon glyphicon-user'>张三</span>
+							</a>
+						</li>
+						<li class='dh1'>
+							<a href='#'><span class='glyphicon glyphicon-envelope'></span></a>
+							<div class='lb1'>
+								<ul>
+									<li><a href='my.html'>@我的</a></li>
+									<li><a href='pl.html'>评论</a></li>
+									<li><a href='zan.html'>赞</a></li>
+									<li><a href='yq.html'>邀请</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class='dh1'>
+							<a href='#'><span class='glyphicon glyphicon-cog'></span></a>
+							<div class='lb1'>
+								<ul>
+									<li><a href='grzl.html'>个人资料</a></li>
+									<li><a href='denglu.html'>退出</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+	</nav>
+    <!-- content -->
+    <div class="container">
+    	<div class="bread">
+    		<ul>
+    			<li>
+    			<a href="sy.html"><i class="glyphicon glyphicon-home home"></i></a>
+    			<span class="divider">/</span>
+    			</li>
+    			<li class="title1">我的课程
+    			<span class="divider">/</span>
+    			</li>
+    			<li class="title">承德13级unity3D游戏开发</li>
+    		</ul>
+    	</div>
+    	<div class="row zhengwen">
+    		<div class="col-sm-2 left">
+    			<div class="avatar">
+    				<a href="">
+    					<img src="img/s2.png" class="img-responsive touxiang" />
+    				</a>
+    				<div class="name">张三</div>
+    			</div>
+    			<hr>
+    			<div class="first">
+    				<a href="my.html" class="menu">@ 我的</i></a>
+    			</div>
+    			<div class="first">
+    				<a href="pl.html"  class="menu"><i class="glyphicon glyphicon-comment"></i> 评论</a>
+    			</div>
+    			<div class="first">
+    				<a href="zan.html"  class="menu"><i class="glyphicon glyphicon-thumbs-up"></i> 赞</a>
+    			</div>
+    			<div class="first">
+    				<a href="sc.html"  class="menu"><i class="glyphicon glyphicon-star"></i> 收藏</a>
+    			</div>
+    			<hr>
+    			<div class="first">
+    				<a href="wdkc.html"  class="menu"><i class="glyphicon glyphicon-check"></i> 我的课程</a>
+    			</div>
+    			<div class="first">
+    				<a href="rw.html"  class="menu"><i class="glyphicon glyphicon-tasks"></i> 我的任务</a>
+    			</div>
+    		</div>
+    		<div class="col-sm-7 center">
+    			<div class="fone">
+    				<div class="fone1">
+    					<p>承德13级 Unity3D 游戏开发</p>
+    					<p>《Unity3D游戏开发》是计算机软件及相关专业在游动游戏开发方面的专业课，它是为培养应用型人才掌握手机游戏开发的技能而开设的。 本课程是一门有关手机游戏开发的的专业课程。其中课程的主要任务是使学生具有使用C#语言编写基于Unity3D游戏引擎的手机游戏的能力。通过本课程的学习，学生可以掌握C#脚本语言的使用、熟悉Unity3D游戏引擎和相关工具的使用。最终，使学生能够通过团队协作完成简单手机游戏的开发。</p>
+    				</div>
+    				<div class="fone2">
+    					<p>完成任务<br/>&nbsp;89.10%</p>
+    				</div>
+    			</div>
+    			<div class="one">
+    				<div style="padding-top:10px;padding-bottom:3px;">#承德13级 Unity3D 游戏开发#的学霸，学渣，听偶说~</div>
+    				<div id="summernote"></div>
+    				<a href="" class="menu">#话题#</a>
+    				<button class="pull-right fabu">发布</button>
+    			</div>
+    			<div class="two" style="margin-top:20px;">
+    				<div class="row" style="width:652px;">
+						<div class="col-md-1 col-sm-1 col-xs-1 col-lg-1">
+							<img class="at-popup" data-username="yangshengqiang" src="img/s2.png">
+						</div>
+						<div class="gossip-body col-md-11 col-sm-11 col-xs-11 col-lg-11">
+							<div class="gossip-title"><a href="man.html">yangshengqiang</a></div>
+				            <div class="gossip-content">
+				                <div class="gossip-gossip">
+				                	<span>给<a href="">#承德 13级 前端开发与HTML5程序设计基础#</a>指派了新任务<br>
+				                	<a href="" target="_blank" class="btn btn-xs">
+				                		<i class="glyphicon glyphicon-link"></i> HTML5本地存储实现信笺
+				                	</a>
+				                	<br>
+				                	一、使用HTML5本地存储实现信笺功能1、简单描述程序实现的思路2、程序实现过程所用到的相关知识3、程序实现过程中遇到的问题，以及解决的办法4、提交程序执行正确的源码...</span>
+				                </div>
+				            </div>
+				            <div class="gossip-footer clearfix">
+				                <div class="footer-form">
+				                    <div class="text-muted pull-left footer-time">
+				                        1 months
+				                    </div>
+				                    <div class="gossip-action pull-right">
+				                        <a href="" class="shoucang">收藏</a>|
+				                        <a href="" class="forward">转发</a>|
+				                        <a href="" class="reply">评论</a>|
+				                        <a href="" class="like">赞</a>
+				                    </div>
+				                </div>
+				            </div>
+						</div>
+					</div>
+    			</div>
+    			<div class="three">
+    				<div class="row" style="width:652px;">
+						<div class="col-md-1 col-sm-1 col-xs-1 col-lg-1">
+							<img class="at-popup" data-username="yangshengqiang" src="img/s2.png">
+						</div>
+						<div class="gossip-body col-md-11 col-sm-11 col-xs-11 col-lg-11">
+							<div class="gossip-title"><a href="man.html">yangshengqiang</a></div>
+				            <div class="gossip-content1">
+                				<span class="zhangkai1">
+			                    	给#承德 13级 前端开发与HTML5程序设计基础#指派了新任务. HTML5实现动态时钟效果 一、使用HTML5实现动态时钟 1、简单描述程序实现的思路 2、程序实现过程所用到的相关知识 3、程序实现过程中遇到的问题，以及解决的办法 4、提交程序执行正确的源码 二、要求 1、熟
+			                    </span>
+			                    <div class="shouqi1">
+			                    	给<a href="" style="color:rgb(235,115,80)">#承德 13级 前端开发与HTML5程序设计基础#</a>指派了新任务<br>
+			                    	<a href="" target="_blank" class="btn btn-xs">
+			                    		<i class="glyphicon glyphicon-link">HTML5实现动态时钟效果</i>
+			                    	</a><br>
+			                        一、使用HTML5实现动态时钟 1、简单描述程序实现的思路 2、程序实现过程所用到的相关知识 3、程序实现过程中遇到的问题，以及解决的办法 4、提交程序执行正确的源码 二、要求 1、熟练掌握can...
+			                    </div>
+							    <div class="adjust-ajax adjust-ajaxz1" style="display:block">
+							        <img src="img/arrow_carrot-2down.png" style="width:9px;height:14px;" /> 展开
+							    </div>
+							    <div class="adjust-ajax adjust-ajaxs1" style="display:none">
+							        <img src="img/arrow_carrot-2up.png" style="width:9px;height:14px;" /> 收起
+							    </div>
+				            </div>
+				            <div class="gossip-footer1 clearfix1">
+            					<div class="footer-form">
+								    <div class="text-muted pull-left footer-time">
+								        2 days，22 hours
+								    </div>
+								    <div class="gossip-action pull-right">
+								    	<a href="" class="shoucang">收藏</a>|
+								        <a href="" class="forward">转发</a>|
+								        <a href="" class="reply">评论</a>|
+								        <a href="" class="like">赞</a>
+								    </div>
+								</div>
+				            </div>
+						</div>
+					</div>
+    			</div>
+    			<div class="four">
+					<div class="row" style="width:652px;">
+						<div class="col-md-1 col-sm-1 col-xs-1 col-lg-1">
+							<img class="at-popup" data-username="zhengbingquan" src="img/s2.png">
+						</div>
+						<div class="gossip-body col-md-11 col-sm-11 col-xs-11 col-lg-11">
+							<div class="gossip-title"><a href="man.html">郑秉全</a></div>
+				            <div class="gossip-content">
+				                <div class="gossip-gossip">
+				                	<span></span>
+				                </div>
+				                <div class="gossip-origin readmore">
+				                	<blockquote>
+				                		<div class="gossip-body1">
+				                			<div class="gossip-title1">
+				                				<a href="at-popup" data-username="qile" class="at-popup1">@祁乐</a>
+				                			</div>
+				                			<div class="gossip-content1">
+				                				<span class="at">
+							                    	给<a href="" style="color:rgb(235,115,80)">#承德 13级 Unity3D 游戏开发#</a>指派了新任务
+							                    	<a href="" target="_blank" class="btn btn-xs">
+							                    		<i class="glyphicon glyphicon-link">观看极客学院视频</i>
+							                    	</a><br>
+							                        观看极客学院视频1.uGUI系统 2.物理引擎链接已发到群里，请观看学习
+							                    </span>
+							                    <div class="adjust-ajax adjust-ajaxz2" style="display:none">
+							                    	<img src="img/arrow_carrot-2down.png" style="width:9px;height:14px;" /> 展开
+							                    </div>
+							                    <div class="adjust-ajax adjust-ajaxs2" style="display:none">
+							                    	<img src="img/arrow_carrot-2up.png" style="width:9px;height:14px;" /> 收起
+							                    </div>
+				                			</div>
+				                			<div class="gossip-footer1 clearfix1">
+				                				<div class="footer-form">
+								                    <div class="text-muted pull-left footer-time">
+								                        1 months, 2 weeks
+								                    </div>
+								                    <div class="gossip-action pull-right">
+								                        <a href="" class="forward">转发</a>|
+								                        <a href="" class="reply">评论</a>|
+								                        <a href="" class="like">赞</a>
+								                    </div>
+								                </div>
+				                			</div>
+				                		</div>
+				                	</blockquote>
+				                </div>
+				            </div>
+				            <div class="gossip-footer clearfix">
+				                <div class="footer-form">
+				                    <div class="text-muted pull-left footer-time">
+				                        1 months, 1 week
+				                    </div>
+				                    <div class="gossip-action pull-right">
+				                    	<a href="" class="shoucang">收藏</a>|
+				                        <a href="" class="forward">转发</a>|
+				                        <a href="" class="reply">评论</a>|
+				                        <a href="" class="like">赞</a>
+				                    </div>
+				                </div>
+				            </div>
+						</div>
+					</div>
+				</div>
+				<div class="five">
+					<div class="row" style="width:652px;">
+						<div class="col-md-1 col-sm-1 col-xs-1 col-lg-1">
+							<img class="at-popup" data-username="limeng" src="img/s2.png">
+						</div>
+						<div class="gossip-body col-md-11 col-sm-11 col-xs-11 col-lg-11">
+							<div class="gossip-title"><a href="man.html">李蒙</a></div>
+				            <div class="gossip-content">
+				                <div class="gossip-gossip">
+				                	<span>已完成</span>
+				                </div>
+				                <div class="gossip-origin readmore">
+				                	<blockquote>
+				                		<div class="gossip-body1">
+				                			<div class="gossip-title1">
+				                				<a href="at-popup" data-username="qile" class="at-popup1">@祁乐</a>
+				                			</div>
+				                			<div class="gossip-content1">
+				                				<span class="at">
+							                    	给<a href="" style="color:rgb(235,115,80)">#承德 13级 Unity3D 游戏开发#</a>指派了新任务
+							                    	<a href="" target="_blank" class="btn btn-xs">
+							                    		<i class="glyphicon glyphicon-link">观看极客学院视频</i>
+							                    	</a><br>
+							                        观看极客学院视频1.uGUI系统 2.物理引擎链接已发到群里，请观看学习
+							                    </span>
+							                    <div class="adjust-ajax adjust-ajaxz2" style="display:none">
+							                    	<img src="img/arrow_carrot-2down.png" style="width:9px;height:14px;" /> 展开
+							                    </div>
+							                    <div class="adjust-ajax adjust-ajaxs2" style="display:none">
+							                    	<img src="img/arrow_carrot-2up.png" style="width:9px;height:14px;" /> 收起
+							                    </div>
+				                			</div>
+				                			<div class="gossip-footer1 clearfix1">
+				                				<div class="footer-form">
+								                    <div class="text-muted pull-left footer-time">
+								                        1 months, 2 weeks
+								                    </div>
+								                    <div class="gossip-action pull-right">
+								                        <a href="" class="forward">转发</a>|
+								                        <a href="" class="reply">评论</a>|
+								                        <a href="" class="like">赞</a>
+								                    </div>
+								                </div>
+				                			</div>
+				                		</div>
+				                	</blockquote>
+				                </div>
+				            </div>
+				            <div class="gossip-footer clearfix">
+				                <div class="footer-form">
+				                    <div class="text-muted pull-left footer-time">
+				                        1 months, 1 week
+				                    </div>
+				                    <div class="gossip-action pull-right">
+				                    	<a href="" class="shoucang">收藏</a>|
+				                        <a href="" class="forward">转发</a>|
+				                        <a href="" class="reply">评论</a>|
+				                        <a href="" class="like">赞</a>
+				                    </div>
+				                </div>
+				            </div>
+						</div>
+					</div>
+				</div>
+    		</div>
+    		<div class="col-sm-3 right">
+    			<div style="border:1px solid rgb(225,225,225);padding-top:5px;padding-left:15px;padding-right:15px;">
+					<p style="font-size:13px;font-family:'Microsoft YaHei';margin-top:10px;">课程任务</p>
+					<div class="test">
+						<div><span class="glyphicon glyphicon-tasks" style="color: rgb(128,128,128);"></span>
+						<a href="">观看极客学院视频</a></div>
+						<div><span class="glyphicon glyphicon-tasks" style="color: rgb(128,128,128);"></span> <a href="">观看慕课网面向对象视频教程</a></div>
+						<div><span class="glyphicon glyphicon-tasks" style="color: rgb(128,128,128);"></span> <a href="">3月2日作业(请按时完成,计入平时<br/>成绩)</a></div>
+						<br/>
+						<div><span class="glyphicon glyphicon-tasks" style="color: rgb(128,128,128);"></span> <a href="">第一个测试任务</a></div>
+					</div>
+				</div>
+				<div style="border:1px solid rgb(225,225,225);padding-top:5px;padding-left:15px;padding-right:15px;margin-top:15px;">
+					<p class="p2">课程学员</p>
+					<div style="margin-top:15px;">
+						<a href=""><img src="img/s2.png" style="width:30px;height:30px;border-radius:45px;margin-left:5px;" class="im1"></a>
+						
+						<a href=""><img src="img/liurong.png" style="width:30px;height:30px;border-radius:45px;margin-left:10px;" class="im2"></a>
+						<a href=""><img src="img/s2.png" style="width:30px;height:30px;border-radius:45px;margin-left:10px;"></a>
+						<a href=""><img src="img/liutingting.png" style="width:30px;height:30px;border-radius:45px;margin-left:10px;"></a>
+						<a href=""><img src="img/s2.png" style="width:30px;height:30px;border-radius:45px;margin-left:10px;"></a>
+
+						<br/>
+						<p style="margin-top:5px;font-size:13px;">王志磊&nbsp;&nbsp;&nbsp;刘荣&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;王晶&nbsp;&nbsp;&nbsp;刘婷婷&nbsp;&nbsp;郑秉全</p>
+
+						
+						<a href=""><img src="img/s2.png" style="width:30px;height:30px;border-radius:45px;margin-left:5px;"></a>
+						
+						<a href=""><img src="img/s2.png" style="width:30px;height:30px;border-radius:45px;margin-left:10px;"></a>
+						<a href=""><img src="img/mengwangwang.png" style="width:30px;height:30px;border-radius:45px;margin-left:10px;"></a>
+						<a href=""><img src="img/s2.png" style="width:30px;height:30px;border-radius:45px;margin-left:10px;"></a>
+						<a href=""><img src="img/s2.png" style="width:30px;height:30px;border-radius:45px;margin-left:10px;"></a>
+
+						<br/>
+						<p style="margin-top:5px;font-size:13px;">张亚辉&nbsp;张会英&nbsp;&nbsp;孟旺旺&nbsp;张利孟&nbsp;&nbsp;&nbsp;李蒙</p>
+
+						<!-- <br/> -->
+						<a href="" style="font-family:'Microsoft Yahei';color:rgb(51,51,51);"><p style="margin-left:165px;margin-top:25px;">查看全部</p></a>
+					</div>
+				</div>
+				<div style="border:1px solid rgb(225,225,225);padding-top:5px;padding-left:15px;padding-right:15px;margin-top:15px;">
+				    <p class="p2">正在学习的课程</p>
+					<img src="img/class1.png" style="padding-left:105px;padding-top:5px;">
+					<p style="text-align:center;padding-bottom:20px;color:rgb(164,164,164);">暂无课程</p>
+				</div>
+
+
+
+
+    		</div>
+    	</div>
+    </div>
+	<!-- yewei -->
+	<footer style="background-color: #2e323e;padding: 20px;color: #a5a6a9;">
+		<div class="container">
+			<div class="address">地址: 石家庄市裕华区南二环东路20号    ®  石家庄佳诚网络技术有限公司</div>
+			<div class="copyright">冀ICP备</div>
+		</div>
+	</footer>
+</body>
+</html>

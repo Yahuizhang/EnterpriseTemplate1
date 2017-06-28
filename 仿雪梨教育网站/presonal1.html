@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>个人中心-雪梨教育</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<script type="text/javascript" src="js/jquery-1.12.1.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script src="js/jquery-ui-1.8.17.custom.min.js"></script>
+	</head>
+	<style type="text/css">
+		.hover{
+			background-color: #e7e7e7;
+			border-bottom:2px solid orange;
+		}
+		.hover1{
+			background-color: #e7e7e7;
+		}
+		.select{
+			color: orange;
+			border-bottom:2px solid orange;
+			background-color: #f1f1f1;
+		}
+		#title div{
+			float: left;
+			width: 80px;
+			height: 50px;
+			text-align: center;
+			line-height: 50px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+		.dh,.dh a{
+			height: 48px;
+		}
+		.active a{
+			border-bottom:2px solid orange;
+		}
+		.navbar a{
+			color: #333;
+		}
+		.navbar a:hover{
+			color: orange;
+		}
+		ul li{
+			list-style-type: none;
+		}
+		a{
+			text-decoration: none;
+		}
+		a:hover{
+			text-decoration: none;
+		}
+		.si p{
+			color: #9e9e9e;
+			font-family:"Microsoft YaHei";
+		}
+		.si p a{
+			color: rgb(255,110,61);
+			font-size: 20px;
+			font-family:"Microsoft YaHei";
+			font-weight: bold;
+		}
+		.bbtn{
+			float:left;margin-left:359px;;background-color:rgb(255,110,61);color:white;border:1px solid rgb(255,64,0);width:70px;height:25px;border-radius:5px;
+		}
+		.test{
+			width: 208px;
+			height:110px;
+			font-family:"Microsoft YaHei";
+			font-size: 13px;
+			margin-left: 5px;
+		}
+		.test div{
+			width: 208px;
+			height: 20px;
+		}
+		.test a{
+			color: black;
+		}
+		.tongbu{
+			border-bottom:2px solid rgb(248,107,59);
+			color: rgb(255,114,69);
+		}
+		.yinying img{
+			width: 176px;
+			height: 85px;
+		}
+		.yinying p{
+			border-left: 1px solid rgb(229,229,229);
+			border-right:1px solid rgb(229,229,229);
+			border-bottom:1px solid rgb(229,229,229);
+			font-family: 'Microsoft Yahei';
+    		font-weight: normal;
+    		color: #333;
+    		font-size: 13px;
+    		height: 40px;
+    		padding-top: 10px;
+    		padding-left: 10px;
+		}
+		.to{
+			position: absolute;
+		}
+		.to1{
+			position: absolute;
+			display: none;
+		}
+		.ull1{
+			color:rgb(255,110,72);
+			border-bottom:2px solid rgb(255,110,61);
+			background-color: rgb(241,241,241);
+		}
+
+
+		.ti1{
+			position: absolute;
+		}
+		.ti2{
+			position: absolute;
+			display: none;
+		}
+
+		.footer{
+			margin-top: 20px;
+			width: 100%;
+			height: 90px;
+			background-color: rgb(46,50,62);
+		}
+		.footer p{
+			text-align: center;
+			color: gray;
+			font-size: 14px;
+			font-family:"Microsoft YaHei";
+		}
+		.cd-top{
+			visibility: visible;
+			border:1px solid #D4D4D4;
+			border-radius: 3px;
+			display: inline-block;
+			height: 40px;
+			width: 40px;
+			position: fixed;
+			bottom: 20px;
+			right: 100px;
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
+			overflow: hidden;
+			text-align: center;
+			white-space: nowrap;
+			background-color: #D4D4D4;
+		}
+		.cd-top i{
+			position: fixed;
+			width: 26px;
+			height: 26px;
+			font-size: 26px;
+			bottom: 27px;
+			color: #FFF;
+			right: 109px;
+		}
+		.cont a{
+			text-decoration: none;
+			border: none;
+		}
+
+		.lb1{
+				width:90px;
+				background-color:white;
+				position:absolute;
+				top:50px;
+				left:-45px;
+				display: none;
+			}
+			.lb1 ul{
+				list-style-type: none;
+				position: relative;
+				left: -40px;
+			}
+			.lb1 ul li a{
+				display: block;
+				width: 90px;
+				height: 30px;
+				text-decoration: none;
+				text-align: center;
+				line-height: 30px;
+			}
+			.lb1 ul li a:hover{
+				background-color: rgb(255,80,20);
+				color: white;
+			}
+	</style>
+	<body>
+		<a href="#" class="cd-top cd-is-visible">
+			<i class="icon icon-eject"><span class="glyphicon glyphicon-eject"></span></i>
+		</a>
+
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="height:50px;margin-bottom:0px;font-family:'Microsoft YaHei';">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><img src="img/logo.png" style="margin-top:-10px;margin-right:100px;"></a>
+				</div>
+				<div class="collapse navbar-collapse navbar-ex1-collapse" style="background-color:rgb(248,248,248);max-height:500px;">
+					<ul class="nav navbar-nav" style="color:black;font-style:楷体;line-height:48px;margin-top:0px;">
+						<li class="active bg-primary dh" style="background-color:rgb(248,248,248);"><a href="sy.html" class="bg-primary">首页</a></li>
+						<li class="dh" style="background-color:rgb(248,248,248);"><a href="KeCheng1.html">课程</a>
+							<div class="lb" style="height:450px;background-color:white;position:absolute;left:-300px;top:50px;display:none;line-height:20px;">
+								<div class="container" style="height:450px;">
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">WEB前端开发</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">前段工程师第一步：用HTML、CSS构建网站</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">构建交互丰富的web应用：Javascript</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">搭建Web服务器</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">切图 如何从效果图转换为html页面</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">web前端开发（一）</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Bootstrap使用指南</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">UI设计基础</a>&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">WEB后端开发</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">Java面向对象</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Java数据存储</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Java多线程编程</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">JavaEE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Java网络编程</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Servlet详解</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">PKI</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">微信公众平台应用开发实战傻瓜版</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">JSP详解</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">phpcms</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Web核心技术</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">PHP基础</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">PHPCMS V9</a>&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">移动应用开发</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">Android基础知识</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Android的多媒体应用</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Android的多线程编程</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Android网络访问</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Android中的数据存储</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Android基本组件</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">软件测试</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">QC测试管理工具</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">白盒测试</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">性能测试与LoadRunner应用</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">软件测试基础</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">功能性自动化测试工具</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试环境搭建</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试职业素质</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试基础知识</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">综合测试策略</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试方法</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试背景</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试质量</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">Web测试技术</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试用例</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">黑盒测试之等价类划分法</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">黑盒测试</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">软件性能测试基础</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">CMM模型与ISO9000模型</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">白盒测试工具Junit</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">用户手册</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">QuickTest输出值概述</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">软件测试实践</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">QuickTest检查点</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试模型</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">测试文档</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">缺陷管理</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">数据库</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">数据库高级开发</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">MySQL数据库设计和SQL语句讲解</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">MySQL数据库管理</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">基础知识&实用工具</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">IT技术之雕虫小技</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">计算机基础课程</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="video1.html">C软件开发工程师</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">网络&操作系统</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">Linux操作系统应用</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="KeCheng1.html">软件设计&系统架构</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="video1.html">设计模式与体系结构模式</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="dh" style="background-color:rgb(248,248,248);"><a href="kctx.html">课程体系</a></li>
+						<li class="dh" style="background-color:rgb(248,248,248);"><a href="tongbuke.html">同步课</a></li>
+						<li class="dh" style="background-color:rgb(248,248,248);"><a href="sq.html">社区</a></li>
+					</ul>
+					<form class="navbar-form navbar-left" role="search" style="background-color:rgb(248,248,248);margin-right:100px;">
+						<input class="form-control" type="text" placeholder="搜索课程、问答" style="border-radius:15px;border-top-right-radius:0px;border-bottom-right-radius:0px;">
+						<button class="btn btn-priamy" type="submit" style="border-radius:15px;border-top-left-radius:0px;border-bottom-left-radius:0px;margin-left:-5px;"><span class="glyphicon glyphicon-search"></span>
+						</button>
+					</form>
+					<ul class="nav navbar-nav yh" style="color:black;font-style:楷体;background-color:rgb(248,248,248);">
+						<li class='dh1'>
+							<a href='man.html'><span class='glyphicon glyphicon-user'>张三</span>
+							</a>
+						</li>
+						<li class='dh1'>
+							<a href='#'><span class='glyphicon glyphicon-envelope'></span></a>
+							<div class='lb1'>
+								<ul>
+									<li><a href='my.html'>@我的</a></li>
+									<li><a href='pl.html'>评论</a></li>
+									<li><a href='zan.html'>赞</a></li>
+									<li><a href='yq.html'>邀请</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class='dh1'>
+							<a href='#'><span class='glyphicon glyphicon-cog'></span></a>
+							<div class='lb1'>
+								<ul>
+									<li><a href='grzl.html'>个人资料</a></li>
+									<li><a href='denglu.html'>退出</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+	</nav>
+
+
+		<div class="container" style="width:1180px;margin-top:50px;">			
+			<div class="row">
+				<div class="col-md-7" style="height:1200px;margin-top:20px;margin-left:110px;width:685px;">
+					<div class="row">
+						<div class="col-md-12" style="border:1px solid rgb(229,229,229);height:182px;width:685px;">
+							<div style="padding-top:30px;padding-left:12px;padding-right:12px;padding-bottom:30px;">
+								<img src="img/s1.png" style="width:120px;height:120px;float:left;">
+								<div style="float:left;margin-left:15px;">
+									<div style="width:494px;height:32px;">
+										<p style="font-weight:bold;float:left;font-size:16px;color:#333;font-family:'Microsoft YaHei'">4班-杨晨</p>
+										<button class="bbtn">
+											<span style="color: white;" class="glyphion glyphicon-plus"></span> 关注
+										</button>
+									</div>
+									<div style="width:359px;height:55px;margin-top:10px;">
+										<p style="font-size:5px;color:rgb(158,158,158);">。。。</p>
+									</div>
+									<div class="si">
+										<p>粉丝&nbsp;<a href="">0</a>&nbsp;&nbsp;关注&nbsp;<a href="">0</a>&nbsp;&nbsp;来访次数&nbsp;<a href="">12</a></p>
+									</div>
+								</div>
+							</div>
+						</div>						
+					</div>
+					<div class="row">
+						<div class="col-md-12" style="border:1px solid rgb(229,229,229);width:685px;height:412px;margin-top:15px;">
+							<div style="width:683px;height:38px;background-color:rgb(245,245,245);border-bottom:2px solid rgb(229,229,229);margin-left:-15px;">
+								<ul style="width:683px;height:38px;">
+									<li style="float:left;width:70px;height:38px;padding-top:10px;font-size:14px;font-family:'Microsoft YaHei';padding-left:15px;margin-left:-20px;" id="cs" class="ull1">同步课</li>
+									<li style="float:left;width:56px;height:38px;padding-top:10px;font-size:14px;font-family:'Microsoft YaHei';margin-left:0px;padding-left:10px;" id="cs1">课程</li>
+								</ul>
+							</div>
+								<div class="row to">
+									<div class="col-md-3" style="width:176px;height:141px; margin-left:5px;margin-top:15px;">
+										<a href="" class="tu">
+											<div class="yinying">
+												<img src="img/tong1.png" class="img-thumbnail">
+												<p>开源自动化测试工...</p>
+											</div>
+										</a>
+									</div>
+									<div class="col-md-3" style="width:176px;height:141px;margin-top:15px;margin-left:-10px;">
+										<a href="" class="tu">
+										<div class="yinying">
+											<img src="img/tong2.png" class="img-thumbnail">
+											<p>计算机操作系统</p>
+										</div>
+										</a>
+									</div>
+									<div class="col-md-3" style="width:176px;height:141px;margin-top:15px;margin-left:-10px;">
+										<a href="" class="tu">
+										<div class="yinying">
+											<img src="img/tong3.png" class="img-thumbnail">
+											<p>2014级数据库原理...</p>
+										</div>
+										</a>
+									</div>
+									<div class="col-md-3" style="width:176px;height:141px;margin-top:15px;margin-left:-10px;">
+										<a href="" class="tu">
+										<div class="yinying">
+											<img src="img/tong4.png" class="img-thumbnail">
+											<p>软件测试方向之软...</p>
+										</div>
+										</a>
+									</div>
+									<div class="col-md-3" style="width:176px;height:141px;margin-left:5px;margin-top:5px;">
+										<a href="" class="tu">
+											<div class="yinying">
+												<img src="img/tong5.png" class="img-thumbnail">
+												<p>cms与模板制作</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="row to1">
+									<div class="col-md-3" style="width:176px;height:141px; margin-left:5px;margin-top:15px;">
+										<a href="" class="tu">
+											<div class="yinying">
+												<img src="img/tong1.png" class="img-thumbnail">
+												<p>开源自动化测试工...</p>
+											</div>
+										</a>
+									</div>
+								</div>							
+						</div>						
+					</div>
+					<div class="row">
+						<div class="col-md-12" style="border:1px solid rgb(229,229,229);width:685px;height:500px;margin-top:15px;">
+							<div style="width:683px;height:38px;background-color:rgb(245,245,245);border-bottom:2px solid rgb(229,229,229);margin-left:-15px;">
+								<ul style="width:683px;height:38px;">
+									<li style="float:left;width:80px;height:38px;padding-top:10px;font-size:14px;font-family:'Microsoft YaHei';padding-left:15px;margin-left:-20px;" id="td1" class="ull1">Ta的互动</li>
+									<li style="float:left;width:80px;height:38px;padding-top:10px;font-size:14px;font-family:'Microsoft YaHei';margin-left:0px;padding-left:10px;" id="td2">提到Ta的</li>
+								</ul>
+							</div>
+							<div  class="ti1">
+								<div><img src="img/s1.png"></div>
+								<!-- <div class="rig">
+									<div><p>4班-杨晨</p></div>
+									<div>
+										<p>@秋月</p>
+										<p>给#软件测试方向之软件测试实践#指派了新任务. 作业十：课堂练习bugzilla 要求：1、安装 2、将排课系统的bug提交到bugzilla里面，将其中的三条缺陷做bugzilla的缺陷流转状态模拟： （1）一条缺陷从new—&gt;reopen-&gt;r</p>
+										<p></p>
+									</div>
+								</div> -->
+							</div>
+							<div class="ti2">
+								<img src=" img/tidao.png" style="margin-top:200px;margin-left:150px;">
+							</div>
+
+
+						</div>
+					</div>
+
+
+
+
+				</div>
+
+				<div class="col-md-2" style="border:1px solid rgb(229,229,229);margin-top:20px;height:158px;margin-left:25px;width:240px;">
+					<div style="width:208px;">
+						<p style="font-size:13px;font-family:'Microsoft YaHei';margin-top:10px;">任务</p>
+						<div class="test">
+							<div><span class="glyphicon glyphicon-tasks" style="color: rgb(128,128,128);"></span>
+							<a href="">作业九：bugzilla的安装</a></div>
+							<div><span class="glyphicon glyphicon-tasks" style="color: rgb(128,128,128);"></span> <a href="">课堂练习</a></div>
+							<div><span class="glyphicon glyphicon-tasks" style="color: rgb(128,128,128);"></span> <a href="">完成实验五</a></div>
+							<div><span class="glyphicon glyphicon-tasks" style="color: rgb(128,128,128);"></span> <a href="">作业八：安装测试</a></div>
+							<div><span class="glyphicon glyphicon-tasks" style="color: rgb(128,128,128);"></span> <a href="">作业七：排课系统回归测试</a></div>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>			
+		</div>
+		
+
+
+		
+
+
+		
+		
+
+
+		<div class="footer">
+			<p style="padding-top:30px;">地址：石家庄市裕华区南二环东路20号&nbsp;&nbsp;&nbsp;®石家庄佳诚网络技术有限公司</p>
+			<p>冀ICP备12011972号-4&nbsp;&nbsp;&nbsp;站长统计</p>
+		</div>	
+	</body>
+	<script type="text/javascript">	
+    $(document).ready(function() {
+       	$(".cd-top").click(function(){
+   		$("html").animate({"scrollTop": "0px"},500); //IE,FF
+    	$("body").animate({"scrollTop": "0px"},500); //Webkit
+     	})
+
+     	$('.dh').mouseenter(function(){
+			$(this).addClass("hover");
+			$(this).children('div').css("display","block");
+		}).mouseleave(function(){
+			$(this).removeClass("hover");
+			$(this).children('div').css("display","none");
+		})
+		$('.dh1').mouseenter(function(){
+			$(this).addClass("hover1");
+		}).mouseleave(function(){
+			$(this).removeClass("hover1");
+		})
+       	//关注按钮
+       	$(".bbtn").mouseenter(function(){
+       		$(".bbtn").css("background-color","rgb(255,80,20)");
+       	}).mouseleave(function(){
+       		$(".bbtn").css("background-color","rgb(255,110,61)");
+       	})
+       	//超链接
+       	$('.test a').mouseover(function(){
+       		$(this).css("color","rgb(255,114,69)");
+       	}).mouseout(function(){
+       		$(this).css("color","black");
+       	})
+       	//同步课
+       	$('.yinying').mouseover(function(){
+			$(this).children('img').css('opacity','0.85');
+		}).mouseout(function(){
+			$(this).children('img').css('opacity','1');
+		})
+		//tab页
+    	$('#cs').click(function(){
+    		$('.to1').css('display','none');
+    		$('.to').css('display','block');
+    		$('#cs').addClass('ull1');
+    		$('#cs1').removeClass('ull1');
+    	})
+    	$('#cs1').click(function(){
+    		$('.to').css('display','none');
+    		$('.to1').css('display','block');
+    		$('#cs').removeClass('ull1');
+    		$('#cs1').addClass('ull1');
+    	})
+    	$('#td1').click(function(){
+    		$('.ti2').css('display','none');
+    		$('.ti1').css('display','block');
+    		$('#td1').addClass('ull1');
+    		$('#td2').removeClass('ull1');
+    	})
+    	$('#td2').click(function(){
+    		$('.ti1').css('display','none');
+    		$('.ti2').css('display','block');
+    		$('#td1').removeClass('ull1');
+    		$('#td2').addClass('ull1');
+    	})
+    	var username;
+		var password;
+		if (localStorage["username"]=="张三") {
+		if (localStorage["password"]=="111") {
+			username = localStorage["username"];
+			password = localStorage["password"]; 
+			$(".yh").html("<ul class='nav navbar-nav' style='margin-left:100px;color:black;font-style:楷体;position:absolute;left:900px;top:0px'><li class='dh1'><a href='grzx.html'><span class='glyphicon glyphicon-user'> " +username+"</span></a></li><li class='dh2'><a href='#'><span class='glyphicon glyphicon-envelope'></span></a><div class='lb1'><ul><li><a href='my.html'>@我的</a></li><li><a href='pl.html'>评论</a></li><li><a href='zan.html'>赞</a></li><li><a href='yq.html'>邀请</a></li></ul></div></li><li class='dh2'><a href='#'><span class='glyphicon glyphicon-cog'></span></a><div class='lb1'><ul><li><a href='grzl.html'>个人资料</a></li><li><a href='' class='tuichu'>退出</a></li></ul></div></li></ul>")		    
+		}
+	}
+	$('.dh2').mouseenter(function(){
+		$(this).children('.lb1').css("display","block");
+	}).mouseleave(function(){
+		$(this).children('.lb1').css("display","none");
+	})
+	$(".tuichu").click(function(){
+		localStorage.clear();
+		location.reload();
+	})
+    })
+
+	</script>
+</html>

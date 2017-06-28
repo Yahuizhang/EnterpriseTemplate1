@@ -1,0 +1,242 @@
+*{
+	margin: 0;
+	padding: 0;
+	border:0;
+}
+body{
+	font-family: "微软雅黑";
+}
+ul li{
+	list-style-type: none;
+	float: left;
+}
+a:hover{
+	text-decoration: none;
+}
+/*daohang*/
+.hover{
+	background-color: #e7e7e7;
+	border-bottom:2px solid orange;
+}
+.hover1{
+	background-color: #e7e7e7;
+}
+.dh,.dh a{
+	height: 48px;
+}
+.navbar a{
+	color: #333;
+}
+.navbar a:hover{
+	color: orange;
+}
+.lb1{
+	width:90px;
+	background-color:white;
+	position:absolute;
+	top:50px;
+	left:-45px;
+	display: none;
+}
+.lb1 ul{
+	list-style-type: none;
+	position: relative;
+}
+.lb1 ul li a{
+	display: block;
+	width: 90px;
+	height: 30px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 30px;
+}
+.lb1 ul li a:hover{
+	background-color: rgb(255,80,20);
+	color: white;
+}
+/*content*/
+.content{
+	height: 950px;
+}
+.bread{
+	padding-top: 65px;
+	padding-left: 10px;
+	padding-bottom: 20px;
+}
+.home{
+	color: rgb(255,110,61);
+}
+.divider{
+	padding-left: 10px;
+	padding-right: 10px;
+	color: rgb(227,221,227);
+	font-weight: bolder;
+}
+.title{
+	color: rgb(227,221,227);
+}
+/*left*/
+.left{
+	margin-top: 40px;
+}
+.nav_fixed{
+	position: fixed;
+	left: 89.5px;
+	top:30px;
+}
+.avatar{
+	padding-top: 10px;
+	margin-bottom: 5px;
+}
+.touxiang{
+	width: 50px;
+	height: 50px;
+	border:1px solid #e5e5e5;
+	border-radius: 3px;
+	cursor: pointer;
+	margin-left: 60px;
+}
+.name{
+	font-size: 15px;
+	padding-top: 7px;
+	margin-left: 65px;
+}
+.first{
+	padding-bottom: 5px;
+}
+.menu{
+	font-size: 15px;
+	color: black;
+}
+.menu:hover{
+	color: rgb(255,155,61);
+	text-decoration: none;
+}
+/*right*/
+.right{
+    padding:10px;
+}
+.wdkc li{
+	color: black;
+	padding: 8px 10px;
+	cursor: pointer;
+}
+.active{
+	border-bottom:2px solid #ff6e3d;
+    color: #ff6e3d!important;
+}
+.horizontal-line{
+	display: block;
+	height: 2px;
+	background-color:#e5e5e5;
+	margin-top: -2px;
+}
+/*section*/
+.card-img{
+	width: 260.5px;
+}
+.card-heading{
+	font-weight: normal;
+	line-height: 1.1;
+	color: #333;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.card-content{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+}
+.card{
+	margin-top:15px;
+	border:1px solid #ddd;
+	border-radius: 4px;
+}
+.card-actions{
+	height: 55px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+.two-line{
+	height: 45px;
+	display: block;
+	overflow: hidden;
+}
+.join-team-btn{
+	background-color: #ff6e3d;
+	color: #fff;
+	font-weight: normal;
+	text-shadow:none;
+	font-size: 12px;
+	line-height: 1.5;
+	border-radius: 4px;
+	border-color: #ccc;
+	cursor: pointer;
+	vertical-align: middle;
+}
+.glyphicon-info-sign{
+ 	color: #c3e7e7;
+ 	width:33px;
+ 	font-size:33px;
+ 	margin-top:200px;
+ 	text-align: center;
+}
+.xuexia{
+	font-size:16px;
+	color:black;
+	text-align: center;
+	margin-top:20px;
+}
+.xuexia:hover{
+	font-size:16px;
+	color:#ff6e3d;
+	text-align: center;
+	margin-top:20px;
+}
+/*top*/
+.cd-top{
+	visibility: visible;
+	border:1px solid #D4D4D4;
+	border-radius: 3px;
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	position: fixed;
+	bottom: 20px;
+	right: 100px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
+	overflow: hidden;
+	text-align: center;
+	white-space: nowrap;
+	background-color: #D4D4D4;
+}
+.cd-top i{
+	position: fixed;
+	width: 26px;
+	height: 26px;
+	font-size: 26px;
+	bottom: 27px;
+	color: #FFF;
+	right: 109px;
+}
+/*footer*/
+.address{
+	text-align: center;
+}
+.copyright{
+	text-align: center;
+}
+#hy{
+	width: 300px;
+	height: 50px;
+	color: white;
+	font-size: 14px;
+	border:1px solid red;
+	background-color: red;
+	border-radius: 20px;
+}

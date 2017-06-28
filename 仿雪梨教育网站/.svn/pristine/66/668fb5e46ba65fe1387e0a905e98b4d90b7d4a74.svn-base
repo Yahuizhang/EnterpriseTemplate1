@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>MySQL数据库工程师</title>
+
+		<script type="text/javascript" src="js/jquery-1.12.1.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+		<style type="text/css">
+			.hover{
+				background-color: #e7e7e7;
+				border-bottom:2px solid orange;
+			}
+			.hover1{
+				background-color: #e7e7e7;
+			}
+			.dh,.dh a{
+				height: 48px;
+			}
+			.active a{
+				border-bottom:2px solid orange;
+			}
+			.navbar a{
+				color: #333;
+			}
+			.navbar a:hover{
+				color: orange;
+			}
+			.cd-top{
+				visibility: visible;
+				border:1px solid #D4D4D4;
+				border-radius: 3px;
+				display: inline-block;
+				height: 40px;
+				width: 40px;
+				position: fixed;
+				bottom: 20px;
+				right: 50px;
+				box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
+				overflow: hidden;
+				text-align: center;
+				white-space: nowrap;
+				background-color: #D4D4D4;
+			}
+			.cd-top i{
+				position: fixed;
+				width: 26px;
+				height: 26px;
+				font-size: 26px;
+				bottom: 27px;
+				color: #FFF;
+				right: 59px;
+			}
+			.footer{
+				padding-top: 20px;
+				width: 100%;
+				height: 100px;
+				background-color: #2e323e;
+				text-align: center;
+				line-height: 25px;
+				color: #a29f9f;
+				margin-top: 20px;
+			}
+			.container a{
+				text-decoration: none;
+			}
+			.row1{
+				margin-top:10px;
+				margin-bottom:20px;
+				border:1px solid rgba(0,0,0,0.075);
+				box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
+				border-radius: 3px;
+				padding-bottom: 10px;
+			}
+			.colhover1{
+				box-shadow: 0px 5px 10px #a49e9d;
+			}
+			.footer{
+				padding-top: 20px;
+				width: 100%;
+				height: 100px;
+				background-color: #2e323e;
+				text-align: center;
+				line-height: 25px;
+				color: #a29f9f;
+				margin-top: 20px;
+			}
+			.lb1{
+				width:90px;
+				background-color:white;
+				position:absolute;
+				top:50px;
+				left:-45px;
+				display: none;
+			}
+			.lb1 ul{
+				list-style-type: none;
+				position: relative;
+				left: -40px;
+			}
+			.lb1 ul li a{
+				display: block;
+				width: 90px;
+				height: 30px;
+				text-decoration: none;
+				text-align: center;
+				line-height: 30px;
+			}
+			.lb1 ul li a:hover{
+				background-color: rgb(255,80,20);
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="#" class="cd-top cd-is-visible">
+			<i class="icon icon-eject"><span class="glyphicon glyphicon-eject"></span></i>
+		</a>
+
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="height:50px;margin-bottom:0px;font-family:'Microsoft YaHei'">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><img src="img/logo.png" style="margin-top:-10px;"></a>
+				</div>
+		
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav" style="margin-left:100px;color:black;font-style:楷体;height:48px;">
+						<li class="dh"><a href="sy.html">首页</a></li>
+						<li class="dh"><a href="#">课程</a>
+							<div class="lb" style="width:1000px;height:450px;background-color:white;position:absolute;left:-300px;top:50px;display:none;">
+								<div class="container" style="width:1000px;height:450px;">
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="#">WEB前端开发</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="#">前段工程师第一步：用HTML、CSS构建网站</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">构建交互丰富的web应用：Javascript</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">搭建Web服务器</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">切图 如何从效果图转换为html页面</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">web前端开发（一）</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Bootstrap使用指南</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">UI设计基础</a>&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="#">WEB后端开发</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="#">Java面向对象</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Java数据存储</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Java多线程编程</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">JavaEE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Java网络编程</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Servlet详解</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">PKI</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">微信公众平台应用开发实战傻瓜版</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">JSP详解</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">phpcms</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Web核心技术</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">PHP基础</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">PHPCMS V9</a>&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="#">移动应用开发</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="#">Android基础知识</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Android的多媒体应用</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Android的多线程编程</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Android网络访问</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Android中的数据存储</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Android基本组件</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="#">软件测试</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="#">QC测试管理工具</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">白盒测试</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">性能测试与LoadRunner应用</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">软件测试基础</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">功能性自动化测试工具</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">测试环境搭建</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">测试职业素质</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">测试基础知识</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">综合测试策略</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">测试方法</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">测试背景</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">测试质量</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Web测试技术</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">测试用例</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">黑盒测试之等价类划分法</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">黑盒测试</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">软件性能测试基础</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">CMM模型与ISO9000模型</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">白盒测试工具Junit</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">用户手册</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">QuickTest输出值概述</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">软件测试实践</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">QuickTest检查点</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">测试模型</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">测试文档</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">缺陷管理</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="#">数据库</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="#">数据库高级开发</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">MySQL数据库设计和SQL语句讲解</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">MySQL数据库管理</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="#">基础知识&实用工具</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="#">IT技术之雕虫小技</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">计算机基础课程</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">C软件开发工程师</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="#">网络&操作系统</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="#">Linux操作系统应用</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+									<div class="row" style="margin-top:20px;">
+										<div class="col-md-2" style="text-align:right;padding-right:30px;font-size:14px;">
+											<a href="#">软件设计&系统架构</a>
+										</div>
+										<div class="col-md-10" style="font-size:12px;">
+											<a href="#">设计模式与体系结构模式</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="active bg-primary dh"><a href="kctx.html" class="bg-primary">课程体系</a></li>
+						<li class="dh"><a href="#">同步课</a></li>
+						<li class="dh"><a href="sq.html">社区</a></li>
+					</ul>
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group" style="top:10px;">
+							<input class="form-control" type="text" placeholder="搜索课程、问答" style="border-radius:15px;border-top-right-radius:0px;border-bottom-right-radius:0px;">
+						</div>
+						<button class="btn btn-priamy" type="button" style="border-radius:15px;border-top-left-radius:0px;border-bottom-left-radius:0px;margin-left:-15px;"><span class="glyphicon glyphicon-search"></span></button>
+					</form>
+					<div class="yh">
+						<ul class="nav navbar-nav" style="margin-left:100px;color:black;font-style:楷体;left:1000px;top:0px;">
+							<li class="dh1"><a href="#">登录</a></li>
+							<li class="dh1"><a href="#">注册</a></li>
+						</ul>
+					</div>
+			</div>
+		</nav>
+
+		<div class="container" style="margin-top:70px;font-family:'Microsoft YaHei';">
+			<div class="bread crumb">
+				<a href="sy.html"><span class="glyphicon glyphicon-home" style="color: rgb(255, 127, 35);"></span></a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="kctx.html" style="color: rgb(255, 127, 35);">课程体系</a>&nbsp;&nbsp;/&nbsp;&nbsp;<span style="color:#a0a09e;">MySQL数据库工程师</span>
+			</div>
+
+			<div class="concert">
+				<h2 style="font-size:30px;font-weight: bold;text-align:center;">MySQL数据库工程师</h2>
+				<p style="color:#a0a09e;font-size:14px;text-align:center;">以当前业界流程的MySQL数据库为主体，从数据库的设计到数据库高级开发，再到数据库的管理，全面地讲解了数据库工程师的知识和技能。整体课程体系也围绕案例和时间开展，帮助学习者通过动手，真正掌握各项技术。</p>
+				<div class="row" style="margin-top:30px;color:black;border:1px solid rgba(0,0,0,0.075);margin-bottom:30px;text-align:center;">
+					<div class="col-md-3" style="border-right:1px solid rgba(0,0,0,0.075);">
+						<img src="img/a10.png" class="center-block" style="margin-top:10px;margin-bottom:10px;">
+					</div>
+					<div class="col-md-3" style="border-right:1px solid rgba(0,0,0,0.075);margin-top:20px;">
+						<p><strong style="font-size:30px;color:#3CB1B0;">3</strong>课时</p>
+						<p>163个视频</p>
+					</div>
+					<div class="col-md-3" style="border-right:1px solid rgba(0,0,0,0.075);margin-top:20px;">
+						<p><strong style="font-size:30px;color:#3CB1B0;">31</strong>小时</p>
+						<p>合计课程时长</p>
+					</div>
+					<div class="col-md-3" style="margin-top:20px;">
+						<p><strong style="font-size:30px;color:#3CB1B0;">3702</strong>人</p>
+						<p>共计33125人次学习</p>
+					</div>
+				</div>
+				<div class="row row1">
+					<div class="col-md-4">
+						<img src="img/c6.png">
+					</div>
+					<div class="col-md-8">
+						<h2 style="font-size:20px;font-weight: bold;margin-top:20px;">数据库高级开发</h2>
+						<p style="color:#a0a09e;font-size:14px;height:90px;">学完了基本的SQL语句，在数据库开发中还会用到数据库系统提供的高级功能，实现数据完整性的机制，在SQL语句使用自定义函数展现数据，使用视图隐含底层数据的复杂性，使用存储过程优化查询，使用触发器实现复杂业务逻辑，使用索引优化查询，在SQL语句中使用事务实现数据完整性。</p>
+						<p style="color:#a0a09e;"><span class="glyphicon glyphicon-tasks"> 课时 66</span> <span class="glyphicon glyphicon-user"> 人数 3149</span><a class="btn" type="button" style="width:100px;height:30px;float:right;background-color:rgb(255,80,20);color:white;opacity:0.8;" href="video.html">开始学习</a></p>
+					</div>
+				</div>
+				<div class="row row1">
+					<div class="col-md-4">
+						<img src="img/c7.png">
+					</div>
+					<div class="col-md-8">
+						<h2 style="font-size:20px;font-weight: bold;margin-top:20px;">MySQL数据库设计和SQL语句讲解</h2>
+						<p style="color:#a0a09e;font-size:14px;height:90px;">对于想从事网站和程序开发人员来说，对数据库操作的知识必不可少。对学习SQL语句的人来说，使用陌生的数据库来学习SQL语句，不知道表与表之间的关系，不知道表是如何来的，学习自然增加不少难度。 本课程先讲解数据库设计规范，通过案例讲解了数据库设计过程，为学生生成学习SQL语句所需的表和数据。使用自己设计的数据库，来学习数据库的增删改查基本SQL语句。 </p>
+						<p style="color:#a0a09e;"><span class="glyphicon glyphicon-tasks"> 课时 52</span> <span class="glyphicon glyphicon-user"> 人数 28488</span><a class="btn" type="button" style="width:100px;height:30px;float:right;background-color:rgb(255,80,20);color:white;opacity:0.8;" href="video.html">开始学习</a></p>
+					</div>
+				</div>
+				<div class="row row1">
+					<div class="col-md-4">
+						<img src="img/c8.png">
+					</div>
+					<div class="col-md-8">
+						<h2 style="font-size:20px;font-weight: bold;margin-top:20px;">MySQL数据库管理</h2>
+						<p style="color:#a0a09e;font-size:14px;height:90px;">数据库管理是数据库管理员必须要掌握的技能，本课程讲解了数据库安全设置，如果管理用户和授权用户对资源访问，讲解数据库的备份和还原，逻辑备份和物理备份以及数据的导入导出，讲解了数据库的日志管理，二进制日志，查询日志和慢查日志。数据库的高可用技术也必不可少，讲解了数据库复制实现数据的实时同步到其他的服务器。</p>
+						<p style="color:#a0a09e;"><span class="glyphicon glyphicon-tasks"> 课时 45</span> <span class="glyphicon glyphicon-user"> 人数 1488</span><a class="btn" type="button" style="width:100px;height:30px;float:right;background-color:rgb(255,80,20);color:white;opacity:0.8;" href="video.html">开始学习</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer" style="font-family:'Microsoft YaHei'">
+			<p>地址：石家庄市裕华区南二环东路20号  @石家庄佳诚网络技术有限公司</p>
+			<p>冀ICP备12011972号-4   站长统计</p>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+	       	$(".cd-top").click(function(){
+	       		$("html").animate({"scrollTop": "0px"},500); //IE,FF
+	        	$("body").animate({"scrollTop": "0px"},500); //Webkit
+	     	})
+       	})
+
+
+		$('.carousel').carousel({
+			interval:2000
+		})
+
+		$('.dh').mouseenter(function(){
+			$(this).addClass("hover");
+			$(this).children('div').css("display","block");
+		}).mouseleave(function(){
+			$(this).removeClass("hover");
+			$(this).children('div').css("display","none");
+		})
+		$('.dh1').mouseenter(function(){
+			$(this).addClass("hover1");
+		}).mouseleave(function(){
+			$(this).removeClass("hover1");
+		})
+
+		$('.row1').mouseenter(function(){
+			$(this).addClass('colhover1');
+		}).mouseleave(function(){
+			$('.row1').removeClass('colhover1');
+		})
+
+		$('.btn').mouseenter(function(){
+			$(this).css("opacity",1);
+		}).mouseleave(function(){
+			$(this).css("opacity",0.8);
+		})
+		var username;
+		var password;
+		if (localStorage["username"]=="张三") {
+			if (localStorage["password"]=="111") {
+				username = localStorage["username"];
+				password = localStorage["password"]; 
+				$(".yh").html("<ul class='nav navbar-nav' style='margin-left:100px;color:black;font-style:楷体;position:absolute;left:900px;top:0px'><li class='dh1'><a href='grzx.html'><span class='glyphicon glyphicon-user'> "+username+"</span></a></li><li class='dh2'><a href='#'><span class='glyphicon glyphicon-envelope'></span></a><div class='lb1'><ul><li><a href='my.html'>@我的</a></li><li><a href='pl.html'>评论</a></li><li><a href='zan.html'>赞</a></li><li><a href='yq.html'>邀请</a></li></ul></div></li><li class='dh2'><a href='#'><span class='glyphicon glyphicon-cog'></span></a><div class='lb1'><ul><li><a href='grzl.html'>个人资料</a></li><li><a href='' class='tuichu'>退出</a></li></ul></div></li></ul>")		    
+			}
+		}
+		$('.dh2').mouseenter(function(){
+			$(this).children('.lb1').css("display","block");
+		}).mouseleave(function(){
+			$(this).children('.lb1').css("display","none");
+		})
+		$(".tuichu").click(function(){
+			localStorage.clear();
+			location.reload();
+		})
+	</script>
+</html>
