@@ -190,15 +190,24 @@
 /*http://192.168.1.111*/
 		/*点赞部分*/
 		.thumbs-up{
-			width: 100px;
+			width: 100%;
 			height: auto;
+			box-sizing: border-box;
+			padding: 0.266rem 0;
+			border-bottom: 1px solid #e3e3e3;
 			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 		.icon-thumbsUp-num{
 			flex: 2;
 		}
 		.thumbsUper{
 			flex: 8;
+		}
+		.thumbsUp-num{
+			color: gray;
+			font-size: 16px;
 		}
 
 		/*文章评论*/
@@ -311,10 +320,19 @@
 			<!--点赞部分-->
 			<div class="thumbs-up">
 				<div class="icon-thumbsUp-num">
-					<img src="images/thumbsUp26@2x.png"/>
+					<img class="icon-thumbsUp" src="images/thumbsUp26@2x.png"/>
+					<span class="thumbsUp-num">99+</span>
 				</div>
 				<div class="thumbsUper">
-
+					<div class="thumbsUper-lists">
+						<img class="thumbsUper-pic-list" src="images/commer1@2x.png">
+						<img class="thumbsUper-pic-list" src="images/commer1@2x.png">
+						<img class="thumbsUper-pic-list" src="images/commer1@2x.png">
+						<img class="thumbsUper-pic-list" src="images/commer1@2x.png">
+						<img class="thumbsUper-pic-list" src="images/commer1@2x.png">
+						<img class="thumbsUper-pic-list" src="images/commer1@2x.png">
+						<img class="thumbsUper-pic-list" src="images/commer1@2x.png">
+					</div>
 				</div>
 			</div>
 			<!--文章评论-->
