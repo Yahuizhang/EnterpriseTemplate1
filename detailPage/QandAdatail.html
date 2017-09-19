@@ -150,7 +150,7 @@
 		}
 		.cont-word-pic-location,.cont-article-comment{
 			width: 100%;
-			color: #000000;
+			color: #222222;
 			box-sizing: border-box;
 			border-bottom: 1px solid #e3e3e3;
 		}
@@ -161,6 +161,7 @@
 		}
 		.question-cont{
 			font-size: 18px;
+			color: #222222;
 			margin-bottom: 0.533rem;
 			/*line-height: 1.8rem;*/
 		}
@@ -184,13 +185,32 @@
 		}
 		.location-name{
 			font-size: 16px;
+			color: #000022;
 		}
 /*http://192.168.1.111*/
+		/*点赞部分*/
+		.thumbs-up{
+			width: 100px;
+			height: auto;
+			display: flex;
+		}
+		.icon-thumbsUp-num{
+			flex: 2;
+		}
+		.thumbsUper{
+			flex: 8;
+		}
+
+		/*文章评论*/
 		.comment-title{
 			font-size: 20px;
 			font-weight: 600;
 			text-align: center;
 			line-height: 3rem;
+		}
+		.commenter{
+			width: 100%;
+
 		}
 
 
@@ -277,6 +297,7 @@
 	<!-- 内容部分 -->
 	<section class="content">
 		<div class="content-cont">
+			<!--内容部分-->
 			<div class="cont-word-pic-location">
 				<h3 class="question-title">全国有哪些鉴定玉石的机构？</h3>
 				<p class="question-cont">这是我祖传的玉石，想去专业机构检测一下。</p>
@@ -287,8 +308,26 @@
 					<span class="location-name">天津  南开区</span>
 				</div>
 			</div>
+			<!--点赞部分-->
+			<div class="thumbs-up">
+				<div class="icon-thumbsUp-num">
+					<img src="images/thumbsUp26@2x.png"/>
+				</div>
+				<div class="thumbsUper">
+
+				</div>
+			</div>
+			<!--文章评论-->
 			<div class="cont-article-comment">
 				<p class="comment-title">- 文章评论 -</p>
+				<div class="commenter">
+					<div class="commenter-information">
+						<div class="commenter-img">
+							<img src="images/commer1@2x.png"/>
+						</div>
+						<div class="commenter-info"></div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
