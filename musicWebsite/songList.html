@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>排行榜</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/songList.css">
+		<link rel="stylesheet" href="css/jquery-ui.min.css">
+		<link rel="stylesheet" type="text/css" href="css/nav.css">
+	</head>
+	<body>
+	<div class="top">
+            <nav class="navbar navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header">
+                        <img src="images/logo.png">
+                        <button class="navbar-toggle" data-target="#mynav" data-toggle="collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="mynav">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">首页</a></li>
+                            <li><a href="songList.html" class="active">榜单</a></li>
+                            <li><a href="mvindex.html">MV</a></li>
+                            <li ><a href="fenlei.html" >分类</a></li>
+                        </ul>
+                        <div class="search">
+                            <input type="text" name="search" placeholder="找到好音乐">
+                            <a href="#" class="searchBtn"></a>
+                        </div>
+                        <span class="welcome" id="username"><a href="#">登录</a><a href="">|</a><a href="zhuce.html">注册</a></span>
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+	<div class="content">
+	    <div class="container">
+			<div class="row">
+				<div class="col-md-2">
+				    <div class="waikuang">
+						<div class="qib">
+							<div class="title" name="one" id="0">
+						    <h2 style="display: inline;">全球榜</h2><img src="images/zhanglimeng/2-up.png" class="down" name="down">
+						    </div>
+							<ul class="second" name="second">
+								<li><a href="#"><img src="images/zhanglimeng/2-1.jpg"></a><a href="" class="point">  Billion排行榜</a></li>
+								<li><a href="#"><img src="images/zhanglimeng/2-2.jpg"></a><a href="" class="point">  iTunes音乐榜</a></li>
+								<li><a href="#"><img src="images/zhanglimeng/2-3.jpg"></a><a href="" class="point">  韩国M-nt榜</a></li>
+								<li><a href="#"><img src="images/zhanglimeng/2-4.jpg"></a><a href="" class="point">  华语榜</a></li>
+								<li><a href="#"><img src="images/zhanglimeng/2-5.jpg"></a><a href="" class="point">  飙声榜</a></li>
+								<li><a href="#"><img src="images/zhanglimeng/2-6.jpg"></a><a href="" class="point">  新歌榜</a></li>
+								<li><a href="#"><img src="images/zhanglimeng/2-7.jpg"></a><a href="" class="point">  日韩榜</a></li>
+							</ul>
+						</div>
+						<div class="flb">
+							<div class="title" name="one" id="1">
+						    <h2 style="display: inline;">分类榜</h2><img src="images/zhanglimeng/2-down.png" class="down" name="down">
+						    </div>
+							<ul class="second" name="second" style="display: block;">
+								<li><a href=""><img src="images/zhanglimeng/2-1.jpg"></a><a href="" class="select point one">  Billion排行榜</li>
+								<li><a href="#"><img src="images/zhanglimeng/2-2.jpg"></a><a href="" class="point two">  iTunes音乐榜</a></li>
+								<li><a href=""><img src="images/zhanglimeng/2-3.jpg"></a><a href="" class="point three">  韩国M-nt榜</a></li>
+								<li><a href=""><img src="images/zhanglimeng/2-4.jpg"></a><a href="" class="point four">  华语榜</a></li>
+								<li><a href="#"><img src="images/zhanglimeng/2-5.jpg"></a><a href="" class="point five">  飙声榜</a></li>
+								<li><a href="#"><img src="images/zhanglimeng/2-6.jpg"></a><a href="" class="point six">  新歌榜</a></li>
+								<li><a href=""><img src="images/zhanglimeng/2-7.jpg"></a><a href="" class="point seven">  日韩榜</a></li>
+							</ul>
+						</div>
+						<div class="ewm" style="margin-top: -70px">
+							<div style="margin-top: -20px"><h2>客户端</h2></div>
+							<div><img src="images/zhanglimeng/ewm.png" style="width: 100px;height: 100px;"></div>
+						</div>
+				    </div>
+				</div>
+				<div class="col-md-10">
+					<div class="right" id="firstPage">
+						<div class="bg"></div>
+						<div class="function">
+							<a class="btn btn-primary downLoad" data-toggle="modal" href='#modal-id'></a>
+							<div class="playAll"></div>
+							<div class="add"></div>
+							<div class="update">最近更新：2016-5-12</div>
+						</div>
+						<div style="width: 943px">
+							<div class="title">
+								<div class="trend">趋势</div>
+								<div class="name">歌曲</div>
+								<div class="artist">歌手</div>
+								<div class="heat">热度</div>
+							</div>
+							<div class="list">
+							 	<div class="one"> 
+							 	    <div id="onefirst">
+										<p>1</p>
+										<div class="new"><a href="#"></a></div>
+									</div>
+									<div class="song"><a href="#">Hello,Hello</a></div>
+									<div class="singer"><a href="#">黄子韬&Wiz Khalifa</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							    <div class="one" style="background-color: #f2f2f2"> 
+							 	    <div id="onefirst">
+										<p>2</p>
+										<div class="up"></div><div class="num">3</div>
+									</div>
+									<div class="song"><a href="#">Underground King</a></div>
+									<div class="singer"><a href="#">黄子韬</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							    	<div class="one"> 
+							 	    <div id="onefirst">
+										<p>3</p>
+										<div class="new"><a href="#"></a></div>
+									</div>
+									<div class="song"><a href="#">BOSS</a></div>
+									<div class="singer"><a href="#">吉克隽逸</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							    	<div class="one" style="background-color: #f2f2f2"> 
+							 	    <div id="onefirst">
+										<p>4</p>
+										<div class="down"></div><div class="num">5</div>
+									</div>
+									<div class="song"><a href="#">宝贝妈妈（吉他版）</a></div>
+									<div class="singer"><a href="#">张靓颖</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							    	<div class="one"> 
+							 	    <div id="onefirst">
+										<p>5</p>
+										<div class="new"><a href="#"></a></div>
+									</div>
+									<div class="song"><a href="#">年轻主义</a></div>
+									<div class="singer"><a href="#">凤凰传奇</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							    	<div class="one" style="background-color: #f2f2f2"> 
+							 	    <div id="onefirst">
+										<p>6</p>
+										<div class="up"></div><div class="num">8</div>
+									</div>
+									<div class="song"><a href="#">替你爱我-(电视剧《重生之名流巨星》主题曲)</a></div>
+									<div class="singer"><a href="#">刘惜君&宁桓宇</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							    	<div class="one"> 
+							 	    <div id="onefirst">
+										<p>7</p>
+										<div class="down"></div><div class="num">10</div>
+									</div>
+									<div class="song"><a href="#">要我幸福</a></div>
+									<div class="singer"><a href="#">黄祖蓝</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							    	<div class="one" style="background-color: #f2f2f2"> 
+							 	    <div id="onefirst">
+										<p>8</p>
+										<div class="new"><a href="#"></a></div>
+									</div>
+									<div class="song"><a href="#">心花朵朵</a></div>
+									<div class="singer"><a href="#">佟丽娅&陈思诚</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							    	<div class="one"> 
+							 	    <div id="onefirst">
+										<p>9</p>
+										<div class="up"></div><div class="num">3</div>
+									</div>
+									<div class="song"><a href="#">幸福太短-(电视剧《奇妙的时光之旅》片尾曲)</a></div>
+									<div class="singer"><a href="#">A-Lin</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							    	<div class="one" style="background-color: #f2f2f2"> 
+							 	    <div id="onefirst">
+										<p>10</p>
+										<div class="new"><a href="#"></a></div>
+									</div>
+									<div class="song"><a href="#">还给你一些孤单-(电视剧《我是杜拉拉》插曲)</a></div>
+									<div class="singer"><a href="#">汪苏泷</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							    	<div class="one"> 
+							 	    <div id="onefirst">
+										<p>11</p>
+										<div class="new"><a href="#"></a></div>
+									</div>
+									<div class="song"><a href="#">爱情是青春的旅行-(电视剧《柠檬初上》片尾曲)</a></div>
+									<div class="singer"><a href="#">郁可唯</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							    	<div class="one" style="background-color: #f2f2f2"> 
+							 	    <div id="onefirst">
+										<p>12</p>
+										<div class="new"><a href="#"></a></div>
+									</div>
+									<div class="song"><a href="#">无人知道双子座</a></div>
+									<div class="singer"><a href="#">容祖儿</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							    	<div class="one"> 
+							 	    <div id="onefirst">
+										<p>13</p>
+										<div class="down"></div><div class="num">15</div>
+									</div>
+									<div class="song"><a href="#">相爱恨晚-(电视剧《柠檬初上》插曲)</a></div>
+									<div class="singer"><a href="#">张磊</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							    	<div class="one" style="background-color: #f2f2f2"> 
+							 	    <div id="onefirst">
+										<p>14</p>
+										<div class="new"><a href="#"></a></div>
+									</div>
+									<div class="song"><a href="#">欢乐颂-(电视剧《欢乐颂》主题曲)</a></div>
+									<div class="singer"><a href="#">张江</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							    	<div class="one"> 
+							 	    <div id="onefirst">
+										<p>15</p>
+										<div class="new"><a href="#"></a></div>
+									</div>
+									<div class="song"><a href="#">向着光亮那方-(电影《谁的青春不迷茫》推广曲)</a></div>
+									<div class="singer"><a href="#">许魏洲</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							    	<div class="one" style="background-color: #f2f2f2"> 
+							 	    <div id="onefirst">
+										<p>16</p>
+										<div class="new"><a href="#"></a></div>
+									</div>
+									<div class="song"><a href="#">说不出口-(电视剧《欢乐颂》插曲)</a></div>
+									<div class="singer"><a href="#">刘涛</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							</div>
+						</div>
+					</div>
+					<div class="right" id="secondPage" style="display: none;">
+						<div class="bg"></div>
+						<div class="function">
+							<a class="btn btn-primary downLoad" data-toggle="modal" href='#modal-id'></a>
+							<div class="playAll"></div>
+							<div class="add"></div>
+							<div class="update">最近更新：2016-5-12</div>
+						</div>
+						<div class="title">
+							<div class="trend">趋势</div>
+							<div class="name">歌曲</div>
+							<div class="artist">歌手</div>
+							<div class="heat">热度</div>
+						</div>
+						<div class="list">
+							 	<div class="one"> 
+							 	    <div id="onefirst">
+										<p>1</p>
+										<div class="new"><a href="#"></a></div>
+									</div>
+									<div class="song"><a href="#">辽阔的草原</a></div>
+									<div class="singer"><a href="#">杭盖</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							    <div class="one" style="background-color: #f2f2f2"> 
+							 	    <div id="onefirst">
+										<p>2</p>
+										<div class="up"></div><div class="num">3</div>
+									</div>
+									<div class="song"><a href="#">我曾经也想过一了百了-(电影《北京遇上西雅图之...)</a></div>
+									<div class="singer"><a href="#">汤唯</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							    	<div class="one"> 
+							 	    <div id="onefirst">
+										<p>3</p>
+										<div class="new"><a href="#"></a></div>
+									</div>
+									<div class="song"><a href="#">Cheer Up</a></div>
+									<div class="singer"><a href="#">TWICE</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							    	<div class="one" style="background-color: #f2f2f2"> 
+							 	    <div id="onefirst">
+										<p>4</p>
+										<div class="down"></div><div class="num">5</div>
+									</div>
+									<div class="song"><a href="#">我的嘴唇像咖啡一样温暖</a></div>
+									<div class="singer"><a href="#">Eddy Kim&李圣经</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							    	<div class="one"> 
+							 	    <div id="onefirst">
+										<p>5</p>
+										<div class="new"><a href="#"></a></div>
+									</div>
+									<div class="song"><a href="#">年轻主义</a></div>
+									<div class="singer"><a href="#">凤凰传奇</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							    	<div class="one" style="background-color: #f2f2f2"> 
+							 	    <div id="onefirst">
+										<p>6</p>
+										<div class="up"></div><div class="num">8</div>
+									</div>
+									<div class="song"><a href="#">替你爱我-(电视剧《重生之名流巨星》主题曲)</a></div>
+									<div class="singer"><a href="#">刘惜君&宁桓宇</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							    	<div class="one"> 
+							 	    <div id="onefirst">
+										<p>7</p>
+										<div class="down"></div><div class="num">10</div>
+									</div>
+									<div class="song"><a href="#">幸福太短-(电视剧《奇妙的时光之旅》片尾曲)</a></div>
+									<div class="singer"><a href="#">A-Lin</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							    	<div class="one" style="background-color: #f2f2f2"> 
+							 	    <div id="onefirst">
+										<p>8</p>
+										<div class="new"><a href="#"></a></div>
+									</div>
+									<div class="song"><a href="#">济州岛的蓝夜</a></div>
+									<div class="singer"><a href="#">金泰妍</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							    	<div class="one"> 
+							 	    <div id="onefirst">
+										<p>9</p>
+										<div class="up"></div><div class="num">3</div>
+									</div>
+									<div class="song"><a href="#">Rough</a></div>
+									<div class="singer"><a href="#">G-Friend</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							    	<div class="one" style="background-color: #f2f2f2"> 
+							 	    <div id="onefirst">
+										<p>10</p>
+										<div class="new"><a href="#"></a></div>
+									</div>
+									<div class="song"><a href="#">D(Half Moon)</a></div>
+									<div class="singer"><a href="#">DEAN[韩]&Gaeko</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							    	<div class="one"> 
+							 	    <div id="onefirst">
+										<p>11</p>
+										<div class="new"><a href="#"></a></div>
+									</div>
+									<div class="song"><a href="#">Pick Me</a></div>
+									<div class="singer"><a href="#">Produce 101</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							    	<div class="one" style="background-color: #f2f2f2"> 
+							 	    <div id="onefirst">
+										<p>12</p>
+										<div class="new"><a href="#"></a></div>
+									</div>
+									<div class="song"><a href="#">Like Ooh-Ahh</a></div>
+									<div class="singer"><a href="#">TWICE</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							    	<div class="one"> 
+							 	    <div id="onefirst">
+										<p>13</p>
+										<div class="down"></div><div class="num">15</div>
+									</div>
+									<div class="song"><a href="#">相爱恨晚-(电视剧《柠檬初上》插曲)</a></div>
+									<div class="singer"><a href="#">张磊</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							    	<div class="one" style="background-color: #f2f2f2"> 
+							 	    <div id="onefirst">
+										<p>14</p>
+										<div class="new"><a href="#"></a></div>
+									</div>
+									<div class="song"><a href="#">欢乐颂-(电视剧《欢乐颂》主题曲)</a></div>
+									<div class="singer"><a href="#">张江</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							    	<div class="one"> 
+							 	    <div id="onefirst">
+										<p>15</p>
+										<div class="new"><a href="#"></a></div>
+									</div>
+									<div class="song"><a href="#">向着光亮那方-(电影《谁的青春不迷茫》推广曲)</a></div>
+									<div class="singer"><a href="#">许魏洲</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							    	<div class="one" style="background-color: #f2f2f2"> 
+							 	    <div id="onefirst">
+										<p>16</p>
+										<div class="new"><a href="#"></a></div>
+									</div>
+									<div class="song"><a href="#">说不出口-(电视剧《欢乐颂》插曲)</a></div>
+									<div class="singer"><a href="#">刘涛</a></div>
+									<div class="heatdiv">
+										<div class="heat"><a href="#"><div class="heatLevel"></div></a>
+										</div>
+									</div>
+									<div class="button">
+										<div class="play"><a href="#"></a></div>
+										<div class="add"><a href="#"></a></div>
+										<div class="download"><a href="#"></a></div>
+										<div class="share"><a href="#"></a></div>
+									</div>
+							    </div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="sharePage">
+	    <a href="http://www.sina.com.cn" ><div class="sina"></div></a>
+		<a href="http://qzone.qq.com"><div class="Qzone"></div></a>
+		<a href="http://t.qq.com"><div class="tqq"></div></a>
+		<a href="https://www.douban.com"><div class="douban"></div></a>
+		<a href="http://page.renren.com"><div class="renren"></div></a>
+	</div>
+	<!-- <div class="btn btn-primary" data-toggle="modal" href='#modal-id' id="freeLoad">
+	</div> -->
+	<div class="modal fade" id="modal-id">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="margin-top: -8px;">&times;</button>
+					<!-- <h4 class="modal-title">Modal title</h4> -->
+				</div>
+				<div class="modal-body" >
+					您确定下载吗？
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<div style="outline: none;float: left;margin-top: -15px;"><img src="images/zhanglimeng/lijixiazai.png"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="footer">
+			<p class="fistLine"><a href="#">网站地图</a>|<a href="#">联系我们</a>|<a href="#">广告服务</a>|<a href="#">诚聘英才</a>|<a href="#">用户服务协议</a>|<a href="#">爱音乐网站免责声明</a>|<a href="#">爱音乐网站著作保护声明</a>|<a href="#">未成年人家长监护工程</a></p>
+			<p class="secondLine"> 北京酷我科技有限公司版权所有 网络文化经营许可证：京网文[2012]0375-124号信息网络传播视听节目许可证0109362号 增值电信业务经营许可证B2-20090418 京ICP证060261号</p>
+			<p class="thirdLine">广播电视节目制作经营许可证京字第2037号营业性演出许可证京市演1574  京ICP备09014827号
+        </p>
+		</div>
+	</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-1.12.1.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/gedan.js"></script>
+	<script type="text/javascript"src="js/navbar.js"></script>
+</html>

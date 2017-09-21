@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>音乐网站注册</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="css/zhuce.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+	<script type="text/javascript" src="js/jquery-1.12.1.js"></script>
+	<script type="text/javascript" src="js/zhuce.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/cityList.js"></script>
+	
+    <script type="text/javascript"src="js/navbar.js"></script>
+
+</head>
+<body>
+<!--                                                                     top begin -->
+   <div class="top">
+            <nav class="navbar navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header">
+                        <img src="images/logo.png">
+                        <button class="navbar-toggle" data-target="#mynav" data-toggle="collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="mynav">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">首页</a></li>
+                            <li><a href="songList.html">榜单</a></li>
+                            <li><a href="mvindex.html">MV</a></li>
+                            <li ><a href="fenlei.html" >分类</a></li>
+                        </ul>
+                        <div class="search">
+                            <input type="text" name="search" placeholder="找到好音乐">
+                            <a href="#" class="searchBtn"></a>
+                        </div>
+                        <span class="welcome" id="username"><a href="#">登录</a><a href="">|</a><a href="zhuce.html">注册</a></span>  
+                    </div>
+                </div>
+            </nav>
+        </div>
+	<!--                                                                   top over -->
+
+
+	<div class="row" style="margin-top: -20px;">
+          <div class="row col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-sm-offset-1 col-xs-offset-1 col-md-offset-1  ">
+	      <div id="bg" class="container col-lg-6 col-xs-6 col-md-6 col-sm-9 col-lg-offset-1 col-xs-offset-1 col-md-offset-1 col-sm-offset-1 "  >
+
+		      <div class="haoma-inner" id="haoma-inner">注册账号</div>
+		      <div style="width: 160%;border-bottom: 1px solid #555;margin-top: 20px;margin-bottom: 20px;" ></div>
+
+		  </div>
+
+	      </div>
+         <div class="row"><!--0-->
+	   	
+         
+
+     		<div class="row col-lg-10  col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-xs-offset-1 col-md-offset-1 col-sm-offset-1 " ><!--1-->
+
+			<div id="bg" class="container col-lg-6  col-md-6 col-xs-11 col-sm-11 col-lg-offset-1 col-xs-offset-1 col-md-offset-1 col-sm-offset-1" ><!--2-->
+	
+	   <form action="index.html" >
+        <div class="row"><!--3-->
+	     	<label class="col-lg-2 col-xs-3 col-md-2 col-sm-2  name">昵称</label>
+	     	<div class="col-lg-6 col-xs-8 col-md-6 col-sm-6"><!--4-->
+	     	<input class="form-control " type="input" id="name" ></input>
+	     	</div><!--04-->
+	     	<div  class="col-lg-4 col-xs-10 col-md-4 col-sm-4 col-xs-offset-3 col-lg-offset-0 col-sm-offset-0 col-md-offset-0   boxone box normalcolor" id="aftername"></div>
+	     
+        </div><!--03-->
+
+       	<div class="row " >
+	        <label class="col-lg-2 col-xs-3 col-md-2 col-sm-2 name" id="mima">密码</label>
+	        <div class="col-lg-6 col-xs-8 col-md-6 col-sm-6"><input type="password" class="text form-control" id="password"></input></div>
+	        <div class="col-lg-4 col-xs-10 col-md-4 col-sm-4 col-xs-offset-3 col-lg-offset-0 col-sm-offset-0 col-md-offset-0  boxone box" id="afterpassword"></div>
+        </div>
+
+        <div class="row " >
+	        <label class="col-lg-2 col-xs-3 col-md-2 col-sm-2 name" >确认密码</label>
+	        <div class="col-lg-6 col-xs-8 col-md-6 col-sm-6 "><input type="password" class="text form-control" id="repassword"></input></div>
+	        <div class="col-lg-4 col-xs-1 col-md-4 col-sm-4 col-xs-offset-1 col-lg-offset-0 col-sm-offset-0 col-md-offset-0  boxone box" id="afterrepassword"></div>
+        </div>
+
+        <div class="row " >
+        	<label class="col-lg-2 col-xs-3 col-md-2 col-sm-2 name">性别</label>
+        	<div class="col-lg-6 col-xs-8 col-md-6 col-sm-6 radio" >
+        	<label class="radio-inline"><input name="optionRadios" type="radio" value="1"><img src="images/zyc/m.png"></input></label>
+        	<label class="radio-inline"><input name="optionRadios" type="radio" value="2"><img src="images/zyc/f.png"></input></label>
+        	</div>
+        	 <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4 boxone box"></div>
+        </div>
+
+        <div class="row ">
+        	<label class="col-lg-2 col-xs-3 col-md-2 col-sm-2"> 生日</label>
+        	<div class="col-lg-6 col-xs-8 col-md-6 col-sm-6">
+                 <label class="checkbox-inline" >
+                    <select node-type="birthday_year" name="birthday_y" id="birthday_y" style="margin-left: -20px;border-radius: 4px;">
+                    <option value="" ></option>
+                    </select><span>年</span>
+                 </label>
+                 <label class="checkbox-inline">
+                   <select node-type="birthday_month" name="birthday_m" id="birthday_m" style="margin-left: -20px;border-radius: 4px;">
+                   <option value=""></option>
+                   </select><span>月</span>
+                 </label>
+                 <label class="checkbox-inline">
+                  <select node-type="birthday_month" name="birthday_d" id="birthday_d" style="margin-left: -20px;border-radius: 4px;">
+                  <option value=""></option>
+                  </select><span>日</span>
+                 </label>
+               <input  type="hidden"  name="birth" id="birth" value="年/4/28">
+               <div class="BirthOfyear"></div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 10px;">
+        	<label class="col-lg-2 col-xs-3 col-md-2 col-sm-2"> 所在地</label>
+        	<div class="col-lg-6 col-xs-6 col-md-6 col-sm-6"><input class="form-control" type="text" id="city" autocomplete="off" value="承德" name="s_cities" onclick="this.value='';GetCityList(this);" onkeyup="selCity(event)" class="inputbox" /></div>
+        	<div class="col-lg-4 col-xs-4 col-md-4 col-sm-4"></div>
+        </div>
+
+       <div class="row" style="margin-top: 10px;">
+       	  <label class="col-lg-2 col-xs-3 col-md-2 col-sm-2">验证码</label>
+       	  <div class="col-lg-6 col-xs-7 col-md-6 col-sm-6" >
+       	  <img src="images/zyc/yzm.png" style="float: left;margin-left: -20px;" class="img-responsive col-xs-6">
+       	  <input type="input" id="yzm" class="form-control" style="width: 50%;"></input>
+       	  </div>
+       	  <div class="col-lg-4 col-xs-1 col-md-4 col-sm-4" id="afteryzm" style=" height: 25px;" ></div>
+       </div>
+
+        <div class="row" style="margin-top: 10px">
+       	  <label class="col-lg-2 col-xs-3 col-md-2 col-sm-2">手机号码</label>
+       	  <div class="col-lg-6 col-xs-8 col-md-6 col-sm-6"><input type="input" id="phone" class=" form-control"></input></div>
+       	  <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4 "id="afterphone"style=" height: 25px;" >&nbsp&nbsp &nbsp</div>
+       </div>
+
+        <div class="row" style="margin-top: 20px">
+       	  <div class="col-lg-10 col-md-10 col-xs-12 col-sm-10 col-lg-offset-1 col-md-offset-1 col-xs-offset-0 col-sm-offset-1" style="font-size: 12px; color: #807c7c;">点击注册，表示您同意遵守<a href="#">《用户服务协议》</a></div>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+        <div class="col-lg-3 col-xs-3 col-md-3 col-sm-3"></div>
+        	<div class="col-lg-4"><button type="submit" class="btn btn-primary" style="width: 50%;" >注册</button></div>
+        	<div class="col-lg-4 col-xs-4 col-md-4 col-sm-4"></div>
+        </div>
+        
+
+
+
+        </form>
+
+	   	<div style="width: 160%;border-bottom: 1px solid #555;margin-top: 60px;" ></div>
+	</div><!--02-->
+
+
+	<div class="col-lg-4 col-md-4 col-xs-9 col-sm-9 col-sm-offset-1 col-lg-offset-0 col-xs-offset-1 col-md-offset-0 "  id="right">
+		<div class="right row">
+        <div class="col-lg-9  col-xs-9 col-md-9 col-sm-9 ">
+			<p >
+				<h4 style="font-size: 17px;">注册成为“爱音乐”的用户后，您可以：</h4>
+				<ul>
+					<li>尽享爱音乐带给您的视听盛宴</li>
+					<li>同步欣赏明星写真、滚动歌词：像卡拉OK一样欣赏同步歌词，像看电影一样欣赏写真图片。</li>
+					<li> 发现歌曲下载迅速，便利，海量的歌曲资源，总有您想要的。</li>
+				</ul>
+			</p>
+            </div>
+			<img class="img-responsive" src="images/zyc/2.jpg" style="width: 90%;height:100%;margin-top: 30px;float: left;" >
+		</div>
+	</div>
+
+    </div><!--01-->
+    </div><!--00-->
+	</div>
+
+
+
+	<div id="footer">
+		<div class="footer">
+			<p class="fistLine"><a href="#">网站地图</a>|<a href="#">联系我们</a>|<a href="#">广告服务</a>|<a href="#">诚聘英才</a>|<a href="#">用户服务协议</a>|<a href="#">爱音乐网站免责声明</a>|<a href="#">爱音乐网站著作保护声明</a>|<a href="#">未成年人家长监护工程</a></p>
+			<p class="secondLine"> 北京酷我科技有限公司版权所有 网络文化经营许可证：京网文[2012]0375-124号信息网络传播视听节目许可证0109362号 增值电信业务经营许可证B2-20090418 京ICP证060261号</p>
+			<p class="thirdLine">广播电视节目制作经营许可证京字第2037号营业性演出许可证京市演1574  京ICP备09014827号
+        </p>
+		</div>
+	</div>
+
+</body>
+<script type="text/javascript">
+    var date=new Date();
+    var year=date.getFullYear();
+    for(var i=year;i>=1900;i--){
+        $("#birthday_y").append("<option value="+i+" label="+i+">"+i+"</option>");
+    }
+ 
+    $('#birthday_y').change(function(){
+        var birth_year=$('#birthday_y').val();
+        if(birth_year!=""){
+            var birth_month=$('#birthday_m').val();
+            if(birth_month!=""){
+                if(birth_month=="2"){
+                    if((birth_year%4==0 && birth_year%100!=0) || (birth_year%400==0)){
+                        $("#birthday_d").append("<option value=" + 29 + " label=" + 29 + ">" + 29 + "</option>");
+                    }else{
+                        $("#birthday_d option[value='29']").remove();
+                    }
+                }
+            }else {
+                for (var i = 1; i <= 12; i++) {
+                    $("#birthday_m").append("<option value=" + i + " label=" + i + ">" + i + "</option>");
+                }
+            }
+        }else{
+            $("#birthday_m").html("<option value=''></option>");
+            $("#birthday_d").html("<option value=''></option>");
+        }
+        checkBirthday();
+    });
+    $('#birthday_m').change(function(){
+        var birth_year=$('#birthday_y').val();
+        var birth_month=this.value;
+        var birth_day=$('#birthday_d').val();
+        if(birth_month!=""){
+            switch (birth_month){
+                case "1":case "3":case "5":case "7":case "8":case "10":case "12":
+                if(birth_day=="") {
+                    $("#birthday_d").empty();
+                    $("#birthday_d").append("<option value='' ></option>");
+                    for (var i = 1; i <= 31; i++) {
+                        $("#birthday_d").append("<option value=" + i + " label=" + i + ">" + i + "</option>");
+                    }
+                }else {
+                    switch ($("#birthday_d option:last").attr("value")){
+                        case "28":$("#birthday_d").append("<option value=" + 29 + " >" + 29 + "</option>");
+                        case "29":$("#birthday_d").append("<option value=" + 30 + " >" + 30 + "</option>");
+                            $("#birthday_d").append("<option value=" + 31 + " >" + 31 + "</option>");break;
+                        case "30":$("#birthday_d").append("<option value=" + 31 + " >" + 31 + "</option>");
+                            break;
+                        default :break;
+ 
+                    }
+                }
+                break;
+                case "4":case "6":case "9": case "11":
+                if(birth_day=="") {
+                    $("#birthday_d").empty();
+                    $("#birthday_d").append("<option value='' ></option>");
+                    for (var i = 1; i <= 30; i++) {
+                        $("#birthday_d").append("<option value=" + i + " label=" + i + ">" + i + "</option>");
+                    }
+                }else{
+                    switch ($("#birthday_d option:last").attr("value")){
+                        case "28":$("#birthday_d").append("<option value=" + 29 + " >" + 29 + "</option>");
+                        case "29":$("#birthday_d").append("<option value=" + 30 + " >" + 30 + "</option>");
+                        case "31":$("#birthday_d option[value='31']").remove();
+                            break;
+                        default :break;
+ 
+                    }
+                }
+                break;
+                case "2":
+                    if(birth_day==""){
+                        if((birth_year%4==0 && birth_year%100!=0) || (birth_year%400==0)){
+                            for(var i=1;i<=29;i++){
+                                $("#birthday_d").append("<option value="+i+" label="+i+">"+i+"</option>");
+                            }
+                        }else{
+                            for(var i=1;i<=28;i++){
+                                $("#birthday_d").append("<option value="+i+" label="+i+">"+i+"</option>");
+                            }
+                        }}else{
+                        $("#birthday_d option[value='31']").remove();
+                        $("#birthday_d option[value='30']").remove();
+                        if((birth_year%4==0 && birth_year%100!=0) || (birth_year%400==0)){
+ 
+                        }else{
+                            $("#birthday_d option[value='29']").remove();
+                        }
+                    }
+                    break;
+                default :break;
+            }
+ 
+ 
+        }
+        checkBirthday();
+    });
+ 
+    $('#birthday_d').change(function() {
+            checkBirthday();
+        }
+    );
+    $('#birthday_d').focus(
+        function(){
+            if($('#birthday_m').val()==""){
+                $("#birthday_d").empty();
+                $("#birthday_d").append("<option value='' ></option>");
+            }
+        }
+    );
+    //根据后台提供的数据，填充用户的值
+    var birth_value=$('#birth').val();
+    if(birth_value!="") {
+        var date1 = new Date(birth_value);
+        var b_year=date1.getFullYear();
+        var b_month=date1.getMonth()+1;
+        var b_day=date1.getDate();
+
+        $("#birthday_y").find("option[value='"+b_year+"']").attr("selected","selected");
+        if($('#birthday_y').val()!="") {
+            for (var i = 1; i <= 12; i++) {
+                $("#birthday_m").append("<option value=" + i + " label=" + i + ">" + i + "</option>");
+            }
+        }
+        $("#birthday_m").find("option[value='"+b_month+"']").attr("selected","selected");
+        switch (b_month){
+            case 1:case 3:case 5:case 7:case 8:case 10:case 12:
+            for (var i = 1; i <= 31; i++) {
+                $("#birthday_d").append("<option value=" + i + " label=" + i + ">" + i + "</option>");
+            }
+            break;
+            case 4:case 6:case 9: case 11:
+ 
+            $("#birthday_d").append("<option value='' ></option>");
+            for (var i = 1; i <= 30; i++) {
+                $("#birthday_d").append("<option value=" + i + " label=" + i + ">" + i + "</option>");
+            }
+            break;
+            case 2:
+                if((b_year%4==0 && b_year%100!=0) || (b_year%400==0)){
+                    for(var i=1;i<=29;i++){
+                        $("#birthday_d").append("<option value="+i+" label="+i+">"+i+"</option>");
+                    }
+                }else{
+                    for(var i=1;i<=28;i++){
+                        $("#birthday_d").append("<option value="+i+" label="+i+">"+i+"</option>");
+                    }
+                }
+                break;
+            default :break;
+        }
+        $("#birthday_d").find("option[value='"+b_day+"']").attr("selected","selected");
+    }
+
+</script>
+</html>
