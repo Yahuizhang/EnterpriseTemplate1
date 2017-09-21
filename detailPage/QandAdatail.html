@@ -11,7 +11,7 @@
     <meta name="x5-page-mode" content="app"/>
     <meta name="Robots" content="all"/>
     <meta content="telephone=no" name="format-detection"/>
-    <!--<script type="text/javascript" src="http://update2.locojoy.com/wz/js/jquery1.71.js"></script>-->
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/flexible_css.js"></script>
 	<script type="text/javascript" src="js/flexible.js"></script>
 	<style type="text/css">
@@ -93,6 +93,7 @@
 			background: #003853;
 			position: fixed;
 			top: 0;
+			z-index: 99;
 			/*padding: 0 0.426rem;*/
 		}
 		.return-btn{
@@ -200,10 +201,10 @@
 			align-items: center;
 		}
 		.icon-thumbsUp-num{
-			flex: 2;
+			flex: 3;
 		}
 		.thumbsUper{
-			flex: 8;
+			flex: 7;
 		}
 		.thumbsUp-num{
 			color: gray;
@@ -309,6 +310,7 @@
 			color: #a4a4a4;
 			font-size: 0.346rem;
 			margin-bottom: 10px;
+
 		}
 
 
@@ -327,10 +329,10 @@
 			left: 0;
 			background: #f8f8f8;
 			display: flex;
+			z-index: 99;
 		}
 		.commentPart{
 		    flex: 1;
-			/*width:4.8rem;*/
 			height:0.853rem;
 			box-sizing: border-box;
 			padding: 0 10px;
@@ -378,6 +380,60 @@
 			background:url("images/ic_share@2x.png") no-repeat center center;
 			background-size: 0.587rem 0.48rem;
 		}
+
+
+		/*遮罩层*/
+		.black{
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			top:0;
+			left: 0;
+			background: rgba(0, 0, 0, 0.5);
+			z-index: 998;
+			display: none;
+
+		}
+		/*自己评论部分*/
+		.self-commenter{
+			width: 100%;
+			height: 4rem;
+			position: fixed;
+			box-sizing: border-box;
+			bottom: 0;
+			left: 0;
+			z-index: 999;
+			background: #FFFFFF;
+			display: none;
+			padding: 0 0.426rem;
+		}
+		.two-btn{
+			width: 100%;
+			display: flex;
+		}
+		.cancal-btn{
+			flex: 1;
+			font-size: 0.4rem;
+			color: #888888;
+			text-align: left;
+			line-height:  1.066rem;
+		}
+		.public-btn{
+			flex: 1;
+			font-size: 0.4rem ;
+			color: #1251a7;
+			text-align: right;
+			line-height:  1.066rem;
+		}
+		.self-write{
+			border: 0;
+			width: 100%;
+			height:2.266rem;
+			font-size: 0.426rem;
+			color: #222222;
+		}
+
+
 	</style>
 </head>
 <body class="AandQ-page">
@@ -509,7 +565,7 @@
 
 	<!-- bottom -->
 	<section class="bottom-comment">
-		<div class="commentPart">发表您的言论...</div>
+		<div class="commentPart" id="comment-start">发表您的言论...</div>
 		<div class="sharePart">
 			<div class="share-cont">
 				<div class="comment">
@@ -521,8 +577,31 @@
 		</div>
 	</section>
 
+	<!--评论部分-->
+	<div class="self-commenter" id="self-commenter">
+		<div class="two-btn">
+			<span class="cancal-btn" id="cancal-btn">取消</span>
+			<span class="public-btn" id="public-btn">发布</span>
+		</div>
+		<textarea type="text" class="self-write" id="self-write" placeholder="写评论"></textarea>
+	</div>
+	<!--遮罩层-->
+	<div class="black"></div>
 	<script>
-		
+		var allF={
+		    clicks:function () {
+                $('#comment-start').click(function () {
+					console.log('开始留言');
+					$('#self-commenter,.black').show();
+				})
+				$('#cancal-btn').click(function () {
+                    $('#self-commenter,.black').hide();
+                    $('#self-write').val('');
+                })
+			}
+		};
+		allF.clicks();
+
 	</script>
 </body>
 </html>
