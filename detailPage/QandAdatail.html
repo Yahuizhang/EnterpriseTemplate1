@@ -247,16 +247,17 @@
 		}
 
 		.commenter-name{
-			flex: 4;
+			flex:1;
 			font-size: 0.346rem;
 			color:#a4a4a4;
 			line-height: 52px;
 		}
 		.commenter-dz{
-			flex: 2;
+			flex: none;
+
 		}
 		.commenter-comt{
-			flex: 2;
+			flex: none;
 		}
 		.num24px{
 			font-size:0.32rem;
@@ -335,7 +336,7 @@
 		    flex: 1;
 			height:0.853rem;
 			box-sizing: border-box;
-			padding: 0 10px;
+			padding: 0 15px;
 			line-height: 0.853rem;
 			background: #e3e3e3;
 			border-radius: 15px;
@@ -440,7 +441,7 @@
 	<!-- top -->
 	<section class="top-nav">
 		<div class="return-btn"></div>
-		<p class="name-title">天崭无涯</p>
+		<p class="name-title">问题详情</p>
 		<div class="follow-btn"> 
 			<span class="add">+</span>
 			<!--<img src="images/add@2x.png" class="add"/>-->
@@ -517,7 +518,7 @@
 											宝轩、美璞屋和神经阁。</p>
 									</div>
 								</div>
-								<p class="second-commenter-info">查看所有评论</p>
+								<p class="second-commenter-info">查看所有1评论 ></p>
 							</div>
 						</div>
 					</div>
@@ -598,7 +599,10 @@
                     $('#self-commenter,.black').hide();
                     $('#self-write').val('');
                 })
-			}
+			},
+			dataF:function () {
+
+            }
 		};
 		allF.clicks();
 

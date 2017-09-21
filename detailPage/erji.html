@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="古玩虫"/>
+    <meta name="keywords" content="古玩虫"/>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="x5-page-mode" content="app"/>
+    <meta name="Robots" content="all"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/flexible_css.js"></script>
+    <script type="text/javascript" src="js/flexible.js"></script>
+    <style type="text/css">
+        /*reset*/
+        body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+            margin: 0;
+            padding: 0;
+            font-family: 'Microsoft YaHei';
+        }
+        article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        audio, canvas, video {
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+        }
+        fieldset, img {
+            border: 0;
+        }
+        img {
+            vertical-align: middle;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        i {
+            vertical-align: middle;
+        }
+        address, caption, cite, code, dfn, em, strong, th, var {
+            font-style: normal;
+            font-weight: normal;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        caption, th {
+            text-align: left;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-size: 100%;
+            font-weight: normal;
+        }
+        q:before, q:after {
+            content: "";
+        }
+        abbr, acronym {
+            border: 0;
+            font-variant: normal;
+        }
+        sup {
+            vertical-align: text-top;
+        }
+        sub {
+            vertical-align: text-bottom;
+        }
+        input, textarea, select {
+            font-family: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+        }
+        input, textarea, select {
+            *font-size: 100%;
+        }
+        html,.commenter-page{
+            width: 100%;
+            height: 100%;
+        }
+
+        /*top*/
+        .top-nav{
+            width: 100%;
+            height: 1.173rem;
+            background: #003853;
+            position: fixed;
+            top: 0;
+            z-index: 99;
+            /*padding: 0 0.426rem;*/
+        }
+        .return-btn{
+            width: 0.266rem;
+            height:0.453rem;
+            position: absolute;
+            top:50%;
+            margin-top: -0.276rem;
+            left: 0.426rem;
+            background: url("images/ic_back@2x.png") no-repeat;
+            background-size: contain;
+        }
+        .name-title{
+            color: #ffffff;
+            line-height: 1.173rem;
+            text-align: center;
+            font-size: 16px;
+        }
+        .follow-btn{
+            /*width: 1.466rem;*/
+            box-sizing: border-box;
+            padding: 3px 5px;
+            /*height: 0.764rem;*/
+            position: absolute;
+            top:50%;
+            margin-top: -0.382rem;
+            right: 0.426rem;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #ffffff;
+            /*line-height: 0.764rem;*/
+
+        }
+        .add{
+            color: #a9742b;
+            /*font-size: 18px;*/
+        }
+
+
+        /*content*/
+        .content{
+            width: 100%;
+            height: auto;
+            background:#ffffff;
+            box-sizing: border-box;
+            padding: 1.173rem 0 1.333rem 0;
+        }
+        .content-cont{
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            padding: 0 0.426rem;
+            /*background:#e3e3e3;*/
+        }
+        .cont-article-comment{
+            width: 100%;
+            color: #222222;
+            box-sizing: border-box;
+            margin-bottom: 0.426rem;
+            /*border-bottom: 1px solid #e3e3e3;*/
+        }
+        .img-k{
+            width: 0.693rem;
+            height: 0.693rem;
+        }
+        .cont-word-pic-location img{
+            width: 100%;
+            height: auto;
+            margin-bottom: 0.426rem;
+        }
+
+        /*http://192.168.1.111*/
+
+
+        /*文章评论*/
+        .commenter{
+            width: 100%;
+        }
+        .commenter-information{
+            width: 100%;
+            display: flex;
+        }
+        .commenter-img{
+            flex: 2;
+
+        }
+        .commenter-info{
+            flex: 8;
+        }
+        .commenter-info-cont{
+            /*display: flex;*/
+            width: 100%;
+        }
+        .line1{
+            width: 100%;
+            display: flex;
+            height: 52px;
+        }
+        .commenter-name{
+            flex:1;
+            font-size: 0.346rem;
+            color:#a4a4a4;
+            line-height: 52px;
+        }
+        .commenter-dz{
+            flex: none;
+        }
+        .num24px{
+            font-size:0.32rem;
+            color: #888888;
+        }
+        .icon-thumbsUp-small{
+            width: 0.346rem;
+            height: 0.333rem;
+        }
+        .commenter-time{
+            width: 100%;
+            font-size: 0.293rem;
+            color: #a4a4a4;
+            margin-bottom: 0.426rem;
+        }
+        .commenter-words{
+            width: 100%;
+            color: #222222;
+            font-size:0.4rem;
+            margin-bottom: 0.426rem;
+        }
+        .bottom-info{
+            width: 100%;
+            text-align: center;
+            color: #a4a4a4;
+            font-size: 0.346rem;
+            margin-bottom: 10px;
+
+        }
+
+
+
+
+        /*bottom*/
+        .bottom-comment{
+            width:100%;
+            height:1.333rem;
+            box-sizing: border-box;
+            padding:0 0.426rem;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            background: #f8f8f8;
+            display: flex;
+            z-index: 99;
+        }
+        .commentPart{
+            flex: 1;
+            height:0.853rem;
+            box-sizing: border-box;
+            padding: 0 15px;
+            line-height: 0.853rem;
+            background: #e3e3e3;
+            border-radius: 15px;
+            display:inline-block ;
+            font-size: 16px;
+            color: #888888;
+            position: relative;
+            top:50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+
+
+        /*遮罩层*/
+        .black{
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top:0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 998;
+            display: none;
+
+        }
+        /*自己评论部分*/
+        .self-commenter{
+            width: 100%;
+            height: 4rem;
+            position: fixed;
+            box-sizing: border-box;
+            bottom: 0;
+            left: 0;
+            z-index: 999;
+            background: #FFFFFF;
+            display: none;
+            padding: 0 0.426rem;
+        }
+        .two-btn{
+            width: 100%;
+            display: flex;
+        }
+        .cancal-btn{
+            flex: 1;
+            font-size: 0.4rem;
+            color: #888888;
+            text-align: left;
+            line-height:  1.066rem;
+        }
+        .public-btn{
+            flex: 1;
+            font-size: 0.4rem ;
+            color: #1251a7;
+            text-align: right;
+            line-height:  1.066rem;
+        }
+        .self-write{
+            border: 0;
+            width: 100%;
+            height:2.266rem;
+            font-size: 0.426rem;
+            color: #222222;
+        }
+    </style>
+</head>
+<body class="commenter-page">
+<!-- top -->
+    <section class="top-nav">
+        <div class="return-btn"></div>
+        <p class="name-title">问题详情</p>
+        <div class="follow-btn">
+            <span class="add">+</span>
+            <!--<img src="images/add@2x.png" class="add"/>-->
+            <span>关注</span>
+        </div>
+    </section>
+
+
+<!--内容部分-->
+<section class="content">
+    <div class="content-cont">
+        <!--文章评论-->
+        <div class="cont-article-comment">
+            <!--<p class="comment-title">- 文章评论 -</p>-->
+            <div class="commenter">
+                <div class="commenter-information">
+                    <div class="commenter-img">
+                        <div class="img-k">
+                            <img src="images/commer1@2x.png" width="100%" height="auto"/>
+                        </div>
+                    </div>
+                    <div class="commenter-info">
+                        <div class="commenter-info-cont">
+                            <div class="line1">
+                                <span class="commenter-name">逆流、小羊</span>
+                                <div class="commenter-dz">
+                                    <span class="num24px">325</span>
+                                    <img class="icon-thumbsUp-small" src="images/thumbsUp26@2x.png"/>
+                                </div>
+                            </div>
+                            <p class="commenter-time">05-02 15:20</p>
+                            <p class="commenter-words">天津好点的玉石机构有四家，分别是茱萸斋琅宝轩、美璞屋和神经阁。</p>
+                        </div>
+                            <!--二级评论部分-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="bottom-info">已显示全部评论</p>
+    </div>
+</section>
+
+
+
+
+<!-- bottom -->
+<section class="bottom-comment">
+    <div class="commentPart" id="comment-start">发表您的言论...</div>
+</section>
+
+<!--评论部分-->
+<div class="self-commenter" id="self-commenter">
+    <div class="two-btn">
+        <span class="cancal-btn" id="cancal-btn">取消</span>
+        <span class="public-btn" id="public-btn">发布</span>
+    </div>
+    <textarea type="text" class="self-write" id="self-write" placeholder="写评论"></textarea>
+</div>
+<!--遮罩层-->
+<div class="black"></div>
+<script>
+    var allF={
+        clicks:function () {
+            $('#comment-start').click(function () {
+                console.log('开始留言');
+                $('#self-commenter,.black').show();
+            })
+            $('#cancal-btn').click(function () {
+                $('#self-commenter,.black').hide();
+                $('#self-write').val('');
+            })
+        },
+        dataF:function () {
+
+        }
+    };
+    allF.clicks();
+
+</script>
+
+
+</body>
+</html>

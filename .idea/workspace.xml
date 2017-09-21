@@ -14,19 +14,28 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4047619">
+    <splitter split-orientation="horizontal" split-proportion="0.43530998">
       <split-first>
         <leaf>
-          <file leaf-file-name="QandAdatail.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="QandAdatail.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/detailPage/QandAdatail.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="528">
-                  <caret line="429" column="24" lean-forward="true" selection-start-line="429" selection-start-column="24" selection-end-line="429" selection-end-column="24" />
+                <state relative-caret-position="403">
+                  <caret line="315" column="0" lean-forward="true" selection-start-line="135" selection-start-column="8" selection-end-line="315" selection-end-column="0" />
                   <folding>
-                    <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="erji.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/detailPage/erji.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="249">
+                  <caret line="160" column="29" lean-forward="true" selection-start-line="160" selection-start-column="29" selection-end-line="160" selection-end-column="29" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -65,15 +74,12 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="QandAdatail.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/detailPage/QandAdatail.html">
+          <file leaf-file-name="erji.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/detailPage/erji.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="646">
-                  <caret line="602" column="22" lean-forward="false" selection-start-line="602" selection-start-column="22" selection-end-line="602" selection-end-column="22" />
-                  <folding>
-                    <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                  </folding>
+                <state relative-caret-position="278">
+                  <caret line="352" column="68" lean-forward="true" selection-start-line="352" selection-start-column="68" selection-end-line="352" selection-end-column="68" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -96,8 +102,10 @@
       <find>thumbsUper-pic-list</find>
       <find>margin</find>
       <find>thumbs-up</find>
-      <find>commentPart</find>
       <find>two-btn</find>
+      <find>.commenter-dz</find>
+      <find>commentPart</find>
+      <find>commenter-img</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -115,6 +123,7 @@
         <option value="$PROJECT_DIR$/guide/index.html" />
         <option value="$PROJECT_DIR$/guide/css.html" />
         <option value="$PROJECT_DIR$/detailPage/QandAdatail.html" />
+        <option value="$PROJECT_DIR$/detailPage/erji.html" />
       </list>
     </option>
   </component>
@@ -125,10 +134,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="840" />
-    <option name="y" value="15" />
-    <option name="width" value="1325" />
-    <option name="height" value="1018" />
+    <option name="x" value="71" />
+    <option name="y" value="23" />
+    <option name="width" value="1695" />
+    <option name="height" value="1012" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -169,7 +178,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="guide" />
+              <option name="myItemId" value="detailPage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -268,18 +277,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1505956792781</updated>
-      <workItem from="1505956794139" duration="19242000" />
+      <workItem from="1505956794139" duration="29366000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19242000" />
+    <option name="totallyTimeSpent" value="29366000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="840" y="15" width="1325" height="1018" extended-state="0" />
+    <frame x="71" y="23" width="1695" height="1012" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.069518715" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.058963668" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -384,13 +393,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/detailPage/QandAdatail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="429" column="24" lean-forward="true" selection-start-line="429" selection-start-column="24" selection-end-line="429" selection-end-column="24" />
+        <state relative-caret-position="403">
+          <caret line="315" column="0" lean-forward="true" selection-start-line="135" selection-start-column="8" selection-end-line="315" selection-end-column="0" />
           <folding>
-            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detailPage/erji.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="352" column="68" lean-forward="true" selection-start-line="352" selection-start-column="68" selection-end-line="352" selection-end-column="68" />
+          <folding />
         </state>
       </provider>
     </entry>
