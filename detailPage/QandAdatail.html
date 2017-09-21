@@ -12,7 +12,6 @@
     <meta name="Robots" content="all"/>
     <meta content="telephone=no" name="format-detection"/>
     <!--<script type="text/javascript" src="http://update2.locojoy.com/wz/js/jquery1.71.js"></script>-->
-	<!--<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>-->
 	<script type="text/javascript" src="js/flexible_css.js"></script>
 	<script type="text/javascript" src="js/flexible.js"></script>
 	<style type="text/css">
@@ -152,7 +151,8 @@
 			width: 100%;
 			color: #222222;
 			box-sizing: border-box;
-			border-bottom: 1px solid #e3e3e3;
+			margin-bottom: 0.426rem;
+			/*border-bottom: 1px solid #e3e3e3;*/
 		}
 		.question-title{
 			font-size: 22px;
@@ -209,6 +209,10 @@
 			color: gray;
 			font-size: 16px;
 		}
+		.thumbsUper-pic-list{
+			/*width: 0.693rem;*/
+			/*height: 0.693rem;*/
+		}
 
 		/*文章评论*/
 		.comment-title{
@@ -219,7 +223,6 @@
 		}
 		.commenter{
 			width: 100%;
-
 		}
 		.commenter-information{
 			width: 100%;
@@ -227,10 +230,85 @@
 		}
 		.commenter-img{
 			flex: 2;
-
 		}
 		.commenter-info{
 			flex: 8;
+		}
+		.commenter-info-cont{
+			/*display: flex;*/
+			width: 100%;
+		}
+		.line1{
+			width: 100%;
+			display: flex;
+			height: 52px;
+
+		}
+
+		.commenter-name{
+			flex: 4;
+			font-size: 0.346rem;
+			color:#a4a4a4;
+			line-height: 52px;
+		}
+		.commenter-dz{
+			flex: 2;
+		}
+		.commenter-comt{
+			flex: 2;
+		}
+		.num24px{
+			font-size:0.32rem;
+			color: #888888;
+		}
+		.icon-thumbsUp-small{
+			width: 0.346rem;
+			height: 0.333rem;
+		}
+		.icon-commenter-small{
+			width: 0.346rem;
+			height: 0.293rem;
+		}
+		.commenter-time{
+			width: 100%;
+			font-size: 0.293rem;
+			color: #a4a4a4;
+			margin-bottom: 0.426rem;
+		}
+		.commenter-words{
+			width: 100%;
+			color: #222222;
+			font-size:0.4rem;
+			margin-bottom: 0.426rem;
+		}
+		.second-commenter{
+			width: 100%;
+			box-sizing: border-box;
+			border-left: 2px solid #e3e3e3;
+			padding: 0 0 0 10px;
+		}
+		.second-commenter-name{
+			width: 100%;
+			color: #a4a4a4;
+			font-size: 0.32rem;
+			margin-bottom: 0.42rem;
+		}
+		.second-commenter-words{
+			width: 100%;
+			font-size: 0.4rem;
+			color: #222222;
+			margin-bottom: 0.42rem;
+		}
+		.second-commenter-info{
+			color: #888888;
+			font-size: 0.346rem;
+		}
+		.bottom-info{
+			width: 100%;
+			text-align: center;
+			color: #a4a4a4;
+			font-size: 0.346rem;
+			margin-bottom: 10px;
 		}
 
 
@@ -332,10 +410,11 @@
 			<div class="thumbs-up">
 				<div class="icon-thumbsUp-num">
 					<img class="icon-thumbsUp" src="images/thumbsUp26@2x.png"/>
-					<span class="thumbsUp-num">99+</span>
+					<span class="thumbsUp-num">999+</span>
 				</div>
 				<div class="thumbsUper">
 					<div class="thumbsUper-lists">
+						<img class="thumbsUper-pic-list" src="images/commer1@2x.png">
 						<img class="thumbsUper-pic-list" src="images/commer1@2x.png">
 						<img class="thumbsUper-pic-list" src="images/commer1@2x.png">
 						<img class="thumbsUper-pic-list" src="images/commer1@2x.png">
@@ -356,15 +435,75 @@
 						</div>
 						<div class="commenter-info">
 							<div class="commenter-info-cont">
-								<div class="commenter-name">
-									逆流、小羊
+								<div class="line1">
+									<span class="commenter-name">逆流、小羊</span>
+									<div class="commenter-dz">
+										<span class="num24px">325</span>
+										<img class="icon-thumbsUp-small" src="images/thumbsUp26@2x.png"/>
+									</div>
+									<div class="commenter-comt">
+										<span class="num24px">3</span>
+										<img class="icon-commenter-small" src="images/comment25@2x.png">
+									</div>
 								</div>
-								<
+								<p class="commenter-time">05-02 15:20</p>
+								<p class="commenter-words">天津好点的玉石机构有四家，分别是茱萸斋琅宝轩、美璞屋和神经阁。</p>
+								<!--二级评论-->
+								<div class="second-commenter">
+									<div class="second-commenter-per">
+										<p class="second-commenter-name">芒果哒哒哒：</p>
+										<p class="second-commenter-words">天津好点的玉石机构有四家，分别是茱萸斋琅
+											宝轩、美璞屋和神经阁。</p>
+									</div>
+									<div class="second-commenter-per">
+										<p class="second-commenter-name">芒果哒哒哒：</p>
+										<p class="second-commenter-words">天津好点的玉石机构有四家，分别是茱萸斋琅
+											宝轩、美璞屋和神经阁。</p>
+									</div>
+								</div>
+								<p class="second-commenter-info">查看所有评论</p>
+							</div>
+						</div>
+					</div>
+					<div class="commenter-information">
+						<div class="commenter-img">
+							<img src="images/commer1@2x.png"/>
+						</div>
+						<div class="commenter-info">
+							<div class="commenter-info-cont">
+								<div class="line1">
+									<span class="commenter-name">逆流、小羊</span>
+									<div class="commenter-dz">
+										<span class="num24px">325</span>
+										<img class="icon-thumbsUp-small" src="images/thumbsUp26@2x.png"/>
+									</div>
+									<div class="commenter-comt">
+										<span class="num24px">3</span>
+										<img class="icon-commenter-small" src="images/comment25@2x.png">
+									</div>
+								</div>
+								<p class="commenter-time">05-02 15:20</p>
+								<p class="commenter-words">天津好点的玉石机构有四家，分别是茱萸斋琅宝轩、美璞屋和神经阁。</p>
+								<!--二级评论-->
+								<div class="second-commenter">
+									<div class="second-commenter-per">
+										<p class="second-commenter-name">芒果哒哒哒：</p>
+										<p class="second-commenter-words">天津好点的玉石机构有四家，分别是茱萸斋琅
+											宝轩、美璞屋和神经阁。</p>
+									</div>
+									<div class="second-commenter-per">
+										<p class="second-commenter-name">芒果哒哒哒：</p>
+										<p class="second-commenter-words">天津好点的玉石机构有四家，分别是茱萸斋琅
+											宝轩、美璞屋和神经阁。</p>
+									</div>
+								</div>
+								<p class="second-commenter-info">查看所有评论</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<p class="bottom-info">已加载全部评论</p>
 		</div>
 	</section>
 
