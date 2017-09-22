@@ -1,0 +1,97 @@
+/*@media screen and (max-width: 460px) {
+
+	#right{
+		display: none;
+	}
+
+}
+*/
+*{
+	margin: auto;
+	padding: 0;
+}
+body{
+	overflow-x: hidden;
+}
+#bg{
+    /*border: 1px solid red;*/
+    
+}
+#haoma-inner{
+	border-left: 3px solid #59AfE4;
+	line-height: 25px;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	text-indent: 6px;
+	margin-top: 50px;
+	color: #616161;
+	margin-bottom: 30px;
+}
+.name{
+	font-size: 14px;
+	font-family: "宋体";
+	line-height: 35px;
+}
+label{
+	 font-family: "微软雅黑";
+	 font-size: 14px;
+}
+.box{
+	line-height: 35px;
+	font-family: "宋体";
+	font-size: 12px;
+}
+.radio img{
+	width: 20px;
+	height: 20px;
+}
+.right li{
+	margin-top: 10px;
+}
+.right{
+	font-family: "微软雅黑";
+}
+#footer{
+	height: 160px;
+	background-color: #181818;
+	margin-top: 40px;
+	font-family: "微软雅黑";
+	color: gray;
+}
+#footer .fistLine{
+	text-align: center;
+	font-size: 14px;
+	padding-top: 40px;
+}
+#footer .fistLine a{
+	color: gray;
+	text-decoration: none;
+}
+#footer .secondLine{
+	text-align: center;
+}
+#footer .thirdLine{
+	text-align: center;
+}
+.normalcolor{
+	color: gray;
+}
+a:hover{
+	text-decoration: none;
+}
+.error{
+	background: url(../images/zyc/error.png) 0px 7px;
+	background-size: 16px 16px;
+	background-repeat: no-repeat;
+	color: red;
+}
+.ok{
+	background: url(../images/zyc/ok.gif) 0px 7px;
+	background-size: 16px 16px;
+	background-repeat: no-repeat;
+	color: white;
+}
+.warning{
+	background: url(../images/zyc/border.png) 0px 7px;
+   
+}

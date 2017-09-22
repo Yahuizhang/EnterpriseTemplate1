@@ -1,0 +1,23 @@
+/*------------------------页脚--------------------------------*/
+#footer{
+	height: 160px;
+	background-color: #181818;
+	margin-top: 40px;
+	font-family: "微软雅黑";
+	color: gray;
+}
+#footer .fistLine{
+	text-align: center;
+	font-size: 14px;
+	padding-top: 40px;
+}
+#footer .fistLine a{
+	color: gray;
+	text-decoration: none;
+}
+#footer .secondLine{
+	text-align: center;
+}
+#footer .thirdLine{
+	text-align: center;
+}

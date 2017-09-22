@@ -1,0 +1,25 @@
+.left p{
+	font-family:'微软雅黑';
+	font-size:18px;
+	height:30px;
+}
+.line{
+	border:1px solid #1093d7;
+	width:728px;
+}
+.choose a{
+	background-color: #1093d7;
+	color: white;
+	border-radius: 12px;
+	padding: 7px 10px;
+}
+.feileiul li a{
+	padding: 7px 10px;
+}
+
+.exit{
+		color: gray;
+		line-height: 50px;
+		font-family: "微软雅黑";
+		font-size: 15px;
+	}

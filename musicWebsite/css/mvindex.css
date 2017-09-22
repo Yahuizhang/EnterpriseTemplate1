@@ -1,0 +1,195 @@
+a{
+	color: #7d7d7d;
+}
+.bread{
+	
+	font-size: 14px;
+}
+
+/*------------------mv 展示-------------------*/
+.contbg{
+	background-color: white;
+}
+.title{
+	text-indent: 16px;
+	font-size: 18px;
+	height:40px;
+	line-height: 40px;
+	border-bottom: 1px solid #1093d7;
+}
+.title a {
+	color:#111;
+	height:25px;
+	line-height: 25px;
+	margin-top:15px;
+	font-size: 12px;
+	float: right; 
+}
+
+.lists{
+	position: relative;
+}
+.lists .img{
+	margin-left: 15px;
+}
+.captain {
+	width: 80%;
+}
+.captain p{
+	text-align: center;
+}
+.captain .mvtitle a{
+	color: #1093d7;
+}
+.captain .name a{
+	color: #808080;
+
+}
+/*--------------------右侧内容-----------*/
+.righttitle{
+	height: 40px;
+	line-height: 40px;
+	background-color: #1093d7;
+	color: #fff;
+	font-size: 18px;
+	text-indent: 13px;
+}
+.fenlei ul{
+	width: 100%;
+	list-style-type: none;
+	padding: 0px 15px;
+	margin: 0 auto;
+	overflow: auto;
+}
+.fenlei ul li{
+	float: left;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	color: #2f2f2f;
+	text-indent: center;
+}
+.fenlei ul li a{
+	color: #111;
+
+}
+.paihang ul{
+	width: 100%;
+	padding: 0px 15px;
+	list-style-type: none;
+	margin: 0 auto;
+	list-style-position: inside;
+
+}
+.paihang ul li{
+	width: 150px;
+	height: 35px;
+	line-height: 35px;
+	
+	color: #2f2f2f;
+	text-indent: center;
+}
+.paihang .num1{
+	color: white;
+	background-color: #f27815;
+	padding:5px 10px; 
+}
+.num{
+	color: #656565;
+	background-color: #dadada;
+	padding:5px 10px; 
+}
+.paihang .songname a{
+	color: #1093d7;
+	font-size: 14px;
+	padding-left: 10px;
+}
+.paihang .singername {
+	font-size: 14px;
+}
+.gqph{
+	margin: 15px 10px;
+
+}
+/*----------------------分享按钮--------------*/
+.fenxiang{
+	position:fixed;
+	top: 280px;
+	right:-137px;
+}
+.fxbt{
+	width: 25px;
+	height: 90px;
+	background-color: #1093d7;
+	color: white;
+	border-radius:5px;
+	float: left;
+	margin-top: 70px;
+}
+.fxul{
+	float: left;
+	list-style-type: none;
+	width: 140px;
+	overflow: auto;
+}
+.fxtitle h1{
+	width: 140px;
+	font-size: 16px;
+	border-bottom: 1px solid #111;
+	text-indent: 1.6em;
+
+}
+.fxul li a{
+	background-image: url(../images/gsf/is.png);
+	background-repeat: no-repeat;
+	float: left;
+	width: 70px;
+	height: 30px;
+	color: #111;
+	font-size: 12px;
+	line-height: 30px;
+	 text-indent: 1.6em;
+
+}
+.yjfx a{
+	background-position: 0px -2067px;
+
+}
+.qqfx a{
+	background-position: 0px -71px;
+}
+.xlfx a{
+	background-position: 0px -114px;
+}
+.bdfx a{
+	background-position: 0px -152px;
+}
+.rrfx a{
+	background-position: 0px -193px;
+}
+.txfx a{
+	background-position: 0px -233px;
+}
+.xcfx a{
+	background-position: 0px -2187px;
+}
+.kxfx a{
+	background-position: 0px -273px;
+}
+.pyfx a{
+	background-position: 0px -313px;
+}
+.tbfx a{
+	background-position: 0px -593px;
+}
+.dbfx a{
+	background-position: 0px -393px;
+}
+.shfx a{
+	background-position: 0px -433px;
+}
+.gdfx a{
+	background-position: 0px 6px;
+}
+

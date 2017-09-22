@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+
+/*------------左侧------------*/
+.contentLeft{
+    background-color: white;
+    /*border: 1px solid blue;*/
+    /*width: 70%;*/
+    /*float: left;*/
+    border-radius: 5px;
+}
+#generic{
+    margin:8px;
+    /*border: 1px solid green;*/
+}
+.carousel-indicators{
+    opacity: 0.7;
+    border-radius: 18px;
+    left: 70%;
+    background-color: gray;
+    margin-left: 0px;
+    width: 154px;
+    margin-bottom: -1.5%;
+}
+.carousel-indicators .active{
+    background-color: #F60;
+    opacity: 1;
+}
+/*--------猜你喜欢部分------*/
+.cnxh{
+    margin-left: 8px;
+}
+.bigtext{
+    font-size: 18px;
+    float: left;
+    font-family: 'Hiragino Sans GB','Microsoft Yahei';
+}
+.cnxh h2{
+    overflow: hidden;
+}
+.cnxh h2 .more{
+    margin-left: 5px;
+    margin-top: 4px;
+    float: left;
+    color: #f60;
+    font-size: 14px;
+    cursor: pointer;
+}
+.one h4{
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+}
+.one h5{
+    color: #999;
+    text-align: center;
+}
+/*------------右侧------------*/
+.contentRight{
+    margin-left: 3%;
+    /*border: 1px solid red;*/
+    background-color: white;
+    /*width: 25%;*/
+    /*float: left;*/
+    border-radius: 5px;
+}
+/*--------个人信息部分---------*/
+.basicInfo{
+    margin-top: 12px;
+    margin-left: 12px;
+}
+#usericon{
+    margin-left: -10px;
+}
+.basicInfo span{
+    margin-left: 7px;
+}
+.basicInfo .qiandao{
+    background-color: black;
+    color: white;
+    width: 62px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    margin-top: 12px;
+    border-radius: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.basicInfo ul{
+    margin-top: 20px;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    background-color: #FCFCFC;
+    list-style-type: none;
+    overflow: hidden;
+}
+.basicInfo .liFirst{
+    border-left:none;
+}
+.basicInfo ul li{
+    float: left;
+    width: 33%;
+    margin: 6px 0;
+    border-left: 1px solid #DBDBDB;
+    text-align: center;
+}
+.basicInfo ul li a{
+    color: #999;
+}
+.basicInfo ul li em{
+    display: block;
+    font-style: normal;
+    font-weight: bold;
+    color: #666;
+}
+/*-------直播间部分-------*/
+.zhibo{
+    padding: 0 5px 5px 5px;
+    border:1px solid #EBEBEB;
+    /*border-top: none;*/
+    border-radius: 4px;
+    background-color: #FCFCFC;
+}
+.zhibo span{
+    color: #f60;
+    margin-left: -10px;
+}
+.zhibo h2{
+    text-align: center;
+    height: 25px;
+    margin:15px 0 5px 0;
+    line-height: 25px;
+    font-size: 14px;
+}
+.onezhibo{
+    padding: 0px 0px 0px 0px;
+    margin-left: -13px;
+    margin-bottom: 10px;
+}
+.onezhibo button{
+    /*background-color: black;*/
+    color: white;
+    margin-left: -2px;
+    text-align: center;
+    margin-top: -12px;
+    display: none;
+    width: 50px;
+    /*height: 14px;*/
+}
+.onezhibo button:hover{
+    background-color: #F60;
+    color: white;
+}
+.onezhibo h5{
+    font-size: 12px;
+}
+.roomName{
+    color: black;
+    font-weight: bold;
+}
+.personNum{
+    color: #999;
+    width: 48px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap; 
+}
+.onezhibo .col-md-4{
+    padding-left: 25px;
+    padding-right: 0px;
+}
+#footer{
+    height: 160px;
+    background-color: #181818;
+    margin-top: 40px;
+    font-family: "微软雅黑";
+    color: gray;
+}
+#footer .fistLine{
+    text-align: center;
+    font-size: 14px;
+    padding-top: 40px;
+}
+#footer .fistLine a{
+    color: gray;
+    text-decoration: none;
+}
+#footer .secondLine{
+    text-align: center;
+}
+#footer .thirdLine{
+    text-align: center;
+}

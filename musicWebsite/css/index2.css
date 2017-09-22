@@ -1,0 +1,215 @@
+*{
+	padding: 0;
+	font-family: "微软雅黑";
+}
+
+
+
+/*-------------------banner图---------------*/
+/*.left{
+	display: none;
+}
+.right{
+	display: none;
+}*/
+/*--------------------2图----------------------*/
+
+.img{
+	background-color: #f3f3f3;
+}
+/*----------------歌单------------------------*/
+h3{
+	font-family: "微软雅黑";
+	font-weight: bold;
+	float: left;
+	color: #333;
+	font-size: 20px;
+}
+.singsList .findMore a{
+	float: right;
+	color: #999;
+	font-family: "微软雅黑";
+	margin-top: 25px;
+	text-decoration:none;
+}
+.singsList .singsong{
+	margin-top: 55px;
+}
+.singsList .singsong .listen{
+	width: 100%;
+    position: absolute;
+    /*bottom: 0px;*/
+    height: 80px;
+    color: #fff;
+}
+.singsList .singsong .listen em{
+	float: left;
+	padding-left: 20px;
+	margin-left: 5px;
+	background-image: url(../images/icon.png);
+	background-position: -230px -44px;
+    display: inline;
+}
+.singsList .singsong .play{
+	position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url(../images/icon.png) -242px -163px;
+    display: none;
+}
+.singsList .singsong .word{
+	line-height: 52px;
+	text-align: center;
+}
+.singsList .singsong .word a{
+	color: #333;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+/*-----------------------歌手--------------------*/
+.singer .findMore a{
+	float: right;
+	color: #999;
+	font-family: "微软雅黑";
+	margin-top: 25px;
+	text-decoration: none;
+}
+.singer .singerSong{
+	margin-top: 55px;
+}
+/*.singer .singerSong #long{
+	width: 552px;
+	height: 360px;
+}*/
+.singer .singerSong .info {
+	background: #000;
+    height: 90px;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.7;
+    font-family: "微软雅黑";
+    color: #fff;
+}
+#infoLong{
+	background: #000;
+    height: 90px;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.7;
+    font-family: "微软雅黑";
+    color: #fff;
+}
+.singer .singerSong .info span{
+	margin-left: 15px;
+	font-family: "微软雅黑";
+	font-size:12px;
+	margin-top: 8px;
+}
+.singer .singerSong .info .name{
+	margin-left: 15px;
+	display: block;
+	font-family: "微软雅黑";
+}
+.singer .singerSong .info .num{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.singer .singerSong .info .num span{
+	float: left;
+	margin-top: 5px;
+	display: inline;
+	padding-left: 20px;
+	padding-bottom: 5px;
+	background-image: url(../images/icon.png);
+}
+.singer .singerSong .info .num .share{
+    background-position: -105px 0px;
+}
+.singer .singerSong .info .num .like{
+	background-position: -230px 0px;
+}
+
+.singer .singerSong .songList{
+	background:#000;
+	position: absolute;
+	top: 0;
+	/*width: 260px;*/
+	height: 100%;
+	opacity: 0.7;
+	display: none;
+}
+.singer .singerSong #songListLong{
+	background:#000;
+	position: absolute;
+	top: 0;
+	/*width:552px;*/
+	height: 100%;
+	opacity: 0.7;
+}
+.singer .singerSong .songList h2{
+	float: left;
+	font-size: 16px;
+	color: #fff;
+	font-weight: 500;
+	font-family: "微软雅黑";
+	margin: 15px 0 0 15px;
+}
+.singer .singerSong .songList .more{
+	text-decoration: none;
+	float: right;
+	color: #fff;
+	margin: 16px 12px 0 0;
+	font-weight: 500;
+	font-family: "微软雅黑";
+
+}
+.singer .singerSong .songList ul{
+	margin-top: 50px;
+	width: 89%;
+	overflow: hidden;
+	margin-left: 13px;
+	color: #fff;
+}
+.singer .singerSong .songList ul li{
+	height: 30px;
+	cursor:pointer;
+}
+.singer .singerSong .songList ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+.singer .singerSong .songList a.playAll{
+	width: 184px;
+	height: 36px;
+	line-height: 36px;
+	float: left;
+	margin-left: 10px;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	background-image: url(../images/zhanglimeng/playAllBg.png);
+}
+/*------------------------页脚--------------------------------*/
+#footer{
+	height: 160px;
+	background-color: #181818;
+	margin-top: 40px;
+	font-family: "微软雅黑";
+	color: gray;
+}
+#footer .fistLine{
+	text-align: center;
+	font-size: 14px;
+	padding-top: 40px;
+}
+#footer .fistLine a{
+	color: gray;
+	text-decoration: none;
+}
+#footer .secondLine{
+	text-align: center;
+}
+#footer .thirdLine{
+	text-align: center;
+}

@@ -1,0 +1,124 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	list-style-type: none;
+}
+#dianji p{
+	cursor: pointer;
+}
+.line{
+	color: blue;
+}
+.active1{
+	font-family:'微软雅黑';
+	font-size:14px;
+	background-color:#1093d7;
+	color:white;
+	border-radius:2px;
+	text-align: center;
+	padding:4px;
+	margin-left: -3px;
+	/*margin-left: -25px;*/
+
+}
+.active1 a:hover{
+	font-family:'微软雅黑';
+}
+.borde{
+	border:2px solid #1093d7;
+}
+#footer{
+	height: 160px;
+	background-color: #181818;
+	margin-top: 40px;
+	font-family: "微软雅黑";
+	color: gray;
+}
+#footer .fistLine{
+	text-align: center;
+	font-size: 14px;
+	padding-top: 40px;
+}
+#footer .fistLine a{
+	color: gray;
+	text-decoration: none;
+}
+#footer .secondLine{
+	text-align: center;
+}
+#footer .thirdLine{
+	text-align: center;
+}
+/*----------------------分享按钮--------------*/
+.fenxiang{
+	position:fixed;
+	top: 280px;
+	right:-137px;
+}
+.fxbt{
+	width: 25px;
+	height: 90px;
+	background-color: #1093d7;
+	color: white;
+	border-radius:5px;
+	float: left;
+	margin-top: 70px;
+}
+.fxul{
+	float: left;
+	list-style-type: none;
+	width: 140px;
+	overflow: auto;
+}
+.fxtitle h1{
+	width: 140px;
+	font-size: 16px;
+	border-bottom: 1px solid #111;
+	text-indent: 1.6em;
+
+}
+.fxul li a{
+	background-image: url(../images/gsf/is.png);
+	background-repeat: no-repeat;
+	float: left;
+	width: 70px;
+	height: 30px;
+	color: #111;
+	font-size: 12px;
+	line-height: 30px;
+	 text-indent: 1.6em;
+
+}
+.yjfx a{
+	background-position: 0px -2067px;
+
+}
+.qqfx a{
+	background-position: 0px -71px;
+}
+.xlfx a{
+	background-position: 0px -114px;
+}
+.bdfx a{
+	background-position: 0px -152px;
+}
+.rrfx a{
+	background-position: 0px -193px;
+}
+.txfx a{
+	background-position: 0px -233px;
+}
+.xcfx a{
+	background-position: 0px -2187px;
+}
+.kxfx a{
+	background-position: 0px -273px;
+}
+#dianji{
+	font-size: 14px;
+	font-family: "微软雅黑";
+}

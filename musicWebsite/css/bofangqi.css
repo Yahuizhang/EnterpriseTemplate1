@@ -1,0 +1,308 @@
+*{
+    margin: auto;
+    padding: auto;
+    font-family: "微软雅黑";
+    list-style-type: none;
+}
+.player{
+    color: white;
+}
+.bfqContent{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+/*----小按钮的外边框------*/
+.kuang{
+    width: 41px;
+    height: 41px;
+    /*border: 1px solid yellow;*/
+}
+/*-----上一曲图标------*/
+.rewind{
+    margin-top: 4px;
+    /*border: 1px solid red;*/
+    margin-left: 5px;
+    width: 31px;
+    height: 32px;
+    background-image: url(../images/icon.png);
+    background-position:-77px -156px ;
+}
+/*-----暂停时的图标------*/
+.playback{
+    /*border: 1px solid red;*/
+    width: 41px;
+    height: 41px;
+    background-image: url(../images/icon.png);
+    background-position:-136px -153px ;
+    /*margin-top: -3%;*/
+
+}
+/*-----播放时的图标------*/
+.playing{
+    /*border: 1px solid red;*/
+    width: 41px;
+    height: 41px;
+    background-image: url(../images/icon.png);
+    background-position:-178px -194px ;
+    /*margin-top: -3%;*/
+}
+/*-----下一曲图标------*/
+.fastforward{
+    /*border: 1px solid red;*/
+    margin-top: 4px;
+    margin-left: 5px;
+    width: 31px;
+    height: 32px;
+    background-image: url(../images/icon.png);
+    background-position:-207px -157px ;
+}
+/*------歌曲名称-------*/
+.musicName{
+    margin-left: 2%;
+    /*float: left;*/
+    text-align: left;
+}
+/*---------播放时间--------*/
+.time{
+    /*float: right;*/
+    text-align: right;
+}
+.ui-slider-horizontal{
+    height:0.3em;
+}
+.ui-slider .ui-slider-handle{
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 0.8em;
+}
+#myprogress .pace{
+    background-color: red;
+    height: 2px;
+    position: absolute;
+}
+#myprogress{
+    margin-top: 22px;
+    width: 100%;
+    float: left;
+    margin-left: 3%;
+    cursor:pointer;
+}
+/*----------标准-------------*/
+.standard{
+    height: 41px;
+    width: 60px;
+    /*border: 1px solid red;*/
+    
+}
+.standImg{
+    background-image: url(../images/icon.png);
+    background-position: 1px -88px;
+    height: 22px;
+    width: 49px;
+    margin-top: 8px;
+    /*border: 1px solid blue;*/
+}
+/*----------声音-------------*/
+.voice{
+    width: 24px;
+    height: 23px;
+    /*border: 1px solid red;*/
+    background-image: url(../images/icon.png);
+    background-position: -262px -128px;
+    cursor:pointer;
+}
+/*----------单曲循环---------*/
+.loop{
+    width: 28px;
+    height: 28px;
+    /*border: 1px solid red;*/
+    background-image: url(../images/icon.png);
+    background-position: -44px -140px;
+    cursor:pointer;
+}
+/*----------随机播放---------*/
+.random{
+    width: 28px;
+    height: 28px;
+    /*border: 1px solid red;*/
+    background-image: url(../images/icon.png);
+    background-position: -44px -200px;
+    cursor:pointer;
+}
+/*----------顺序播放---------*/
+.order{
+    width: 28px;
+    height: 28px;
+    /*border: 1px solid red;*/
+    background-image: url(../images/icon.png);
+    background-position: -44px -110px;
+    cursor:pointer;
+}
+/*----------k歌-------------*/
+.kg{
+    width: 27px;
+    height: 28px;
+    /*border: 1px solid red;*/
+    background-image: url(../images/icon.png);
+    background-position: -19px -60px;
+    cursor:pointer;
+}
+/*----------列表-------------*/
+.list{
+    width: 28px;
+    height: 28px;
+    /*border: 1px solid red;*/
+    background-image: url(../images/icon.png);
+    background-position: -68px -60px;
+    cursor:pointer;
+}
+/*----------音量按钮的位置设置---------*/
+.voicePosition{
+    margin-top: 8px;
+    margin-left: 8px;
+}
+/*----------播放模式的位置设置---------*/
+.modalPosition{
+    margin-top: 5px;
+    margin-left: 6px;
+}
+/*----------k歌按钮的位置设置---------*/
+.kgPosition{
+    margin-top: 5px;
+    margin-left: 6px;
+}
+/*---------列表按钮的位置设置---------*/
+.listPosition{
+    margin-top: 5px;
+    margin-left: 6px;
+}
+.music li{
+    color: black;
+}
+/*--------声音控制----------*/
+.voiceControl{
+    background-image: url(../images/huzongsen/voiceBg.png);
+    width: 35px;
+    height: 150px;
+    position: absolute;
+    z-index:2;
+    border-radius: 3px;
+    display: none;
+
+}
+.voiceControl .slider{
+    margin: auto;
+    width: 5px;
+    height: 70%;
+    margin-top: 23px;
+}
+.voiceControl .slider .pace{
+    /*top: 20%;*/
+    position: absolute;
+    background-color: orange;
+    width: 3px;
+    height: 100%;
+}
+/*---------播放列表模块---------*/
+.myList{
+    position: absolute;
+    z-index:1;
+    width: 400px;
+    height: 210px;
+    color: white;
+    background-image: url(../images/huzongsen/musicListBg.png);
+    display: none;
+}
+.menu{
+    background-color: black;
+    font-weight: bold;
+    height: 35px;
+    /*position: absolute;*/
+}
+.menu #musicNum{
+    font-size: 16px;
+    margin-top: 8px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: white;
+}
+.musicList{
+    height: 175px;
+    overflow: auto;
+    overflow-x:hidden;
+}
+.musicList ul{
+    padding: 0px;
+    margin-top: 8px;
+    /*margin-left: 30px;*/
+    /*width: 350px;*/
+}
+.musicList ul li{
+    padding-left: 30px;
+    list-style-type: none;
+    color: #949494;
+    line-height: 25px;
+    cursor:pointer;
+}
+.musicList .selected{
+    color: white;
+    font-weight: bold;
+}
+.musicList .mouseMove{
+    color: white;
+    background-color: #696969;
+}
+#closeBtn{
+    float: right;
+    /*border: 1px solid red;*/
+    height: 20px;
+    width: 20px;
+    background-image: url(../images/icon.png);
+    background-position: -83px -18px;
+    margin-top: 9px;
+    margin-right:10px;
+    cursor:pointer; 
+}
+/*-------是否锁定播放器------*/
+#lock{
+    position: absolute;
+    /*border: 1px solid red;*/
+    width: 55px;
+    height: 21px;
+    cursor: pointer;
+    z-index:3;
+}
+.opened{
+    background-image: url(../images/icon.png);
+    background-position: -106px -80px;
+}
+.closed{
+    background-image: url(../images/icon.png);
+    background-position: -162px -80px;
+}
+/*自定义谷歌浏览器的滚动条*/
+/*::-webkit-scrollbar-thumb{
+    background-color:#949494;  
+    height:50px;
+}*/
+/*::-webkit-scrollbar-thumb:hover{  
+    background-color:#949494; 
+    height:50px;  
+    -webkit-border-radius:4px;
+} */ 
+/*---滚动条大小--  */
+/*::-webkit-scrollbar{  
+    width:8px;  
+    height:8px;  
+}  */
+/*---滚动框背景样式--  */
+/*::-webkit-scrollbar-track-piece{  
+    background-color:red;  
+    background-image: url(../images/huzongsen/musicListBg.png);
+    -webkit-border-radius:0;
+}*/
+/*---滑轨两头的监听按钮颜色--*/
+/*::-webkit-scrollbar-button {
+     background-color: #949494;
+}  
+*/

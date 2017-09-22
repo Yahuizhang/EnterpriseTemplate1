@@ -1,0 +1,417 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+
+.exit{
+		color: gray;
+		line-height: 50px;
+		font-family: "微软雅黑";
+		font-size: 15px;
+	}
+.top{
+	font-size: 18px;
+}
+.top .name{
+	/*background-color: #181818;*/
+	font-size: 20px;
+	color: white;
+	border: 0;
+	font-weight: bold;
+}
+.top .nav li a{
+	color: #fff;
+}
+.top .nav li a:hover{
+	color:#feca2e; 
+}
+.top .nav li a.active{
+	color:#feca2e;
+}
+.top .search{
+	margin-left: 40%;
+	margin-top: 1.2%;
+	width: 200px;
+	height: 25px;
+	line-height: 25px;
+	background-image: url(../images/searchBg.jpg);
+	position: absolute;
+}
+.top .search input{
+	/*margin-top:15px;*/
+	margin: 0;
+	border: 0;
+	padding: 0;
+	width: 160px;
+	height: 25px;
+    color:#999;
+	padding-left: 10px;
+	font-size: 12px;
+	line-height: 25px;
+	float: left; 
+	text-shadow: none;
+	background-image: initial;
+    background-position-x: 0px;
+    background-position-y: 50%;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+}
+.top .search a.searchBtn{
+	width: 30px;
+	height: 25px;
+	float: right;
+	display: block;
+}
+.top .search a{
+	color: #fff;
+}
+.navbar {
+    border-radius: 0px;
+}
+/*-------------------左侧内容--------------------*/
+.content .qib{
+	width: 150px;
+	margin-left: 5px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e7e7e7;
+}
+.content .flb{
+	width: 150px;
+	margin-left: 5px;
+	border-bottom: 1px solid #e7e7e7;
+}
+.content .waikuang{
+	width: 160px;
+	border: 1px solid #e7e7e7;
+}
+.content .waikuang .title{
+    width: 160px;
+    margin-top: 10px;
+}
+.content .waikuang  h2{
+	width: 160px;
+	color: #333;
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 100px;
+	margin-left: 10px;
+}
+.content .waikuang  ul{
+	list-style: none;
+	margin-top: 10px;
+	margin-left: 10px;
+	padding-bottom: 10px;
+	/*border-bottom: 1px solid red;*/
+}
+.content .waikuang  ul li{
+	height: 60px;
+}
+.content .waikuang  ul li a{
+	color: #666;
+	text-decoration: none;
+}
+.content .waikuang  ul li img{
+	width: 50px;
+	height: 50px;
+}
+.content .waikuang  .down{
+	float: right;
+	display: inline;
+	margin-right:14px;
+	margin-top: 5px;
+}
+.second{
+	display: none;
+}
+.content .ewm{
+	height: 150px;
+	margin-left: 10px;
+}
+/*----------------------右侧部分-------------------------------*/
+.content .right .bg{
+	height: 150px;
+	background-image: url(../images/zhanglimeng/bang_xgb.png);
+}
+.content .right .function{
+	height: 80px;
+}
+.content .right .function .downLoad{
+	width: 110px;
+	height: 32px;
+	float: left;
+	margin-top: 30px;
+	background-image: url(../images/zhanglimeng/icon2.png);
+	background-position: 110px 100px;
+	border-color: white;
+	outline: none;
+}
+.content .right .function .playAll{
+	float: left;
+	width: 112px;
+	height: 35px;
+	margin-left: 30px;
+	margin-top: 28px;
+	background-image: url(../images/zhanglimeng/icon2.png);
+	background-position: -240px 69px;
+}
+.content .right .function .add{
+	float: left;
+	width: 100px;
+	height: 33px;
+	margin-left: 5px;
+	margin-top: 28px;
+	background-image: url(../images/zhanglimeng/icon2.png);
+	background-position: -241px 136px;
+}
+.content .right .function .update{
+	float: right;
+	font-size: 15px;
+	color: #999;
+	margin-top: 35px;
+}
+.content .right .title{
+	height: 40px;
+	background-color: #f2f2f6;
+	color: #999;
+}
+.content .right .title .trend{
+	float: left;
+	margin-top: 10px;
+	padding-left: 45px;
+}
+.content .right .title .name{
+	float: left;
+	margin-top: 10px;
+	padding-left: 40px;
+}
+.content .right .title .artist{
+	float: left;
+	margin-top: 10px;
+	margin-left: 360px;
+}
+.content .right .title .heat{
+	float: left;
+	margin-top: 10px;
+    padding-left: 180px;
+}
+.content .right .list .one{
+	height: 40px;
+}
+.content .right .list .one p{
+	line-height: 40px;
+	padding-left: 15px;
+	width: 34px;
+	float: left;
+}
+.content .right .list .one .new{
+	float: left;
+	width: 25px;
+	height: 10px;
+	margin-top: 15px;
+	margin-left: 15px;
+	background-image: url(../images/zhanglimeng/icon3.png);
+	background-position: -15px 0;
+}
+.content .right .list .one .song{
+	line-height: 40px;
+	padding-left: 35px;
+	float: left;
+}
+.content .right .list  .one .song a{
+	color: #666;
+	text-decoration: none;
+}
+.content .right .list .one .singer{
+	width: 130px;
+	float: left;
+	line-height: 40px;
+	margin-left:315px;
+}
+.content .right .list .one .singer a{
+	color: #666;
+	text-decoration: none;
+}
+.content .right .list .one .heat{
+	width: 70px;
+	height: 6px;
+	margin-top: 15px;
+	margin-left: 78px;
+	float: left;
+	background-image: url(../images/zhanglimeng/heatBg.jpg);
+}
+.content .right .list .one .heatLevel{
+	width: 72%;
+	height: 6px;
+	background-image: url(../images/zhanglimeng/heatValueBg.jpg);
+}
+.content .right .list .one .button{
+	width: 130px;
+	height: 40px;
+	margin-left: 36px;
+	float: left;
+}
+.content .right .list .one .button .play{
+	width: 13px;
+	height: 15px;
+	margin-top: 10px;
+	float: left;
+	background-image: url(../images/zhanglimeng/icon2.png);
+	background-position: 0px 82px;
+}
+.content .right .list .one .button .add{
+	width: 15px;
+	height: 15px;
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+	background-image: url(../images/zhanglimeng/icon2.png);
+	background-position: -13px 82px;
+}
+.content .right .list .one .button .download{
+	width: 15px;
+	height: 15px;
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+	background-image: url(../images/icon.png);
+	background-position: -51px 0px;
+}
+.content .right .list .one .button .share{
+	/*position: absolute;*/
+	width: 15px;
+	height: 15px;
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+	background-image: url(../images/icon.png);
+	background-position: -69px 0px;
+}
+.sharePage{
+	position: absolute;
+	width: 140px;
+	height: 40px;
+	display: none;
+	z-index: 5;
+}
+.sharePage .sina{
+	width: 18px;
+	height: 18px;
+	margin-top: 10px;
+	float: left;
+	background-image: url(../images/icon.png);
+	background-position: -219px -196px;
+}
+.sharePage .Qzone{
+	width: 18px;
+	height: 18px;
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+	background-image: url(../images/icon.png);
+	background-position: -242px -196px;
+}
+.sharePage .tqq{
+	width: 18px;
+	height: 18px;
+	margin-left: 10px;
+	margin-top: 10px;
+	float: left;
+	background-image: url(../images/icon.png);
+	background-position: -265px -196px;
+}
+.sharePage .douban{
+	width: 18px;
+	height: 18px;
+	margin-left: 10px;
+	margin-top: 10px;
+	float: left;
+	background-image: url(../images/icon.png);
+	background-position: -288px -196px;
+}
+.sharePage .renren{
+	width: 18px;
+	height: 18px;
+	margin-left: 10px;
+	margin-top: 10px;
+	float: left;
+	background-image: url(../images/icon.png);
+	background-position: -311px -196px;
+}
+/*----------------------点击-----------------------*/
+.content .flb .select{
+	color: black;
+}
+/*-----------------up/down-------------------------*/
+.up{
+	float: left;
+	width: 15px;
+	height: 10px;
+	margin-top: 15px;
+	margin-left: 15px;
+	background-image: url(../images/zhanglimeng/icon3.png);
+	background-position: 0px 0;
+}
+.list .down{
+	float: left;
+	width: 15px;
+	height: 10px;
+	margin-top: 15px;
+	margin-left: 15px;
+	background-image: url(../images/zhanglimeng/icon3.png);
+	background-position: -42px -1px;
+}
+.ping{
+	float: left;
+	width: 15px;
+	height: 10px;
+	margin-top: 15px;
+	margin-left: 15px;
+	background-image: url(../images/zhanglimeng/icon3.png);
+	background-position: -52px -1px;
+}
+.num{
+	float: left;
+	line-height: 40px;
+}
+/*-----------------------模态框-------------------------------*/
+#freeLoad{
+	clear: both;
+	width: 100px;
+	height: 20px;
+	background-color: red;
+	display: block;
+}
+#modal-id{
+	position: absolute;
+	top: 400px;
+	left: 500px;
+}
+/*------------------------页脚--------------------------------*/
+#footer{
+	height: 160px;
+	background-color: #181818;
+	margin-top: 40px;
+	font-family: "微软雅黑";
+	color: gray;
+}
+#footer .fistLine{
+	text-align: center;
+	font-size: 14px;
+	padding-top: 40px;
+}
+#footer .fistLine a{
+	color: gray;
+	text-decoration: none;
+}
+#footer .secondLine{
+	text-align: center;
+}
+#footer .thirdLine{
+	text-align: center;
+}
